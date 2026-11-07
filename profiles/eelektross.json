@@ -1,0 +1,37 @@
+{
+  "_help": "Secondary profile (Gavin t199u 11/03, t200u 11/04). Tynamo line is the secondary; Eternatus (890) is primary.",
+  "name": "Eelektross",
+  "role": "secondary",
+  "species": [
+    602,
+    603,
+    604
+  ],
+  "ability": "Levitate (Tynamo, Eelektrik, Eelektross) - immune to Ground moves",
+  "secondary_rules": "Keep alive. Gets heals, Soothe Bells, Revives. Toxic Orb -> Tynamo line (Poison Heal passive heals it); never cure its poison. Never Flame Orb.",
+  "doubles_rule": "In double battles while a Tynamo-line mon is the primary's partner on the field, the primary may use Earthquake (spread Ground moves) freely - the partner is immune. Never Earthquake while a wild shiny is on the field.",
+  "spread_moves_ok_with_partner": [
+    "Earthquake"
+  ],
+  "mega": "Mega Bracelet (rank -380), then Eelektrossite (rank -370, only while Eelektross 604 alive; applied to Eelektross only) -> Mega Eelektross.",
+  "signature_items": [],
+  "learn_moves": false,
+  "protected_moves": [],
+  "wanted_moves": [],
+  "replaceable_moves": [],
+  "replace_normal_type": false,
+  "good_moves": [],
+  "primary_move": null,
+  "spread_moves": [],
+  "replace_on_learn": {
+    "Wild Charge": [
+      "Charge Shot",
+      "Charge Beam"
+    ]
+  },
+  "evolution": "Tynamo->Eelektrik at Lv39; Thunder Stone -> Eelektrik (603) to evolve into Eelektross (604); Thunder Stone ranks -360 while Eelektrik is in party (above Nugget/money).",
+  "held_items": {
+    "Toxic Orb": "yes",
+    "Flame Orb": "never"
+  }
+}

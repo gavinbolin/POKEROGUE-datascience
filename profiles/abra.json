@@ -1,0 +1,107 @@
+{
+    "_help":  "Rayquaza/Abra candy run 2026-11-06. Keep starting special coverage through evolution.",
+    "name":  "Abra",
+    "species":  [
+                    63,
+                    64,
+                    65
+                ],
+    "signature_items":  [
+
+                        ],
+    "learn_moves":  true,
+    "learn_mode":  "score",
+    "replace_margin":  1.1,
+    "stats":  {
+                  "atk":  50,
+                  "spatk":  135
+              },
+    "stab_types":  [
+                       13
+                   ],
+    "recharge_moves":  [
+                           "Hyper Beam",
+                           "Giga Impact",
+                           "Eternabeam",
+                           "Blast Burn",
+                           "Hydro Cannon",
+                           "Frenzy Plant",
+                           "Roar of Time",
+                           "Rock Wrecker",
+                           "Prismatic Laser",
+                           "Meteor Assault"
+                       ],
+    "self_drop_moves":  [
+                            "Draco Meteor",
+                            "Overheat",
+                            "Leaf Storm",
+                            "Psycho Boost",
+                            "Fleur Cannon",
+                            "Close Combat",
+                            "Superpower",
+                            "V-create",
+                            "Make It Rain",
+                            "Clanging Scales"
+                        ],
+    "status_values":  {
+                          "Recover":  45,
+                          "Calm Mind":  30
+                      },
+    "protected_moves":  [
+                            "Psystrike",
+                            "Thunderbolt",
+                            "Aura Sphere",
+                            "Ice Beam"
+                        ],
+    "wanted_moves":  [
+                         "Psystrike",
+                         "Thunderbolt",
+                         "Aura Sphere",
+                         "Ice Beam"
+                     ],
+    "replaceable_moves":  [
+
+                          ],
+    "replace_normal_type":  true,
+    "good_moves":  [
+                       "Psychic",
+                       "Recover"
+                   ],
+    "primary_move":  "Psystrike",
+    "spread_moves":  [
+
+                     ],
+    "drop_first":  [
+                       "Teleport",
+                       "Kinesis"
+                   ],
+    "starter_moveset":  [
+
+                        ],
+    "target_moveset":  [
+                           "Psystrike",
+                           "Thunderbolt",
+                           "Aura Sphere",
+                           "Ice Beam"
+                       ],
+    "extra_type_caps":  {
+
+                        },
+    "pp_up_pref":  {
+                       "items":  [
+                                     "pp up",
+                                     "pp max"
+                                 ],
+                       "tiers":  [
+                                     "GREAT",
+                                     "ULTRA"
+                                 ],
+                       "rank_bonus":  3,
+                       "max_pp_at_most":  10
+                   },
+    "role":  "secondary",
+    "evolution_items":  {
+                            "alakazamite":  "Top-priority pick (with Mega Bracelet if not owned); give to Alakazam (65) to Mega Evolve",
+                            "link_cord":  "Top-priority pick; use on Kadabra (64) to evolve to Alakazam"
+                        }
+}

@@ -1,0 +1,142 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "encounter_rules.schema.json",
+  "title": "Farm encounter rules",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["rules_version", "encounters", "special_encounters"],
+  "properties": {
+    "rules_version": { "type": "string", "minLength": 1 },
+    "engine_commit": { "type": "string" },
+    "engine_version": { "type": "string" },
+    "description": { "type": "string" },
+    "encounters": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/encounter" }
+    },
+    "special_encounters": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/special" }
+    }
+  },
+  "$defs": {
+    "option": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["index", "key", "label", "requirements", "selects_party"],
+      "properties": {
+        "index": { "type": "integer", "minimum": 0 },
+        "key": { "type": "string", "pattern": "^option_[1-9][0-9]*$" },
+        "label": { "type": "string", "minLength": 1 },
+        "tooltip": { "type": "string" },
+        "requirements": { "type": "array", "items": { "type": "string" } },
+        "selects_party": { "type": "boolean" },
+        "select_prompt": { "type": "string" }
+      }
+    },
+    "condition": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["type"],
+      "properties": {
+        "type": {
+          "enum": ["money_above_fraction", "party_has_free_slot", "primary_hp_above_fraction"]
+        },
+        "fraction": { "type": "number", "minimum": 0, "maximum": 1 }
+      },
+      "allOf": [
+        {
+          "if": { "properties": { "type": { "const": "party_has_free_slot" } } },
+          "then": { "not": { "required": ["fraction"] } }
+        },
+        {
+          "if": { "properties": { "type": { "enum": ["money_above_fraction", "primary_hp_above_fraction"] } } },
+          "then": { "required": ["fraction"] }
+        }
+      ]
+    },
+    "followChoice": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["key", "label"],
+      "properties": {
+        "key": { "type": "string", "minLength": 1 },
+        "label": { "type": "string", "minLength": 1 }
+      }
+    },
+    "followUp": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "label", "applies_to", "mode", "choices", "selected"],
+      "properties": {
+        "id": { "type": "string", "minLength": 1 },
+        "label": { "type": "string", "minLength": 1 },
+        "applies_to": { "type": "array", "minItems": 1, "items": { "type": "string" } },
+        "mode": { "enum": ["single", "multi"] },
+        "choices": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/followChoice" } },
+        "selected": {
+          "anyOf": [
+            { "type": "string", "minLength": 1 },
+            { "type": "array", "items": { "type": "string" } }
+          ]
+        }
+      }
+    },
+    "encounter": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "key",
+        "enum_name",
+        "enum_index",
+        "display_name",
+        "tier",
+        "wave_range",
+        "sprite_key",
+        "catch_allowed",
+        "options",
+        "choice",
+        "fallback",
+        "leave",
+        "conditions",
+        "follow_ups",
+        "note"
+      ],
+      "properties": {
+        "key": { "type": "string", "minLength": 1 },
+        "enum_name": { "type": "string" },
+        "enum_index": { "type": "integer", "minimum": 0 },
+        "display_name": { "type": "string", "minLength": 1 },
+        "tier": { "enum": ["COMMON", "GREAT", "ULTRA", "ROGUE", "MASTER"] },
+        "wave_range": {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 2,
+          "items": { "type": "integer" }
+        },
+        "sprite_key": { "type": "string" },
+        "catch_allowed": { "type": "boolean" },
+        "options": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/option" } },
+        "choice": { "type": "string", "minLength": 1 },
+        "fallback": { "type": "string", "minLength": 1 },
+        "leave": { "type": "boolean" },
+        "conditions": { "type": "array", "items": { "$ref": "#/$defs/condition" } },
+        "follow_ups": { "type": "array", "items": { "$ref": "#/$defs/followUp" } },
+        "note": { "type": "string" }
+      }
+    },
+    "special": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["key", "display_name", "catch", "ball_cap", "note"],
+      "properties": {
+        "key": { "type": "string", "minLength": 1 },
+        "display_name": { "type": "string", "minLength": 1 },
+        "catch": { "type": "boolean" },
+        "ball_cap": { "enum": ["none", "poke", "great", "ultra", "rogue", "master"] },
+        "note": { "type": "string" }
+      }
+    }
+  }
+}

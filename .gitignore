@@ -1,0 +1,46 @@
+﻿# Generated files and dependencies
+node_modules/
+__pycache__/
+*.py[cod]
+.cache/
+cache/
+dist/
+build/
+*.exe
+*.dll
+*.wasm
+*.zip
+*.pack
+*.prsv
+# Logs, volatile state, screenshots
+*_log.txt
+*.log
+*.jsonl
+*status*.json
+screenshots/
+*.png
+*.gif
+replay_result.txt
+# Backups and vendored research projects
+*.bak*
+*.orig
+*.premerge*
+backups/
+item_priority_backups/
+pokerogue data science/
+# Private data and browser state
+.env
+.env.*
+*token*
+*cookie*
+*credential*
+*secret*
+*password*
+*.pem
+*.key
+*.pfx
+*.prsv
+User Data/
+chrome-profile*/
+ChromeProfile*/
+.browser*/

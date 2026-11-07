@@ -1,0 +1,1 @@
+(()=>{const bs=window.__pr_cam?.scene;const h=bs.ui.getHandler();return {h:h.constructor.name,pm:h.partyUiMode,om:h.optionsMode,opts:(h.options||[]).slice(0,10),party:bs.getPlayerParty().map(p=>[p.name,p.hp,p.isOnField?.()]),ph:bs.phaseManager.getCurrentPhase().constructor.name, modes:Object.keys(bs.ui).slice(0,30)}})()

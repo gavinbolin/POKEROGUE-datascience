@@ -1,0 +1,2182 @@
+{
+  "rules_version": "encounter-rules-v1",
+  "engine_commit": "7fd2ba7058e5f6a62eca96987f16072cece383da",
+  "engine_version": "1.12.2.2",
+  "description": "Farm-side mystery encounter rules seeded from farm17. choice and fallback are option keys (option_N, 1-based, matching the locale option.N). leave true ignores choice and takes the last option. The simulator pins its own copy and does not read this live file.",
+  "encounters": [
+    {
+      "key": "mysteriousChallengers",
+      "enum_name": "MYSTERIOUS_CHALLENGERS",
+      "enum_index": 0,
+      "display_name": "Mysterious Challengers",
+      "tier": "GREAT",
+      "wave_range": [
+        10,
+        180
+      ],
+      "sprite_key": "",
+      "catch_allowed": false,
+      "options": [
+        {
+          "index": 0,
+          "key": "option_1",
+          "label": "A Clever, Mindful Foe",
+          "tooltip": "(-) Standard Battle\n(+) Move Item Rewards",
+          "requirements": [],
+          "selects_party": false,
+          "select_prompt": ""
+        },
+        {
+          "index": 1,
+          "key": "option_2",
+          "label": "A Strong Foe",
+          "tooltip": "(-) Tough Battle\n(+) Good Rewards",
+          "requirements": [],
+          "selects_party": false,
+          "select_prompt": ""
+        },
+        {
+          "index": 2,
+          "key": "option_3",
+          "label": "The Mightiest Foe",
+          "tooltip": "(-) Brutal Battle\n(+) Great Rewards",
+          "requirements": [],
+          "selects_party": false,
+          "select_prompt": ""
+        }
+      ],
+      "choice": "option_1",
+      "fallback": "option_3",
+      "leave": false,
+      "conditions": [],
+      "follow_ups": [],
+      "note": "Farm takes the top option (A Clever, Mindful Foe). If that option's requirements are not met, use The Mightiest Foe."
+    },
+    {
+      "key": "mysteriousChest",
+      "enum_name": "MYSTERIOUS_CHEST",
+      "enum_index": 1,
+      "display_name": "The Mysterious Chest",
+      "tier": "COMMON",
+      "wave_range": [
+        10,
+        180
+      ],
+      "sprite_key": "mysterious_chest_blue",
+      "catch_allowed": true,
+      "options": [
+        {
+          "index": 0,
+          "key": "option_1",
+          "label": "Open It",
+          "tooltip": "@[SUMMARY_BLUE]{({{trapPercent}}%) Something terrible}\n@[SUMMARY_GREEN]{({{commonPercent}}%) Okay Rewards}\n@[SUMMARY_GREEN]{({{ultraPercent}}%) Good Rewards}\n@[SUMMARY_GREEN]{({{roguePercent}}%) Great Rewards}\n@[SUMMARY_GREEN]{({{masterPercent}}%) Amazing Rewards}",
+          "requirements": [
+            "mode:DEFAULT"
+          ],
+          "selects_party": false,
+          "select_prompt": ""
+        },
+        {
+          "index": 1,
+          "key": "option_2",
+          "label": "Too Risky, Leave",
+          "tooltip": "(-) No Rewards",
+          "requirements": [],
+          "selects_party": false,
+          "select_prompt": ""
+        }
+      ],
+      "choice": "option_1",
+      "fallback": "option_2",
+      "leave": false,
+      "conditions": [],
+      "follow_ups": [],
+      "note": "Farm opens the chest."
+    },
+    {
+      "key": "darkDeal",
+      "enum_name": "DARK_DEAL",
+      "enum_index": 2,
+      "display_name": "Dark Deal",
+      "tier": "ROGUE",
+      "wave_range": [
+        30,
+        180
+      ],
+      "sprite_key": "dark_deal_scientist",
+      "catch_allowed": true,
+      "options": [
+        {
+          "index": 0,
+          "key": "option_1",
+          "label": "Accept",
+          "tooltip": "(+) 5 Rogue Balls\n(?) Enhance a Random Pokémon",
+          "requirements": [
+            "mode:DEFAULT"
+          ],
+          "selects_party": false,
+          "select_prompt": ""
+        },
+        {
+          "index": 1,
+          "key": "option_2",
+          "label": "Refuse",
+          "tooltip": "(-) No Rewards",
+          "requirements": [],
+          "selects_party": false,
+          "select_prompt": ""
+        }
+      ],
+      "choice": "option_2",
+      "fallback": "option_2",
+      "leave": true,
+      "conditions": [],
+      "follow_ups": [],
+      "note": "Farm leaves. This encounter is on the party-change block list (trade, weird dream, or dark deal)."
+    },
+    {
+      "key": "fightOrFlight",
+      "enum_name": "FIGHT_OR_FLIGHT",
+      "enum_index": 3,
+      "display_name": "Fight or Flight",
+      "tier": "COMMON",
+      "wave_range": [
+        10,
+        180
+      ],
+      "sprite_key": "",
+      "catch_allowed": true,
+      "options": [
+        {
+          "index": 0,
+          "key": "option_1",
+          "label": "Battle the Pokémon",
+          "tooltip": "(-) Tough Battle\n(+) New Item",
+          "requirements": [],
+          "selects_party": false,
+          "select_prompt": ""
+        },
+        {
+          "index": 1,
+          "key": "option_2",
+          "label": "Steal the Item",
+          "tooltip": "(+) {{option2PrimaryName}} uses {{option2PrimaryMove}}",
+          "requirements": [
+            "mode:DISABLED_OR_SPECIAL",
+            "withPrimaryPokemonRequirement(new MoveRequirement(STEALING_MOVES, true)"
+          ],
+          "selects_party": false,
+          "select_prompt": ""
+        },
+        {
+          "index": 2,
+          "key": "option_3",
+          "label": "Leave",
+          "tooltip": "(-) No Rewards",
+          "requirements": [],
+          "selects_party": false,
+          "select_prompt": ""
+        }
+      ],
+      "choice": "option_1",
+      "fallback": "option_3",
+      "leave": false,
+      "conditions": [],
+      "follow_ups": [],
+      "note": "Farm takes the top option (Battle the Pokémon). If that option's requirements are not met, use Leave."
+    },
+    {
+      "key": "slumberingSnorlax",
+      "enum_name": "SLUMBERING_SNORLAX",
+      "enum_index": 4,
+      "display_name": "Slumbering {{snorlaxName}}",
+      "tier": "GREAT",
+      "wave_range": [
+        15,
+        150
+      ],
+      "sprite_key": "",
+      "catch_allowed": true,
+      "options": [
+        {
+          "index": 0,
+          "key": "option_1",
+          "label": "Battle It",
+          "tooltip": "(-) Fight Sleeping {{snorlaxName}}\n(+) Special Reward",
+          "requirements": [],
+          "selects_party": false,
+          "select_prompt": ""
+        },
+        {
+          "index": 1,
+          "key": "option_2",
+          "label": "Wait for It to Move",
+          "tooltip": "(-) Wait a Long Time\n(+) Recover Party",
+          "requirements": [],
+          "selects_party": false,
+          "select_prompt": ""
+        },
+        {
+          "index": 2,
+          "key": "option_3",
+          "label": "Steal Its Item",
+          "tooltip": "(+) {{option3PrimaryName}} uses {{option3PrimaryMove}}\n(+) Special Reward",
+          "requirements": [
+            "mode:DISABLED_OR_SPECIAL",
+            "withPrimaryPokemonRequirement(new MoveRequirement(STEALING_MOVES, true)"
+          ],
+          "selects_party": false,
+          "select_prompt": ""
+        }
+      ],
+      "choice": "option_1",
+      "fallback": "option_3",
+      "leave": false,
+      "conditions": [],
+      "follow_ups": [],
+      "note": "Farm takes the top option (Battle It). If that option's requirements are not met, use Steal Its Item."
+    },
+    {
+      "key": "trainingSession",
+      "enum_name": "TRAINING_SESSION",
+      "enum_index": 5,
+      "display_name": "Training Session",
+      "tier": "ULTRA",
+      "wave_range": [
+        10,
+        180
+      ],
+      "sprite_key": "training_session_gear",
+      "catch_allowed": false,
+      "options": [
+        {
+          "index": 0,
+          "key": "option_1",
+          "label": "Light Training",
+          "tooltip": "(-) Light Battle with Chosen Pokémon\n(+) Permanently Improve 2 Random IVs of Chosen Pokémon",
+          "requirements": [
+            "mode:DEFAULT"
+          ],
+          "selects_party": true,
+          "select_prompt": ""
+        },
+        {
+          "index": 1,
+          "key": "option_2",
+          "label": "Moderate Training",
+          "tooltip": "(-) Moderate Battle with Chosen Pokémon\n(+) Permanently Change Chosen Pokémon’s Nature",
+          "requirements": [
+            "mode:DEFAULT"
+          ],
+          "selects_party": true,
+          "select_prompt": "Select a new nature\nto train your Pokémon in."
+        },
+        {
+          "index": 2,
+          "key": "option_3",
+          "label": "Heavy Training",
+          "tooltip": "(-) Harsh Battle with Chosen Pokémon\n(+) Permanently Change Chosen Pokémon’s Ability",
+          "requirements": [
+            "mode:DEFAULT"
+          ],
+          "selects_party": true,
+          "select_prompt": "Select a new ability\nto train your Pokémon in."
+        },
+        {
+          "index": 3,
+          "key": "option_4",
+          "label": "Leave",
+          "tooltip": "(-) No Rewards",
+          "requirements": [],
+          "selects_party": false,
+          "select_prompt": ""
+        }
+      ],
+      "choice": "option_4",
+      "fallback": "option_4",
+      "leave": true,
+      "conditions": [],
+      "follow_ups": [
+        {
+          "id": "pokemon",
+          "label": "Which Pokémon",
+          "applies_to": [
+            "option_1",
+            "option_2",
+            "option_3"
+          ],
+          "mode": "single",
+          "choices": [
+            {
+              "key": "lowest_index_alive",
+              "label": "Lowest-index unfainted"
+            },
+            {
+              "key": "lead",
+              "label": "Lead"
+            },
+            {
+              "key": "secondary",
+              "label": "Secondary"
+            },
+            {
+              "key": "lowest_hp",
+              "label": "Lowest HP"
+            }
+          ],
+          "selected": "lowest_index_alive"
+        },
+        {
+          "id": "nature",
+          "label": "Nature to train",
+          "applies_to": [
+            "option_2"
+          ],
+          "mode": "single",
+          "choices": [
+            {
+              "key": "HARDY",
+              "label": "Hardy"
+            },
+            {
+              "key": "LONELY",
+              "label": "Lonely"
+            },
+            {
+              "key": "BRAVE",
+              "label": "Brave"
+            },
+            {
+              "key": "ADAMANT",
+              "label": "Adamant"
+            },
+            {
+              "key": "NAUGHTY",
+              "label": "Naughty"
+            },
+            {
+              "key": "BOLD",
+              "label": "Bold"
+            },
+            {
+              "key": "DOCILE",
+              "label": "Docile"
+            },
+            {
+              "key": "RELAXED",
+              "label": "Relaxed"
+            },
+            {
+              "key": "IMPISH",
+              "label": "Impish"
+            },
+            {
+              "key": "LAX",
+              "label": "Lax"
+            },
+            {
+              "key": "TIMID",
+              "label": "Timid"
+            },
+            {
+              "key": "HASTY",
+              "label": "Hasty"
+            },
+            {
+              "key": "SERIOUS",
+              "label": "Serious"
+            },
+            {
+              "key": "JOLLY",
+              "label": "Jolly"
+            },
+            {
+              "key": "NAIVE",
+              "label": "Naive"
+            },
+            {
+              "key": "MODEST",
+              "label": "Modest"
+            },
+            {
+              "key": "MILD",
+              "label": "Mild"
+            },
+            {
+              "key": "QUIET",
+              "label": "Quiet"
+            },
+            {
+              "key": "BASHFUL",
+              "label": "Bashful"
+            },
+            {
+              "key": "RASH",
+              "label": "Rash"
+            },
+            {
+              "key": "CALM",
+              "label": "Calm"
+            },
+            {
+              "key": "GENTLE",
+              "label": "Gentle"
+            },
+            {
+              "key": "SASSY",
+              "label": "Sassy"
+            },
+            {
+              "key": "CAREFUL",
+              "label": "Careful"
+            },
+            {
+              "key": "QUIRKY",
+              "label": "Quirky"
+            }
+          ],
+          "selected": "HARDY"
+        },
+        {
+          "id": "ability",
+          "label": "Ability to train",
+          "applies_to": [
+            "option_3"
+          ],
+          "mode": "single",
+          "choices": [
+            {
+              "key": "first_offered",
+              "label": "First offered ability"
+            }
+          ],
+          "selected": "first_offered"
+        }
+      ],
+      "note": "Farm opts out. Heavy training teaches an ability, which the farm declines."
+    },
+    {
+      "key": "departmentStoreSale",
+      "enum_name": "DEPARTMENT_STORE_SALE",
+      "enum_index": 6,
+      "display_name": "Department Store Sale",
+      "tier": "COMMON",
+      "wave_range": [
+        10,
+        100
+      ],
+      "sprite_key": "department_store_sale_lady",
+      "catch_allowed": false,
+      "options": [
+        {
+          "index": 0,
+          "key": "option_1",
+          "label": "TM Counter",
+          "tooltip": "(+) TM Shop",
+          "requirements": [],
+          "selects_party": false,
+          "select_prompt": ""
+        },
+        {
+          "index": 1,
+          "key": "option_2",
+          "label": "Vitamin Counter",
+          "tooltip": "(+) Vitamin Shop",
+          "requirements": [],
+          "selects_party": false,
+          "select_prompt": ""
+        },
+        {
+          "index": 2,
+          "key": "option_3",
+          "label": "Battle Item Counter",
+          "tooltip": "(+) X Item Shop",
+          "requirements": [],
+          "selects_party": false,
+          "select_prompt": ""
+        },
+        {
+          "index": 3,
+          "key": "option_4",
+          "label": "Poké Ball Counter",
+          "tooltip": "(+) Poké Ball Shop",
+          "requirements": [],
+          "selects_party": false,
+          "select_prompt": ""
+        }
+      ],
+      "choice": "option_1",
+      "fallback": "option_4",
+      "leave": false,
+      "conditions": [],
+      "follow_ups": [],
+      "note": "Farm takes the top option (TM Counter). If that option's requirements are not met, use Poké Ball Counter."
+    },
+    {
+      "key": "shadyVitaminDealer",
+      "enum_name": "SHADY_VITAMIN_DEALER",
+      "enum_index": 7,
+      "display_name": "The Vitamin Dealer",
+      "tier": "COMMON",
+      "wave_range": [
+        10,
+        180
+      ],
+      "sprite_key": "shady_vitamin_dealer",
+      "catch_allowed": false,
+      "options": [
+        {
+          "index": 0,
+          "key": "option_1",
+          "label": "The Cheap Deal",
+          "tooltip": "(-) Pay {{option1Money, money}}\n(-) Side Effects?\n(+) Chosen Pokémon Gains 2 Random Vitamins",
+          "requirements": [
+            "mode:DISABLED_OR_DEFAULT",
+            "withSceneMoneyRequirement(0, VITAMIN_DEALER_CHEAP_PRICE_MULTIPLIER)"
+          ],
+          "selects_party": true,
+          "select_prompt": ""
+        },
+        {
+          "index": 1,
+          "key": "option_2",
+          "label": "The Pricey Deal",
+          "tooltip": "(-) Pay {{option2Money, money}}\n(+) Chosen Pokémon Gains 2 Random Vitamins",
+          "requirements": [
+            "mode:DISABLED_OR_DEFAULT",
+            "withSceneMoneyRequirement(0, VITAMIN_DEALER_EXPENSIVE_PRICE_MULTIPLIER)"
+          ],
+          "selects_party": true,
+          "select_prompt": ""
+        },
+        {
+          "index": 2,
+          "key": "option_3",
+          "label": "Leave",
+          "tooltip": "(-) No Rewards",
+          "requirements": [],
+          "selects_party": false,
+          "select_prompt": ""
+        }
+      ],
+      "choice": "option_2",
+      "fallback": "option_3",
+      "leave": false,
+      "conditions": [],
+      "follow_ups": [
+        {
+          "id": "pokemon",
+          "label": "Which Pokémon",
+          "applies_to": [
+            "option_1",
+            "option_2"
+          ],
+          "mode": "single",
+          "choices": [
+            {
+              "key": "lowest_index_alive",
+              "label": "Lowest-index unfainted"
+            },
+            {
+              "key": "lead",
+              "label": "Lead"
+            },
+            {
+              "key": "secondary",
+              "label": "Secondary"
+            },
+            {
+              "key": "lowest_hp",
+              "label": "Lowest HP"
+            }
+          ],
+          "selected": "lowest_index_alive"
+        }
+      ],
+      "note": "Farm picks The Pricey Deal when its requirements are met, otherwise Leave."
+    },
+    {
+      "key": "fieldTrip",
+      "enum_name": "FIELD_TRIP",
+      "enum_index": 8,
+      "display_name": "Field Trip",
+      "tier": "COMMON",
+      "wave_range": [
+        10,
+        100
+      ],
+      "sprite_key": "preschooler_m",
+      "catch_allowed": false,
+      "options": [
+        {
+          "index": 0,
+          "key": "option_1",
+          "label": "A Physical Move",
+          "tooltip": "(+) Physical Item Rewards",
+          "requirements": [
+            "mode:DEFAULT"
+          ],
+          "selects_party": true,
+          "select_prompt": ""
+        },
+        {
+          "index": 1,
+          "key": "option_2",
+          "label": "A Special Move",
+          "tooltip": "(+) Special Item Rewards",
+          "requirements": [
+            "mode:DEFAULT"
+          ],
+          "selects_party": true,
+          "select_prompt": ""
+        },
+        {
+          "index": 2,
+          "key": "option_3",
+          "label": "A Status Move",
+          "tooltip": "(+) Status Item Rewards",
+          "requirements": [
+            "mode:DEFAULT"
+          ],
+          "selects_party": true,
+          "select_prompt": ""
+        }
+      ],
+      "choice": "option_1",
+      "fallback": "option_3",
+      "leave": false,
+      "conditions": [],
+      "follow_ups": [
+        {
+          "id": "pokemon",
+          "label": "Which Pokémon",
+          "applies_to": [
+            "option_1",
+            "option_2",
+            "option_3"
+          ],
+          "mode": "single",
+          "choices": [
+            {
+              "key": "lowest_index_alive",
+              "label": "Lowest-index unfainted"
+            },
+            {
+              "key": "lead",
+              "label": "Lead"
+            },
+            {
+              "key": "secondary",
+              "label": "Secondary"
+            },
+            {
+              "key": "lowest_hp",
+              "label": "Lowest HP"
+            }
+          ],
+          "selected": "lowest_index_alive"
+        },
+        {
+          "id": "demo_move",
+          "label": "Move to demonstrate",
+          "applies_to": [
+            "option_1",
+            "option_2",
+            "option_3"
+          ],
+          "mode": "single",
+          "choices": [
+            {
+              "key": "first_of_category",
+              "label": "First move matching the chosen category"
+            }
+          ],
+          "selected": "first_of_category"
+        }
+      ],
+      "note": "Farm takes the top option (A Physical Move). If that option's requirements are not met, use A Status Move."
+    },
+    {
+      "key": "safariZone",
+      "enum_name": "SAFARI_ZONE",
+      "enum_index": 9,
+      "display_name": "The Safari Zone",
+      "tier": "GREAT",
+      "wave_range": [
+        10,
+        180
+      ],
+      "sprite_key": "safari_zone",
+      "catch_allowed": false,
+      "options": [
+        {
+          "index": 0,
+          "key": "option_1",
+          "label": "Enter",
+          "tooltip": "(-) Pay {{option1Money, money}}\n@[SUMMARY_GREEN]{(?) Safari Zone}",
+          "requirements": [
+            "mode:DISABLED_OR_DEFAULT",
+            "withSceneRequirement(new MoneyRequirement(0, SAFARI_MONEY_MULTIPLIER)"
+          ],
+          "selects_party": false,
+          "select_prompt": ""
+        },
+        {
+          "index": 1,
+          "key": "option_2",
+          "label": "Leave",
+          "tooltip": "(-) No Rewards",
+          "requirements": [
+            "mode:DEFAULT"
+          ],
+          "selects_party": false,
+          "select_prompt": ""
+        }
+      ],
+      "choice": "option_1",
+      "fallback": "option_2",
+      "leave": false,
+      "conditions": [],
+      "follow_ups": [
+        {
+          "id": "safari_action",
+          "label": "Safari action",
+          "applies_to": [
+            "option_1"
+          ],
+          "mode": "single",
+          "choices": [
+            {
+              "key": "ball",
+              "label": "Throw a Poké Ball"
+            },
+            {
+              "key": "bait",
+              "label": "Throw Bait"
+            },
+            {
+              "key": "mud",
+              "label": "Throw Mud"
+            },
+            {
+              "key": "flee",
+              "label": "Flee"
+            }
+          ],
+          "selected": "ball"
+        }
+      ],
+      "note": "Farm takes the top option (Enter). If that option's requirements are not met, use Leave."
+    },
+    {
+      "key": "lostAtSea",
+      "enum_name": "LOST_AT_SEA",
+      "enum_index": 10,
+      "display_name": "Lost at Sea",
+      "tier": "COMMON",
+      "wave_range": [
+        10,
+        180
+      ],
+      "sprite_key": "lost_at_sea_buoy",
+      "catch_allowed": false,
+      "options": [
+        {
+          "index": 0,
+          "key": "option_1",
+          "label": "{{option1PrimaryName}} Might Help",
+          "tooltip": "(+) {{option1PrimaryName}} saves you\n(+) {{option1PrimaryName}} gains some Exp.",
+          "requirements": [
+            "mode:DISABLED_OR_DEFAULT",
+            "withPokemonCanLearnMoveRequirement(OPTION_1_REQUIRED_MOVE)"
+          ],
+          "selects_party": false,
+          "select_prompt": ""
+        },
+        {
+          "index": 1,
+          "key": "option_2",
+          "label": "{{option2PrimaryName}} Might Help",
+          "tooltip": "(+) {{option2PrimaryName}} saves you\n(+) {{option2PrimaryName}} gains some Exp.",
+          "requirements": [
+            "mode:DISABLED_OR_DEFAULT",
+            "withPokemonCanLearnMoveRequirement(OPTION_2_REQUIRED_MOVE)"
+          ],
+          "selects_party": false,
+          "select_prompt": ""
+        },
+        {
+          "index": 2,
+          "key": "option_3",
+          "label": "Wander Aimlessly",
+          "tooltip": "(-) Each of your Pokémon lose {{damagePercentage}}% of their total HP",
+          "requirements": [],
+          "selects_party": false,
+          "select_prompt": ""
+        }
+      ],
+      "choice": "option_1",
+      "fallback": "option_3",
+      "leave": false,
+      "conditions": [],
+      "follow_ups": [],
+      "note": "Farm takes the top option ({{option1PrimaryName}} Might Help). If that option's requirements are not met, use Wander Aimlessly."
+    },
+    {
+      "key": "fieryFallout",
+      "enum_name": "FIERY_FALLOUT",
+      "enum_index": 11,
+      "display_name": "Fiery Fallout",
+      "tier": "COMMON",
+      "wave_range": [
+        40,
+        180
+      ],
+      "sprite_key": "",
+      "catch_allowed": true,
+      "options": [
+        {
+          "index": 0,
+          "key": "option_1",
+          "label": "Find the Source",
+          "tooltip": "(?) Discover the source\n(-) Tough Battle\n(+) Gain a Held Item",
+          "requirements": [],
+          "selects_party": false,
+          "select_prompt": ""
+        },
+        {
+          "index": 1,
+          "key": "option_2",
+          "label": "Hunker Down",
+          "tooltip": "(-) Suffer the effects of the weather\n(?) Affects One Pokémon’s Ability",
+          "requirements": [],
+          "selects_party": false,
+          "select_prompt": ""
+        },
+        {
+          "index": 2,
+          "key": "option_3",
+          "label": "Your Fire Resistant Pokémon Help",
+          "tooltip": "(+) End the conditions\n(+) Gain a Held Item",
+          "requirements": [
+            "mode:DISABLED_OR_SPECIAL",
+            "withPrimaryPokemonRequirement(CombinationPokemonRequirement.Some( new TypeRequirement(PokemonType.FIRE, true, 1)",
+            "AbilityRequirement(FIRE_RESISTANT_ABILITIES, true)"
+          ],
+          "selects_party": false,
+          "select_prompt": ""
+        }
+      ],
+      "choice": "option_1",
+      "fallback": "option_3",
+      "leave": false,
+      "conditions": [],
+      "follow_ups": [],
+      "note": "Farm takes the top option (Find the Source). If that option's requirements are not met, use Your Fire Resistant Pokémon Help."
+    },
+    {
+      "key": "theStrongStuff",
+      "enum_name": "THE_STRONG_STUFF",
+      "enum_index": 12,
+      "display_name": "The Strong Stuff",
+      "tier": "COMMON",
+      "wave_range": [
+        10,
+        180
+      ],
+      "sprite_key": "berry_juice_good",
+      "catch_allowed": false,
+      "options": [
+        {
+          "index": 0,
+          "key": "option_1",
+          "label": "Approach the {{shuckleName}}",
+          "tooltip": "(?) Something awful or amazing might happen",
+          "requirements": [],
+          "selects_party": false,
+          "select_prompt": ""
+        },
+        {
+          "index": 1,
+          "key": "option_2",
+          "label": "Battle the {{shuckleName}}",
+          "tooltip": "(-) Tough Battle\n(+) Special Rewards",
+          "requirements": [],
+          "selects_party": false,
+          "select_prompt": ""
+        }
+      ],
+      "choice": "option_1",
+      "fallback": "option_2",
+      "leave": false,
+      "conditions": [],
+      "follow_ups": [],
+      "note": "Farm takes the top option (Approach the {{shuckleName}}). If that option's requirements are not met, use Battle the {{shuckleName}}."
+    },
+    {
+      "key": "thePokemonSalesman",
+      "enum_name": "THE_POKEMON_SALESMAN",
+      "enum_index": 13,
+      "display_name": "The Pokémon Salesman",
+      "tier": "ULTRA",
+      "wave_range": [
+        10,
+        180
+      ],
+      "sprite_key": "pokemon_salesman",
+      "catch_allowed": false,
+      "options": [
+        {
+          "index": 0,
+          "key": "option_1",
+          "label": "Accept",
+          "tooltip": "(-) Pay {{price, money}}\n(+) Gain a {{purchasePokemon}} with its Hidden Ability",
+          "requirements": [
+            "mode:DISABLED_OR_DEFAULT",
+            "withSceneMoneyRequirement(0, MAX_POKEMON_PRICE_MULTIPLIER)"
+          ],
+          "selects_party": false,
+          "select_prompt": ""
+        },
+        {
+          "index": 1,
+          "key": "option_2",
+          "label": "Refuse",
+          "tooltip": "(-) No Rewards",
+          "requirements": [],
+          "selects_party": false,
+          "select_prompt": ""
+        }
+      ],
+      "choice": "option_1",
+      "fallback": "option_2",
+      "leave": false,
+      "conditions": [],
+      "follow_ups": [],
+      "note": "Farm takes the top option (Accept). If that option's requirements are not met, use Refuse."
+    },
+    {
+      "key": "anOfferYouCantRefuse",
+      "enum_name": "AN_OFFER_YOU_CANT_REFUSE",
+      "enum_index": 14,
+      "display_name": "An Offer You Can’t Refuse",
+      "tier": "GREAT",
+      "wave_range": [
+        10,
+        180
+      ],
+      "sprite_key": "rich_kid_m",
+      "catch_allowed": false,
+      "options": [
+        {
+          "index": 0,
+          "key": "option_1",
+          "label": "Accept the Deal",
+          "tooltip": "(-) Lose {{strongestPokemon}}\n(+) Gain a@[TOOLTIP_TITLE]{ {{itemName}}}\n(+) Gain {{price, money}}",
+          "requirements": [
+            "mode:DEFAULT"
+          ],
+          "selects_party": false,
+          "select_prompt": ""
+        },
+        {
+          "index": 1,
+          "key": "option_2",
+          "label": "Extort the Kid",
+          "tooltip": "(+) {{option2PrimaryName}} uses {{moveOrAbility}}\n(+) Gain {{price, money}}",
+          "requirements": [
+            "mode:DISABLED_OR_SPECIAL",
+            "withPrimaryPokemonRequirement(CombinationPokemonRequirement.Some( new MoveRequirement(EXTORTION_MOVES, true)",
+            "AbilityRequirement(EXTORTION_ABILITIES, true)"
+          ],
+          "selects_party": false,
+          "select_prompt": ""
+        },
+        {
+          "index": 2,
+          "key": "option_3",
+          "label": "Leave",
+          "tooltip": "(-) No Rewards",
+          "requirements": [],
+          "selects_party": false,
+          "select_prompt": ""
+        }
+      ],
+      "choice": "option_1",
+      "fallback": "option_3",
+      "leave": false,
+      "conditions": [],
+      "follow_ups": [],
+      "note": "Farm takes the top option (Accept the Deal). If that option's requirements are not met, use Leave."
+    },
+    {
+      "key": "delibirdy",
+      "enum_name": "DELIBIRDY",
+      "enum_index": 15,
+      "display_name": "Delibir-dy",
+      "tier": "GREAT",
+      "wave_range": [
+        10,
+        180
+      ],
+      "sprite_key": "",
+      "catch_allowed": false,
+      "options": [
+        {
+          "index": 0,
+          "key": "option_1",
+          "label": "Give Money",
+          "tooltip": "(-) Give the {{delibirdName}}s {{money, money}}\n(+) Receive a Gift Item",
+          "requirements": [
+            "mode:DISABLED_OR_DEFAULT",
+            "withSceneMoneyRequirement(0, DELIBIRDY_MONEY_PRICE_MULTIPLIER)"
+          ],
+          "selects_party": false,
+          "select_prompt": ""
+        },
+        {
+          "index": 1,
+          "key": "option_2",
+          "label": "Give Food",
+          "tooltip": "(-) Give the {{delibirdName}}s a Berry or Reviver Seed\n(+) Receive a Gift Item",
+          "requirements": [
+            "mode:DISABLED_OR_DEFAULT",
+            "withPrimaryPokemonRequirement(new HeldItemRequirement(OPTION_2_ALLOWED_MODIFIERS)"
+          ],
+          "selects_party": true,
+          "select_prompt": "Select an item to give."
+        },
+        {
+          "index": 2,
+          "key": "option_3",
+          "label": "Give an Item",
+          "tooltip": "(-) Give the {{delibirdName}}s a Held Item\n(+) Receive a Gift Item",
+          "requirements": [
+            "mode:DISABLED_OR_DEFAULT",
+            "withPrimaryPokemonRequirement(new HeldItemRequirement(OPTION_3_DISALLOWED_MODIFIERS, 1, true)"
+          ],
+          "selects_party": true,
+          "select_prompt": "Select an item to give."
+        }
+      ],
+      "choice": "option_1",
+      "fallback": "option_3",
+      "leave": false,
+      "conditions": [],
+      "follow_ups": [
+        {
+          "id": "pokemon",
+          "label": "Which Pokémon",
+          "applies_to": [
+            "option_2",
+            "option_3"
+          ],
+          "mode": "single",
+          "choices": [
+            {
+              "key": "lowest_index_alive",
+              "label": "Lowest-index unfainted"
+            },
+            {
+              "key": "lead",
+              "label": "Lead"
+            },
+            {
+              "key": "secondary",
+              "label": "Secondary"
+            },
+            {
+              "key": "lowest_hp",
+              "label": "Lowest HP"
+            }
+          ],
+          "selected": "lowest_index_alive"
+        },
+        {
+          "id": "food",
+          "label": "Food to give",
+          "applies_to": [
+            "option_2"
+          ],
+          "mode": "multi",
+          "choices": [
+            {
+              "key": "berry",
+              "label": "Berry"
+            },
+            {
+              "key": "reviver_seed",
+              "label": "Reviver Seed"
+            }
+          ],
+          "selected": [
+            "berry",
+            "reviver_seed"
+          ]
+        },
+        {
+          "id": "held_item",
+          "label": "Held item to give",
+          "applies_to": [
+            "option_3"
+          ],
+          "mode": "single",
+          "choices": [
+            {
+              "key": "first_transferable",
+              "label": "First transferable held item (not a berry, Reviver Seed, or vitamin)"
+            }
+          ],
+          "selected": "first_transferable"
+        }
+      ],
+      "note": "Farm takes the top option (Give Money). If that option's requirements are not met, use Give an Item."
+    },
+    {
+      "key": "absoluteAvarice",
+      "enum_name": "ABSOLUTE_AVARICE",
+      "enum_index": 16,
+      "display_name": "Absolute Avarice",
+      "tier": "GREAT",
+      "wave_range": [
+        20,
+        180
+      ],
+      "sprite_key": "lum_berry",
+      "catch_allowed": false,
+      "options": [
+        {
+          "index": 0,
+          "key": "option_1",
+          "label": "Battle It",
+          "tooltip": "(-) Tough Battle\n(+) Rewards from its Berry Hoard",
+          "requirements": [
+            "mode:DEFAULT"
+          ],
+          "selects_party": false,
+          "select_prompt": ""
+        },
+        {
+          "index": 1,
+          "key": "option_2",
+          "label": "Reason with It",
+          "tooltip": "(+) Regain Some Lost Berries",
+          "requirements": [
+            "mode:DEFAULT"
+          ],
+          "selects_party": false,
+          "select_prompt": ""
+        },
+        {
+          "index": 2,
+          "key": "option_3",
+          "label": "Let It Have the Food",
+          "tooltip": "(-) Lose All Berries\n(?) The {{greedentName}} Will Like You",
+          "requirements": [
+            "mode:DEFAULT"
+          ],
+          "selects_party": false,
+          "select_prompt": ""
+        }
+      ],
+      "choice": "option_1",
+      "fallback": "option_3",
+      "leave": false,
+      "conditions": [],
+      "follow_ups": [],
+      "note": "Farm takes the top option (Battle It). If that option's requirements are not met, use Let It Have the Food."
+    },
+    {
+      "key": "aTrainersTest",
+      "enum_name": "A_TRAINERS_TEST",
+      "enum_index": 17,
+      "display_name": "A Trainer’s Test",
+      "tier": "ROGUE",
+      "wave_range": [
+        100,
+        180
+      ],
+      "sprite_key": "",
+      "catch_allowed": false,
+      "options": [
+        {
+          "index": 0,
+          "key": "option_1",
+          "label": "Accept the Challenge",
+          "tooltip": "(-) Brutal Battle\n(+) Gain a @[TOOLTIP_TITLE]{Very Rare Egg}",
+          "requirements": [],
+          "selects_party": false,
+          "select_prompt": ""
+        },
+        {
+          "index": 1,
+          "key": "option_2",
+          "label": "Refuse the Challenge",
+          "tooltip": "(+) Full Heal Party\n(+) Gain an @[TOOLTIP_TITLE]{Egg}",
+          "requirements": [],
+          "selects_party": false,
+          "select_prompt": ""
+        }
+      ],
+      "choice": "option_1",
+      "fallback": "option_2",
+      "leave": false,
+      "conditions": [],
+      "follow_ups": [],
+      "note": "Farm takes the top option (Accept the Challenge). If that option's requirements are not met, use Refuse the Challenge."
+    },
+    {
+      "key": "trashToTreasure",
+      "enum_name": "TRASH_TO_TREASURE",
+      "enum_index": 18,
+      "display_name": "Trash to Treasure",
+      "tier": "ULTRA",
+      "wave_range": [
+        100,
+        180
+      ],
+      "sprite_key": "",
+      "catch_allowed": false,
+      "options": [
+        {
+          "index": 0,
+          "key": "option_1",
+          "label": "Investigate Further",
+          "tooltip": "(?) Find the Source of the Garbage",
+          "requirements": [
+            "mode:DEFAULT"
+          ],
+          "selects_party": false,
+          "select_prompt": ""
+        },
+        {
+          "index": 1,
+          "key": "option_2",
+          "label": "Dig for Valuables",
+          "tooltip": "(-) Items in Shops Will Cost {{costMultiplier}}×\n(+) Gain Amazing Items",
+          "requirements": [
+            "mode:DEFAULT"
+          ],
+          "selects_party": false,
+          "select_prompt": ""
+        }
+      ],
+      "choice": "option_1",
+      "fallback": "option_2",
+      "leave": false,
+      "conditions": [],
+      "follow_ups": [],
+      "note": "Farm takes the top option (Investigate Further). If that option's requirements are not met, use Dig for Valuables."
+    },
+    {
+      "key": "berriesAbound",
+      "enum_name": "BERRIES_ABOUND",
+      "enum_index": 19,
+      "display_name": "Berries Abound",
+      "tier": "COMMON",
+      "wave_range": [
+        10,
+        180
+      ],
+      "sprite_key": "berries_abound_bush",
+      "catch_allowed": true,
+      "options": [
+        {
+          "index": 0,
+          "key": "option_1",
+          "label": "Battle the Pokémon",
+          "tooltip": "(-) Tough Battle\n(+) Gain Berries",
+          "requirements": [],
+          "selects_party": false,
+          "select_prompt": ""
+        },
+        {
+          "index": 1,
+          "key": "option_2",
+          "label": "Race to the Bush",
+          "tooltip": "(-) {{fastestPokemon}} uses its Speed\n(+) Gain Berries",
+          "requirements": [
+            "mode:DEFAULT"
+          ],
+          "selects_party": false,
+          "select_prompt": ""
+        },
+        {
+          "index": 2,
+          "key": "option_3",
+          "label": "Leave",
+          "tooltip": "(-) No Rewards",
+          "requirements": [],
+          "selects_party": false,
+          "select_prompt": ""
+        }
+      ],
+      "choice": "option_1",
+      "fallback": "option_3",
+      "leave": false,
+      "conditions": [],
+      "follow_ups": [],
+      "note": "Farm takes the top option (Battle the Pokémon). If that option's requirements are not met, use Leave."
+    },
+    {
+      "key": "clowningAround",
+      "enum_name": "CLOWNING_AROUND",
+      "enum_index": 20,
+      "display_name": "Clowning Around",
+      "tier": "ULTRA",
+      "wave_range": [
+        80,
+        180
+      ],
+      "sprite_key": "harlequin",
+      "catch_allowed": false,
+      "options": [
+        {
+          "index": 0,
+          "key": "option_1",
+          "label": "Battle the Clown",
+          "tooltip": "(-) Strange Battle\n(?) Affects One Pokémon’s Ability",
+          "requirements": [
+            "mode:DEFAULT"
+          ],
+          "selects_party": false,
+          "select_prompt": ""
+        },
+        {
+          "index": 1,
+          "key": "option_2",
+          "label": "Remain Unprovoked",
+          "tooltip": "(?) Affects One Pokémon’s Items",
+          "requirements": [
+            "mode:DEFAULT"
+          ],
+          "selects_party": false,
+          "select_prompt": ""
+        },
+        {
+          "index": 2,
+          "key": "option_3",
+          "label": "Return the Insults",
+          "tooltip": "(?) Affects Your Pokémons’ Types",
+          "requirements": [
+            "mode:DEFAULT"
+          ],
+          "selects_party": true,
+          "select_prompt": ""
+        }
+      ],
+      "choice": "option_1",
+      "fallback": "option_3",
+      "leave": false,
+      "conditions": [],
+      "follow_ups": [
+        {
+          "id": "pokemon",
+          "label": "Which Pokémon",
+          "applies_to": [
+            "option_3"
+          ],
+          "mode": "single",
+          "choices": [
+            {
+              "key": "lowest_index_alive",
+              "label": "Lowest-index unfainted"
+            },
+            {
+              "key": "lead",
+              "label": "Lead"
+            },
+            {
+              "key": "secondary",
+              "label": "Secondary"
+            },
+            {
+              "key": "lowest_hp",
+              "label": "Lowest HP"
+            }
+          ],
+          "selected": "lowest_index_alive"
+        },
+        {
+          "id": "ability_offer",
+          "label": "Ability offered after the battle",
+          "applies_to": [
+            "option_1"
+          ],
+          "mode": "single",
+          "choices": [
+            {
+              "key": "decline",
+              "label": "Decline"
+            },
+            {
+              "key": "accept",
+              "label": "Accept"
+            }
+          ],
+          "selected": "decline"
+        }
+      ],
+      "note": "Farm takes the top option (Battle the Clown). If that option's requirements are not met, use Return the Insults."
+    },
+    {
+      "key": "partTimer",
+      "enum_name": "PART_TIMER",
+      "enum_index": 21,
+      "display_name": "Part-Timer",
+      "tier": "COMMON",
+      "wave_range": [
+        10,
+        180
+      ],
+      "sprite_key": "part_timer_crate",
+      "catch_allowed": false,
+      "options": [
+        {
+          "index": 0,
+          "key": "option_1",
+          "label": "Make Deliveries",
+          "tooltip": "(-) Your Pokémon Uses its Speed\n(+) Earn @[MONEY]{Money}",
+          "requirements": [
+            "mode:DEFAULT"
+          ],
+          "selects_party": true,
+          "select_prompt": ""
+        },
+        {
+          "index": 1,
+          "key": "option_2",
+          "label": "Warehouse Work",
+          "tooltip": "(-) Your Pokémon Uses its Strength and Endurance\n(+) Earn @[MONEY]{Money}",
+          "requirements": [
+            "mode:DEFAULT"
+          ],
+          "selects_party": true,
+          "select_prompt": ""
+        },
+        {
+          "index": 2,
+          "key": "option_3",
+          "label": "Sales Assistant",
+          "tooltip": "(-) Your {{option3PrimaryName}} uses {{option3PrimaryMove}}\n(+) Earn @[MONEY]{Money}",
+          "requirements": [
+            "mode:DISABLED_OR_SPECIAL",
+            "withPrimaryPokemonRequirement(new MoveRequirement(CHARMING_MOVES, true)"
+          ],
+          "selects_party": false,
+          "select_prompt": ""
+        }
+      ],
+      "choice": "option_1",
+      "fallback": "option_3",
+      "leave": false,
+      "conditions": [],
+      "follow_ups": [
+        {
+          "id": "pokemon",
+          "label": "Which Pokémon",
+          "applies_to": [
+            "option_1",
+            "option_2"
+          ],
+          "mode": "single",
+          "choices": [
+            {
+              "key": "lowest_index_alive",
+              "label": "Lowest-index unfainted"
+            },
+            {
+              "key": "lead",
+              "label": "Lead"
+            },
+            {
+              "key": "secondary",
+              "label": "Secondary"
+            },
+            {
+              "key": "lowest_hp",
+              "label": "Lowest HP"
+            }
+          ],
+          "selected": "lowest_index_alive"
+        }
+      ],
+      "note": "Farm takes the top option (Make Deliveries). If that option's requirements are not met, use Sales Assistant."
+    },
+    {
+      "key": "dancingLessons",
+      "enum_name": "DANCING_LESSONS",
+      "enum_index": 22,
+      "display_name": "Dancing Lessons",
+      "tier": "GREAT",
+      "wave_range": [
+        30,
+        180
+      ],
+      "sprite_key": "",
+      "catch_allowed": true,
+      "options": [
+        {
+          "index": 0,
+          "key": "option_1",
+          "label": "Battle It",
+          "tooltip": "(-) Tough Battle\n(+) Gain a Baton",
+          "requirements": [
+            "mode:DEFAULT"
+          ],
+          "selects_party": false,
+          "select_prompt": ""
+        },
+        {
+          "index": 1,
+          "key": "option_2",
+          "label": "Learn Its Dance",
+          "tooltip": "(+) Teach any Pokémon Revelation Dance",
+          "requirements": [
+            "mode:DEFAULT"
+          ],
+          "selects_party": true,
+          "select_prompt": ""
+        },
+        {
+          "index": 2,
+          "key": "option_3",
+          "label": "Show It a Dance",
+          "tooltip": "(-) Teach the {{oricorioName}} a Dance Move\n(+) The {{oricorioName}} Will Like You",
+          "requirements": [
+            "mode:DISABLED_OR_SPECIAL",
+            "withPrimaryPokemonRequirement(new MoveRequirement(DANCING_MOVES, true)"
+          ],
+          "selects_party": true,
+          "select_prompt": "Select a Dance type move to use."
+        }
+      ],
+      "choice": "option_1",
+      "fallback": "option_3",
+      "leave": false,
+      "conditions": [],
+      "follow_ups": [
+        {
+          "id": "pokemon",
+          "label": "Which Pokémon",
+          "applies_to": [
+            "option_2",
+            "option_3"
+          ],
+          "mode": "single",
+          "choices": [
+            {
+              "key": "lowest_index_alive",
+              "label": "Lowest-index unfainted"
+            },
+            {
+              "key": "lead",
+              "label": "Lead"
+            },
+            {
+              "key": "secondary",
+              "label": "Secondary"
+            },
+            {
+              "key": "lowest_hp",
+              "label": "Lowest HP"
+            }
+          ],
+          "selected": "lowest_index_alive"
+        },
+        {
+          "id": "dance_move",
+          "label": "Dance move to show",
+          "applies_to": [
+            "option_3"
+          ],
+          "mode": "single",
+          "choices": [
+            {
+              "key": "first_dance",
+              "label": "First Dance move the party knows"
+            }
+          ],
+          "selected": "first_dance"
+        }
+      ],
+      "note": "Farm takes the top option (Battle It). If that option's requirements are not met, use Show It a Dance."
+    },
+    {
+      "key": "weirdDream",
+      "enum_name": "WEIRD_DREAM",
+      "enum_index": 23,
+      "display_name": "???",
+      "tier": "ROGUE",
+      "wave_range": [
+        30,
+        140
+      ],
+      "sprite_key": "weird_dream_woman",
+      "catch_allowed": false,
+      "options": [
+        {
+          "index": 0,
+          "key": "option_1",
+          "label": "“I See Them”",
+          "tooltip": "@[SUMMARY_GREEN]{(?) Affects your Pokémon}",
+          "requirements": [
+            "mode:DEFAULT"
+          ],
+          "selects_party": false,
+          "select_prompt": ""
+        },
+        {
+          "index": 1,
+          "key": "option_2",
+          "label": "“Show Them To Me”",
+          "tooltip": "(-) Tough Battle\n(+) Great Rewards",
+          "requirements": [],
+          "selects_party": false,
+          "select_prompt": ""
+        },
+        {
+          "index": 2,
+          "key": "option_3",
+          "label": "Quickly Leave",
+          "tooltip": "(-) Affects your Pokémon",
+          "requirements": [],
+          "selects_party": false,
+          "select_prompt": ""
+        }
+      ],
+      "choice": "option_3",
+      "fallback": "option_3",
+      "leave": true,
+      "conditions": [],
+      "follow_ups": [],
+      "note": "Farm leaves. This encounter is on the party-change block list (trade, weird dream, or dark deal)."
+    },
+    {
+      "key": "theWinstrateChallenge",
+      "enum_name": "THE_WINSTRATE_CHALLENGE",
+      "enum_index": 24,
+      "display_name": "The Winstrate Challenge",
+      "tier": "ROGUE",
+      "wave_range": [
+        100,
+        180
+      ],
+      "sprite_key": "vito",
+      "catch_allowed": false,
+      "options": [
+        {
+          "index": 0,
+          "key": "option_1",
+          "label": "Accept the Challenge",
+          "tooltip": "(-) Brutal Battle Against 5 Trainers\n(+) Special Item Reward",
+          "requirements": [],
+          "selects_party": false,
+          "select_prompt": ""
+        },
+        {
+          "index": 1,
+          "key": "option_2",
+          "label": "Refuse the Challenge",
+          "tooltip": "(+) Full Heal Party\n(+) Gain a Rarer Candy",
+          "requirements": [],
+          "selects_party": false,
+          "select_prompt": ""
+        }
+      ],
+      "choice": "option_1",
+      "fallback": "option_2",
+      "leave": false,
+      "conditions": [],
+      "follow_ups": [],
+      "note": "Farm takes the top option (Accept the Challenge). If that option's requirements are not met, use Refuse the Challenge."
+    },
+    {
+      "key": "teleportingHijinks",
+      "enum_name": "TELEPORTING_HIJINKS",
+      "enum_index": 25,
+      "display_name": "Teleporting Hijinks",
+      "tier": "COMMON",
+      "wave_range": [
+        10,
+        180
+      ],
+      "sprite_key": "teleporting_hijinks_teleporter",
+      "catch_allowed": true,
+      "options": [
+        {
+          "index": 0,
+          "key": "option_1",
+          "label": "Put Money In",
+          "tooltip": "(-) Pay {{price, money}}\n(?) Teleport to New Biome",
+          "requirements": [
+            "mode:DISABLED_OR_DEFAULT",
+            "withSceneMoneyRequirement(0, MONEY_COST_MULTIPLIER)"
+          ],
+          "selects_party": false,
+          "select_prompt": ""
+        },
+        {
+          "index": 1,
+          "key": "option_2",
+          "label": "A Pokémon Helps",
+          "tooltip": "(-) {{option2PrimaryName}} Helps\n(+) {{option2PrimaryName}} gains Exp.\n(?) Teleport to New Biome",
+          "requirements": [
+            "mode:DISABLED_OR_SPECIAL",
+            "withPokemonTypeRequirement(MACHINE_INTERFACING_TYPES, true, 1)"
+          ],
+          "selects_party": false,
+          "select_prompt": ""
+        },
+        {
+          "index": 2,
+          "key": "option_3",
+          "label": "Inspect the Machine",
+          "tooltip": "(-) Pokémon Battle",
+          "requirements": [],
+          "selects_party": false,
+          "select_prompt": ""
+        }
+      ],
+      "choice": "option_1",
+      "fallback": "option_3",
+      "leave": false,
+      "conditions": [],
+      "follow_ups": [],
+      "note": "Farm takes the top option (Put Money In). If that option's requirements are not met, use Inspect the Machine."
+    },
+    {
+      "key": "bugTypeSuperfan",
+      "enum_name": "BUG_TYPE_SUPERFAN",
+      "enum_index": 26,
+      "display_name": "The Bug-Type Superfan",
+      "tier": "GREAT",
+      "wave_range": [
+        30,
+        180
+      ],
+      "sprite_key": "bug_type_superfan",
+      "catch_allowed": false,
+      "options": [
+        {
+          "index": 0,
+          "key": "option_1",
+          "label": "Offer to Battle",
+          "tooltip": "(-) Tough Battle\n(+) Teach any Pokémon a Bug-type Move",
+          "requirements": [],
+          "selects_party": false,
+          "select_prompt": ""
+        },
+        {
+          "index": 1,
+          "key": "option_2",
+          "label": "Show Your Bug-types",
+          "tooltip": "(+) Receive a Gift Item",
+          "requirements": [
+            "mode:DISABLED_OR_DEFAULT",
+            "withPrimaryPokemonRequirement(new TypeRequirement(PokemonType.BUG, false, 1)"
+          ],
+          "selects_party": false,
+          "select_prompt": ""
+        },
+        {
+          "index": 2,
+          "key": "option_3",
+          "label": "Gift a Bug Item",
+          "tooltip": "(-) Give the Trainer a {{requiredBugItems}}\n(+) Receive a Gift Item",
+          "requirements": [
+            "mode:DISABLED_OR_DEFAULT",
+            "withPrimaryPokemonRequirement(CombinationPokemonRequirement.Some( // Meets one or both of the below reqs new HeldItemRequirement([\"BypassSpeedChanceModifier\", \"ContactHeldItemTransferChanceModifier\"], 1)",
+            "AttackTypeBoosterHeldItemTypeRequirement(PokemonType.BUG, 1)"
+          ],
+          "selects_party": true,
+          "select_prompt": "Select an item to give."
+        }
+      ],
+      "choice": "option_1",
+      "fallback": "option_3",
+      "leave": false,
+      "conditions": [],
+      "follow_ups": [
+        {
+          "id": "pokemon",
+          "label": "Which Pokémon",
+          "applies_to": [
+            "option_1",
+            "option_3"
+          ],
+          "mode": "single",
+          "choices": [
+            {
+              "key": "lowest_index_alive",
+              "label": "Lowest-index unfainted"
+            },
+            {
+              "key": "lead",
+              "label": "Lead"
+            },
+            {
+              "key": "secondary",
+              "label": "Secondary"
+            },
+            {
+              "key": "lowest_hp",
+              "label": "Lowest HP"
+            }
+          ],
+          "selected": "lowest_index_alive"
+        },
+        {
+          "id": "bug_move",
+          "label": "Bug move to teach after the battle",
+          "applies_to": [
+            "option_1"
+          ],
+          "mode": "single",
+          "choices": [
+            {
+              "key": "decline",
+              "label": "Decline (Cancel)"
+            },
+            {
+              "key": "first_offered",
+              "label": "First offered move"
+            }
+          ],
+          "selected": "decline"
+        },
+        {
+          "id": "bug_item",
+          "label": "Bug item to gift",
+          "applies_to": [
+            "option_3"
+          ],
+          "mode": "multi",
+          "choices": [
+            {
+              "key": "quick_claw",
+              "label": "Quick Claw"
+            },
+            {
+              "key": "grip_claw",
+              "label": "Grip Claw"
+            },
+            {
+              "key": "bug_type_booster",
+              "label": "Bug-type booster"
+            }
+          ],
+          "selected": [
+            "quick_claw",
+            "grip_claw",
+            "bug_type_booster"
+          ]
+        }
+      ],
+      "note": "Farm takes the top option (Offer to Battle). If that option's requirements are not met, use Gift a Bug Item."
+    },
+    {
+      "key": "funAndGames",
+      "enum_name": "FUN_AND_GAMES",
+      "enum_index": 27,
+      "display_name": "Fun And Games!",
+      "tier": "GREAT",
+      "wave_range": [
+        10,
+        180
+      ],
+      "sprite_key": "fun_and_games_game",
+      "catch_allowed": false,
+      "options": [
+        {
+          "index": 0,
+          "key": "option_1",
+          "label": "Play the Game",
+          "tooltip": "(-) Pay {{option1Money, money}}\n(+) Play {{wobbuffetName}} Whack-o-matic",
+          "requirements": [
+            "mode:DISABLED_OR_DEFAULT",
+            "withSceneRequirement(new MoneyRequirement(0, 1.5)"
+          ],
+          "selects_party": true,
+          "select_prompt": ""
+        },
+        {
+          "index": 1,
+          "key": "option_2",
+          "label": "Leave",
+          "tooltip": "(-) No Rewards",
+          "requirements": [],
+          "selects_party": false,
+          "select_prompt": ""
+        }
+      ],
+      "choice": "option_1",
+      "fallback": "option_2",
+      "leave": false,
+      "conditions": [],
+      "follow_ups": [
+        {
+          "id": "pokemon",
+          "label": "Which Pokémon",
+          "applies_to": [
+            "option_1"
+          ],
+          "mode": "single",
+          "choices": [
+            {
+              "key": "lowest_index_alive",
+              "label": "Lowest-index unfainted"
+            },
+            {
+              "key": "lead",
+              "label": "Lead"
+            },
+            {
+              "key": "secondary",
+              "label": "Secondary"
+            },
+            {
+              "key": "lowest_hp",
+              "label": "Lowest HP"
+            }
+          ],
+          "selected": "lowest_index_alive"
+        }
+      ],
+      "note": "Farm takes the top option (Play the Game). If that option's requirements are not met, use Leave."
+    },
+    {
+      "key": "uncommonBreed",
+      "enum_name": "UNCOMMON_BREED",
+      "enum_index": 28,
+      "display_name": "Uncommon Breed",
+      "tier": "COMMON",
+      "wave_range": [
+        10,
+        180
+      ],
+      "sprite_key": "",
+      "catch_allowed": true,
+      "options": [
+        {
+          "index": 0,
+          "key": "option_1",
+          "label": "Battle the Pokémon",
+          "tooltip": "(-) Tough Battle\n(+) Strong Catchable Foe",
+          "requirements": [],
+          "selects_party": false,
+          "select_prompt": ""
+        },
+        {
+          "index": 1,
+          "key": "option_2",
+          "label": "Give It Food",
+          "tooltip": "(-) Give 4 Berries\n(+) The {{enemyPokemon}} Likes You",
+          "requirements": [
+            "mode:DISABLED_OR_SPECIAL",
+            "withSceneRequirement(new PersistentModifierRequirement(\"BerryModifier\", 4)"
+          ],
+          "selects_party": false,
+          "select_prompt": ""
+        },
+        {
+          "index": 2,
+          "key": "option_3",
+          "label": "Befriend It",
+          "tooltip": "(+) {{option3PrimaryName}} uses {{option3PrimaryMove}}\n(+) The {{enemyPokemon}} Likes You",
+          "requirements": [
+            "mode:DISABLED_OR_SPECIAL",
+            "withPrimaryPokemonRequirement(new MoveRequirement(CHARMING_MOVES, true)"
+          ],
+          "selects_party": false,
+          "select_prompt": ""
+        }
+      ],
+      "choice": "option_1",
+      "fallback": "option_3",
+      "leave": false,
+      "conditions": [],
+      "follow_ups": [],
+      "note": "Farm takes the top option (Battle the Pokémon). If that option's requirements are not met, use Befriend It."
+    },
+    {
+      "key": "globalTradeSystem",
+      "enum_name": "GLOBAL_TRADE_SYSTEM",
+      "enum_index": 29,
+      "display_name": "The GTS",
+      "tier": "COMMON",
+      "wave_range": [
+        10,
+        180
+      ],
+      "sprite_key": "global_trade_system",
+      "catch_allowed": false,
+      "options": [
+        {
+          "index": 0,
+          "key": "option_1",
+          "label": "Check Trade Offers",
+          "tooltip": "(+) Select a trade offer for one of your Pokémon",
+          "requirements": [
+            "mode:DISABLED_OR_DEFAULT",
+            "withSceneRequirement(new PartySizeRequirement([2, 6], true)"
+          ],
+          "selects_party": true,
+          "select_prompt": ""
+        },
+        {
+          "index": 1,
+          "key": "option_2",
+          "label": "Wonder Trade",
+          "tooltip": "(+) Send one of your Pokémon to the GTS and get a random special Pokémon in return",
+          "requirements": [
+            "mode:DISABLED_OR_DEFAULT",
+            "withSceneRequirement(new PartySizeRequirement([2, 6], true)"
+          ],
+          "selects_party": true,
+          "select_prompt": ""
+        },
+        {
+          "index": 2,
+          "key": "option_3",
+          "label": "Trade an Item",
+          "tooltip": "(+) Send one of your Items to the GTS and get a random improved Item",
+          "requirements": [
+            "mode:DEFAULT"
+          ],
+          "selects_party": true,
+          "select_prompt": ""
+        },
+        {
+          "index": 3,
+          "key": "option_4",
+          "label": "Leave",
+          "tooltip": "(-) No Rewards",
+          "requirements": [],
+          "selects_party": false,
+          "select_prompt": ""
+        }
+      ],
+      "choice": "option_4",
+      "fallback": "option_4",
+      "leave": true,
+      "conditions": [],
+      "follow_ups": [
+        {
+          "id": "pokemon",
+          "label": "Which Pokémon",
+          "applies_to": [
+            "option_1",
+            "option_2",
+            "option_3"
+          ],
+          "mode": "single",
+          "choices": [
+            {
+              "key": "lowest_index_alive",
+              "label": "Lowest-index unfainted"
+            },
+            {
+              "key": "lead",
+              "label": "Lead"
+            },
+            {
+              "key": "secondary",
+              "label": "Secondary"
+            },
+            {
+              "key": "lowest_hp",
+              "label": "Lowest HP"
+            }
+          ],
+          "selected": "lowest_index_alive"
+        }
+      ],
+      "note": "Farm leaves. This encounter is on the party-change block list (trade, weird dream, or dark deal)."
+    },
+    {
+      "key": "theExpertPokemonBreeder",
+      "enum_name": "THE_EXPERT_POKEMON_BREEDER",
+      "enum_index": 30,
+      "display_name": "The Expert Pokémon Breeder",
+      "tier": "ULTRA",
+      "wave_range": [
+        25,
+        180
+      ],
+      "sprite_key": "expert_pokemon_breeder",
+      "catch_allowed": false,
+      "options": [
+        {
+          "index": 0,
+          "key": "option_1",
+          "label": "{{pokemon1Name}}",
+          "tooltip": "",
+          "requirements": [
+            "mode:DEFAULT"
+          ],
+          "selects_party": false,
+          "select_prompt": ""
+        },
+        {
+          "index": 1,
+          "key": "option_2",
+          "label": "{{pokemon2Name}}",
+          "tooltip": "",
+          "requirements": [
+            "mode:DEFAULT"
+          ],
+          "selects_party": false,
+          "select_prompt": ""
+        },
+        {
+          "index": 2,
+          "key": "option_3",
+          "label": "{{pokemon3Name}}",
+          "tooltip": "",
+          "requirements": [
+            "mode:DEFAULT"
+          ],
+          "selects_party": false,
+          "select_prompt": ""
+        }
+      ],
+      "choice": "option_1",
+      "fallback": "option_3",
+      "leave": false,
+      "conditions": [],
+      "follow_ups": [],
+      "note": "Farm takes the top option ({{pokemon1Name}}). If that option's requirements are not met, use {{pokemon3Name}}."
+    }
+  ],
+  "special_encounters": [
+    {
+      "key": "wild_shiny",
+      "display_name": "Wild shiny",
+      "catch": false,
+      "ball_cap": "none",
+      "note": "The farm stops for a human on a wild shiny. The simulator cannot wait, so catch is off: fight with the normal move rules and do not make a special shiny catch."
+    },
+    {
+      "key": "wild_boss",
+      "display_name": "Wild boss",
+      "catch": true,
+      "ball_cap": "rogue",
+      "note": "Catch when a party slot is empty, shields are down, and the enemy BST is above the weakest party member. Ball cap rogue means the best non-Master ball."
+    },
+    {
+      "key": "trainer",
+      "display_name": "Trainer",
+      "catch": false,
+      "ball_cap": "none",
+      "note": "Trainers are fought like a normal wave. No catch."
+    },
+    {
+      "key": "eternatus_wave_200",
+      "display_name": "Eternatus (wave 200)",
+      "catch": false,
+      "ball_cap": "none",
+      "note": "The Classic final boss is never a catch target."
+    }
+  ]
+}

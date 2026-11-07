@@ -1,0 +1,12 @@
+﻿from pathlib import Path
+p = Path(r"C:\Users\gavin\AppData\Local\Temp\prfarm\pr_farm13.py")
+t = p.read_text(encoding="utf-8")
+t = t.replace("async def z(h=90):", "async def press_z(h=90):")
+t = t.replace("await z(h)", "await press_z(h)")
+t = t.replace("zi, z = zacian(party)", "zi, zmon = zacian(party)")
+t = t.replace("if not z:", "if not zmon:")
+t = t.replace('moves = list(z.get("moves") or [])', 'moves = list(zmon.get("moves") or [])')
+t = t.replace("if z is not None and (z.get(\"hp\") or 0) <= 0:", "if zmon is not None and (zmon.get(\"hp\") or 0) <= 0:")
+t = t.replace('if lead.get("name") != "Zacian" and z and (z.get("hp") or 0) > 0:', 'if lead.get("name") != "Zacian" and zmon and (zmon.get("hp") or 0) > 0:')
+p.write_text(t, encoding="utf-8")
+print("ok", t.count("press_z"), "await z(", t.count("await z("), "zi, z =", t.count("zi, z ="))

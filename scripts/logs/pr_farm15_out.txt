@@ -1,0 +1,58 @@
+01:27:29 START farm15 (UI-state driven) mode=Classic
+01:27:29 mystery encounter w98: 4 options -> last (leave)
+01:27:30 reward screen with no reward options - X + confirm skip
+01:27:31 WAVE UP 98 -> 99
+01:27:35 w99 Zacian -> Bitter Blade eff=[1, 2] stab=False PP={'Earthquake': '8/10', 'Mighty Cleave': '3/8', 'Spirit Break': '8/15', 'Bitter Blade': '11/12'} foes=[('Probopass', [5, 8], 'Sturdy'), ('Excadrill', [4, 8], 'Mold Breaker')] dbl=True
+01:27:37 w99 Nosepass -> Earth Power eff=[4, 2] stab=False PP={'Tachyon Cutter': '10/10', 'Discharge': '15/15', 'Earth Power': '10/10', 'Power Gem': '20/20'} foes=[('Probopass', [5, 8], 'Sturdy'), ('Excadrill', [4, 8], 'Mold Breaker')] dbl=True
+01:27:45 w99 Zacian -> Bitter Blade eff=[2] stab=False PP={'Earthquake': '8/10', 'Mighty Cleave': '3/8', 'Spirit Break': '8/15', 'Bitter Blade': '10/12'} foes=[('Excadrill', [4, 8], 'Mold Breaker')] dbl=True
+01:27:46 w99 Nosepass -> Earth Power eff=[2] stab=False PP={'Tachyon Cutter': '10/10', 'Discharge': '15/15', 'Earth Power': '9/10', 'Power Gem': '20/20'} foes=[('Excadrill', [4, 8], 'Mold Breaker')] dbl=True
+01:27:51 REWARD pick 5× Poké Ball (rank 50, pp_low=True) from ['X Defense', 'Lure', '5× Poké Ball', 'Potion']
+01:27:52 WAVE UP 99 -> 100
+01:27:54 w100 Zacian -> Earthquake eff=[2] stab=False PP={'Earthquake': '8/10', 'Mighty Cleave': '3/8', 'Spirit Break': '8/15', 'Bitter Blade': '9/12'} foes=[('Perrserker', [8], 'Battle Armor')] dbl=False
+01:28:01 WAVE UP 100 -> 101
+01:28:05 w101 Zacian -> Spirit Break eff=[2] stab=True PP={'Earthquake': '10/10', 'Mighty Cleave': '8/8', 'Spirit Break': '15/15', 'Bitter Blade': '12/12'} foes=[('Pawmot', [12, 1], 'Volt Absorb')] dbl=False
+01:28:07 REWARD pick Starf Berry (rank 19, pp_low=False) from ['5× Poké Ball', 'Starf Berry', 'X Accuracy', 'TM103 - Torment', 'Lure']
+01:28:08 WAVE UP 101 -> 102
+01:28:10 w102 Zacian -> Earthquake eff=[2] stab=False PP={'Earthquake': '10/10', 'Mighty Cleave': '8/8', 'Spirit Break': '14/15', 'Bitter Blade': '12/12'} foes=[('Luxray', [12], 'Intimidate')] dbl=False
+01:28:13 REWARD pick Enigma Berry (rank 19, pp_low=False) from ['5× Poké Ball', 'X Defense', 'Enigma Berry', 'PP Max', 'TM063 - Scary Face']
+01:28:15 WAVE UP 102 -> 103
+01:28:16 w103 Zacian -> Spirit Break eff=[2] stab=True PP={'Earthquake': '9/10', 'Mighty Cleave': '8/8', 'Spirit Break': '14/15', 'Bitter Blade': '12/12'} foes=[('Pawmot', [12, 1], 'Natural Cure')] dbl=False
+01:28:20 REWARD pick Ganlon Berry (rank 19, pp_low=False) from ['Calcium', 'Ganlon Berry', 'TM175 - Rock Polish', 'Nugget', '5× Great Ball']
+01:28:22 party SelectModifierPhase: slot 0 option 3
+01:28:22 WAVE UP 103 -> 104
+01:28:25 mystery encounter w104: 2 options -> last (leave)
+01:28:26 reward screen with no reward options - X + confirm skip
+01:28:27 WAVE UP 104 -> 105
+01:28:30 w105 Zacian -> Earthquake eff=[4] stab=False PP={'Earthquake': '9/10', 'Mighty Cleave': '8/8', 'Spirit Break': '13/15', 'Bitter Blade': '12/12'} foes=[('Magnezone', [12, 8], 'Sturdy')] dbl=False
+01:28:36 w105 Zacian -> Earthquake eff=[4] stab=False PP={'Earthquake': '8/10', 'Mighty Cleave': '8/8', 'Spirit Break': '13/15', 'Bitter Blade': '12/12'} foes=[('Magnezone', [12, 8], 'Sturdy')] dbl=False
+01:28:39 REWARD pick Lum Berry (rank 19, pp_low=False) from ['Carbos', 'Lure', '5× Poké Ball', 'Lum Berry', 'TM072 - Endure']
+01:28:41 party SelectModifierPhase: slot 0 option 3
+01:28:41 WAVE UP 105 -> 106
+01:28:44 w106 Zacian -> Spirit Break eff=[1, 1] stab=True PP={'Earthquake': '7/10', 'Mighty Cleave': '8/8', 'Spirit Break': '13/15', 'Bitter Blade': '12/12'} foes=[('Ampharos', [12], 'Static'), ('Electrode', [12], 'Static')] dbl=True
+01:28:45 w106 Nosepass -> Earth Power eff=[2, 2] stab=False PP={'Tachyon Cutter': '10/10', 'Discharge': '15/15', 'Earth Power': '10/10', 'Power Gem': '20/20'} foes=[('Ampharos', [12], 'Static'), ('Electrode', [12], 'Static')] dbl=True
+01:28:55 w106 Zacian -> Spirit Break eff=[1] stab=True PP={'Earthquake': '7/10', 'Mighty Cleave': '8/8', 'Spirit Break': '12/15', 'Bitter Blade': '12/12'} foes=[('Electrode', [12], 'Static')] dbl=True
+01:28:57 w106 Nosepass -> Earth Power eff=[2] stab=False PP={'Tachyon Cutter': '10/10', 'Discharge': '15/15', 'Earth Power': '9/10', 'Power Gem': '20/20'} foes=[('Electrode', [12], 'Static')] dbl=True
+01:29:02 REWARD pick Rare Candy (rank 0, pp_low=False) from ['5× Great Ball', 'Rare Candy', 'TM077 - Attract', 'Potion', 'Lure']
+01:29:04 party SelectModifierPhase: slot 0 option 3
+01:29:04 WAVE UP 106 -> 107
+01:29:06 w107 Zacian -> Earthquake eff=[2] stab=False PP={'Earthquake': '7/10', 'Mighty Cleave': '8/8', 'Spirit Break': '11/15', 'Bitter Blade': '12/12'} foes=[('Dedenne', [12, 17], 'Pickup')] dbl=False
+01:29:11 REWARD pick Leppa Berry (rank 19, pp_low=False) from ['Leppa Berry', 'X Sp. Def', 'Max Lure', 'Potion', '5× Poké Ball']
+01:29:12 party SelectModifierPhase: slot 0 option 3
+01:29:14 party SelectModifierPhase: slot 0 option 3
+01:29:15 reward Leppa Berry cannot be applied - blacklist for wave 107, back to rewards
+01:29:16 REWARD pick 5× Poké Ball (rank 50, pp_low=False) from ['X Sp. Def', 'Max Lure', 'Potion', '5× Poké Ball']
+01:29:16 WAVE UP 107 -> 108
+01:29:17 w108 Zacian -> Earthquake eff=[2] stab=False PP={'Earthquake': '6/10', 'Mighty Cleave': '8/8', 'Spirit Break': '11/15', 'Bitter Blade': '12/12'} foes=[('Manectric', [12], 'Static')] dbl=False
+01:29:22 REWARD pick Lansat Berry (rank 19, pp_low=False) from ['Super Lure', 'Potion', '5× Poké Ball', 'Lansat Berry', 'X Accuracy']
+01:29:24 party SelectModifierPhase: slot 0 option 3
+01:29:24 WAVE UP 108 -> 109
+01:29:26 w109 Zacian -> Spirit Break eff=[1] stab=True PP={'Earthquake': '5/10', 'Mighty Cleave': '8/8', 'Spirit Break': '11/15', 'Bitter Blade': '12/12'} foes=[('Electrode', [12], 'Static')] dbl=False
+01:29:29 REWARD pick Liechi Berry (rank 19, pp_low=False) from ['5× Poké Ball', 'Super Lure', 'Liechi Berry', 'Thunder Stone', 'TM245 - Struggle Bug']
+01:29:31 party SelectModifierPhase: slot 0 option 3
+01:29:31 WAVE UP 109 -> 110
+01:29:37 w110 Zacian -> Earthquake eff=[2] stab=False PP={'Earthquake': '5/10', 'Mighty Cleave': '8/8', 'Spirit Break': '11/15', 'Bitter Blade': '12/12'} foes=[('Zebstrika', [12], 'Lightning Rod')] dbl=False
+01:29:42 w110 Zacian -> Spirit Break eff=[1] stab=True PP={'Earthquake': '4/10', 'Mighty Cleave': '8/8', 'Spirit Break': '11/15', 'Bitter Blade': '12/12'} foes=[('Eelektross', [12], 'Levitate')] dbl=False
+01:29:46 w110 Zacian -> Mighty Cleave eff=[2] stab=False PP={'Earthquake': '4/10', 'Mighty Cleave': '8/8', 'Spirit Break': '10/15', 'Bitter Blade': '12/12'} foes=[('Emolga', [12, 2], 'Static')] dbl=False
+01:29:51 w110 Zacian -> Bitter Blade eff=[2] stab=False PP={'Earthquake': '4/10', 'Mighty Cleave': '7/8', 'Spirit Break': '10/15', 'Bitter Blade': '12/12'} foes=[('Rotom', [12, 11], 'Levitate')] dbl=False
+01:29:52 ZACIAN FAINT/missing - stop
+01:29:52 DONE farm15

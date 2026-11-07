@@ -1,0 +1,578 @@
+08:38:17 START farm16 (UI-state driven) mode=Classic
+08:38:17 ME party select -> slot 1
+08:38:18 ME party select -> slot 1
+08:38:18 party MysteryEncounterPhase: slot 1 option 13
+08:38:21 reward screen with no reward options - X + confirm skip
+08:38:22 WAVE UP 36 -> 37
+08:38:30 w37 Zacian -> Spirit Break eff=[1, 2] stab=True PP={'Earthquake': '16/16', 'Mighty Cleave': '3/5', 'Spirit Break': '11/15', 'Bitter Blade': '8/10'} foes=[('Phantump', [7, 11], 'Frisk'), ('Spiritomb', [7, 16], 'Pressure')] dbl=True
+08:38:31 w37 Glameow -> Feint Attack eff=[2, 1] stab=False PP={'Scratch': '34/35', 'Feint Attack': '17/20', 'High Horsepower': '9/10', 'Parting Shot': '20/20'} foes=[('Phantump', [7, 11], 'Frisk'), ('Spiritomb', [7, 16], 'Pressure')] dbl=True
+08:38:36 w37 Zacian -> Spirit Break eff=[2] stab=True PP={'Earthquake': '16/16', 'Mighty Cleave': '3/5', 'Spirit Break': '10/15', 'Bitter Blade': '8/10'} foes=[('Spiritomb', [7, 16], 'Pressure')] dbl=True
+08:38:37 w37 Glameow -> High Horsepower eff=[1] stab=False PP={'Scratch': '34/35', 'Feint Attack': '15/20', 'High Horsepower': '9/10', 'Parting Shot': '20/20'} foes=[('Spiritomb', [7, 16], 'Pressure')] dbl=True
+08:38:43 REWARD pick 5× Ultra Ball (rank 31, pp_low=False, heal_need=False) from ['Map', '5× Ultra Ball', 'Potion']
+08:38:45 WAVE UP 37 -> 38
+08:38:46 w38 Zacian -> Mighty Cleave eff=[2] stab=False PP={'Earthquake': '16/16', 'Mighty Cleave': '3/5', 'Spirit Break': '8/15', 'Bitter Blade': '8/10'} foes=[('Drifloon', [7, 2], 'Unburden')] dbl=False
+08:38:49 REWARD pick Sitrus Berry (rank 20, pp_low=False, heal_need=False) from ['Sitrus Berry', 'Super Lure', 'Potion']
+08:38:51 party SelectModifierPhase: slot 0 option 3
+08:38:51 WAVE UP 38 -> 39
+08:38:53 w39 Zacian -> Spirit Break eff=[1, 1] stab=True PP={'Earthquake': '16/16', 'Mighty Cleave': '2/5', 'Spirit Break': '8/15', 'Bitter Blade': '8/10'} foes=[('Cubone', [4], 'Rock Head'), ('Cubone', [4], 'Rock Head')] dbl=True
+08:38:54 w39 Glameow -> High Horsepower eff=[1, 1] stab=False PP={'Scratch': '34/35', 'Feint Attack': '15/20', 'High Horsepower': '8/10', 'Parting Shot': '20/20'} foes=[('Cubone', [4], 'Rock Head'), ('Cubone', [4], 'Rock Head')] dbl=True
+08:38:59 w39 Zacian -> Spirit Break eff=[1] stab=True PP={'Earthquake': '16/16', 'Mighty Cleave': '2/5', 'Spirit Break': '7/15', 'Bitter Blade': '8/10'} foes=[('Cubone', [4], 'Rock Head')] dbl=True
+08:39:01 w39 Glameow -> High Horsepower eff=[1] stab=False PP={'Scratch': '34/35', 'Feint Attack': '15/20', 'High Horsepower': '7/10', 'Parting Shot': '20/20'} foes=[('Cubone', [4], 'Rock Head')] dbl=True
+08:39:04 REWARD pick Max Elixir (rank 25, pp_low=False, heal_need=False) from ['Max Elixir', '5× Poké Ball', 'PP Max']
+08:39:06 party SelectModifierPhase: slot 0 option 3
+08:39:07 WAVE UP 39 -> 40
+08:39:08 w40 Zacian -> Mighty Cleave eff=[1] stab=False PP={'Earthquake': '16/16', 'Mighty Cleave': '5/5', 'Spirit Break': '15/15', 'Bitter Blade': '10/10'} foes=[('Mimikyu', [7, 17], 'Disguise')] dbl=False
+08:39:12 w40 Zacian -> Spirit Break eff=[1] stab=True PP={'Earthquake': '16/16', 'Mighty Cleave': '4/5', 'Spirit Break': '15/15', 'Bitter Blade': '10/10'} foes=[('Mimikyu', [7, 17], 'Disguise')] dbl=False
+08:39:16 w40 Zacian -> Spirit Break eff=[1] stab=True PP={'Earthquake': '16/16', 'Mighty Cleave': '4/5', 'Spirit Break': '14/15', 'Bitter Blade': '10/10'} foes=[('Mimikyu', [7, 17], 'Disguise')] dbl=False
+08:39:23 WAVE UP 40 -> 41
+08:39:29 w41 Zacian -> Spirit Break eff=[1, 2] stab=True PP={'Earthquake': '16/16', 'Mighty Cleave': '5/5', 'Spirit Break': '15/15', 'Bitter Blade': '10/10'} foes=[('Misdreavus', [7], 'Levitate'), ('Absol', [16], 'Pressure')] dbl=True
+08:39:30 w41 Glameow -> Feint Attack eff=[2, 0.5] stab=False PP={'Scratch': '35/35', 'Feint Attack': '20/20', 'High Horsepower': '10/10', 'Parting Shot': '20/20'} foes=[('Misdreavus', [7], 'Levitate'), ('Absol', [16], 'Pressure')] dbl=True
+08:39:37 w41 Zacian -> Spirit Break eff=[2] stab=True PP={'Earthquake': '16/16', 'Mighty Cleave': '5/5', 'Spirit Break': '14/15', 'Bitter Blade': '10/10'} foes=[('Absol', [16], 'Pressure')] dbl=True
+08:39:39 w41 Glameow -> High Horsepower eff=[1] stab=False PP={'Scratch': '35/35', 'Feint Attack': '18/20', 'High Horsepower': '10/10', 'Parting Shot': '20/20'} foes=[('Absol', [16], 'Pressure')] dbl=True
+08:39:43 REWARD pick Shell Bell (rank 4, pp_low=False, heal_need=False) from ['5× Poké Ball', 'Memory Mushroom', 'Shell Bell']
+08:39:44 party SelectModifierPhase: slot 0 option 3
+08:39:45 WAVE UP 41 -> 42
+08:39:46 w42 Zacian -> Bitter Blade eff=[0.5, 4] stab=False PP={'Earthquake': '16/16', 'Mighty Cleave': '5/5', 'Spirit Break': '12/15', 'Bitter Blade': '10/10'} foes=[('Deino', [16, 15], 'Hustle'), ('Parasect', [6, 11], 'Dry Skin')] dbl=True
+08:39:48 w42 Glameow -> High Horsepower eff=[1, 0.25] stab=False PP={'Scratch': '35/35', 'Feint Attack': '18/20', 'High Horsepower': '9/10', 'Parting Shot': '20/20'} foes=[('Deino', [16, 15], 'Hustle'), ('Parasect', [6, 11], 'Dry Skin')] dbl=True
+08:39:54 w42 Zacian -> Bitter Blade eff=[4] stab=False PP={'Earthquake': '16/16', 'Mighty Cleave': '5/5', 'Spirit Break': '12/15', 'Bitter Blade': '9/10'} foes=[('Parasect', [6, 11], 'Dry Skin')] dbl=True
+08:39:59 REWARD pick Nugget (rank 30, pp_low=False, heal_need=False) from ['TM251 - Wild Charge', 'X Attack', 'Nugget']
+08:40:00 WAVE UP 42 -> 43
+08:40:02 w43 Zacian -> Mighty Cleave eff=[2] stab=False PP={'Earthquake': '16/16', 'Mighty Cleave': '5/5', 'Spirit Break': '12/15', 'Bitter Blade': '8/10'} foes=[('Swoobat', [13, 2], 'Unaware')] dbl=False
+08:40:04 REWARD pick 5× Poké Ball (rank 50, pp_low=False, heal_need=False) from ['X Accuracy', '5× Poké Ball', 'Lure']
+08:40:05 WAVE UP 43 -> 44
+08:40:06 w44 Zacian -> Spirit Break eff=[1] stab=True PP={'Earthquake': '16/16', 'Mighty Cleave': '4/5', 'Spirit Break': '12/15', 'Bitter Blade': '8/10'} foes=[('Misdreavus', [7], 'Levitate')] dbl=False
+08:40:08 REWARD pick 5× Great Ball (rank 32, pp_low=False, heal_need=False) from ['5× Great Ball', 'Dire Hit', 'Lure']
+08:40:10 WAVE UP 44 -> 45
+08:40:11 w45 Zacian -> Mighty Cleave eff=[2] stab=False PP={'Earthquake': '16/16', 'Mighty Cleave': '4/5', 'Spirit Break': '11/15', 'Bitter Blade': '8/10'} foes=[('Houndoom', [16, 9], 'Flash Fire')] dbl=False
+08:40:14 REWARD pick Rare Candy (rank 1, pp_low=False, heal_need=False) from ['5× Poké Ball', 'TM192 - Giga Impact', 'Rare Candy']
+08:40:14 WAVE UP 45 -> 46
+08:40:16 w46 Zacian -> Spirit Break eff=[2] stab=True PP={'Earthquake': '16/16', 'Mighty Cleave': '3/5', 'Spirit Break': '11/15', 'Bitter Blade': '8/10'} foes=[('Spiritomb', [7, 16], 'Pressure')] dbl=False
+08:40:19 REWARD pick Nugget (rank 30, pp_low=False, heal_need=False) from ['5× Poké Ball', 'Carbos', 'Nugget']
+08:40:20 WAVE UP 46 -> 47
+08:40:25 w47 Zacian -> Bitter Blade eff=[2] stab=False PP={'Earthquake': '16/16', 'Mighty Cleave': '3/5', 'Spirit Break': '9/15', 'Bitter Blade': '8/10'} foes=[('Floragato', [11], 'Overgrow')] dbl=False
+08:40:29 w47 Zacian -> Earthquake eff=[2] stab=False PP={'Earthquake': '16/16', 'Mighty Cleave': '3/5', 'Spirit Break': '9/15', 'Bitter Blade': '7/10'} foes=[('Numel', [9, 4], 'Oblivious')] dbl=False
+08:40:32 w47 Zacian -> Earthquake eff=[2] stab=False PP={'Earthquake': '15/16', 'Mighty Cleave': '3/5', 'Spirit Break': '9/15', 'Bitter Blade': '7/10'} foes=[('Nosepass', [5], 'Sturdy')] dbl=False
+08:40:36 w47 Zacian -> Spirit Break eff=[1] stab=True PP={'Earthquake': '14/16', 'Mighty Cleave': '3/5', 'Spirit Break': '9/15', 'Bitter Blade': '7/10'} foes=[('Nosepass', [5], 'Sturdy')] dbl=False
+08:40:40 w47 Zacian -> Earthquake eff=[2] stab=False PP={'Earthquake': '14/16', 'Mighty Cleave': '3/5', 'Spirit Break': '8/15', 'Bitter Blade': '7/10'} foes=[('Nosepass', [5], 'Sturdy')] dbl=False
+08:40:44 REWARD pick Nugget (rank 30, pp_low=False, heal_need=False) from ['TM230 - Round', '5× Poké Ball', 'Nugget']
+08:40:46 party SelectModifierPhase: slot 0 option 4
+08:40:49 party SelectModifierPhase: slot 0 option 4
+08:40:52 party SelectModifierPhase: slot 0 option 4
+08:40:56 party SelectModifierPhase: slot 0 option 4
+08:40:59 party SelectModifierPhase: slot 0 option 4
+08:41:03 party SelectModifierPhase: slot 0 option 4
+08:41:06 party SelectModifierPhase: slot 0 option 4
+08:41:10 party SelectModifierPhase: slot 0 option 4
+08:41:13 party SelectModifierPhase: slot 0 option 4
+08:41:16 party SelectModifierPhase: slot 0 option 4
+08:41:20 party SelectModifierPhase: slot 0 option 4
+08:41:23 party SelectModifierPhase: slot 0 option 4
+08:41:27 party SelectModifierPhase: slot 0 option 4
+08:41:30 party SelectModifierPhase: slot 0 option 4
+08:41:33 party SelectModifierPhase: slot 0 option 4
+08:41:37 party SelectModifierPhase: slot 0 option 4
+08:41:40 party SelectModifierPhase: slot 0 option 4
+08:41:44 party SelectModifierPhase: slot 0 option 4
+08:41:47 party SelectModifierPhase: slot 0 option 4
+08:41:50 party SelectModifierPhase: slot 0 option 4
+08:41:54 party SelectModifierPhase: slot 0 option 4
+08:41:57 party SelectModifierPhase: slot 0 option 4
+08:42:01 party SelectModifierPhase: slot 0 option 4
+08:42:04 party SelectModifierPhase: slot 0 option 4
+08:42:08 party SelectModifierPhase: slot 0 option 4
+08:42:11 party SelectModifierPhase: slot 0 option 4
+08:42:14 party SelectModifierPhase: slot 0 option 4
+08:42:18 party SelectModifierPhase: slot 0 option 4
+08:42:21 party SelectModifierPhase: slot 0 option 4
+08:42:25 party SelectModifierPhase: slot 0 option 4
+08:42:28 party SelectModifierPhase: slot 0 option 4
+08:42:31 party SelectModifierPhase: slot 0 option 4
+08:42:35 party SelectModifierPhase: slot 0 option 4
+08:42:38 party SelectModifierPhase: slot 0 option 4
+08:42:42 party SelectModifierPhase: slot 0 option 4
+08:42:45 party SelectModifierPhase: slot 0 option 4
+08:42:49 party SelectModifierPhase: slot 0 option 4
+08:42:52 party SelectModifierPhase: slot 0 option 4
+08:42:55 party SelectModifierPhase: slot 0 option 4
+08:42:59 party SelectModifierPhase: slot 0 option 4
+08:43:02 party SelectModifierPhase: slot 0 option 4
+08:43:06 party SelectModifierPhase: slot 0 option 4
+08:43:09 party SelectModifierPhase: slot 0 option 4
+08:43:12 party SelectModifierPhase: slot 0 option 4
+08:43:16 party SelectModifierPhase: slot 0 option 4
+08:43:19 party SelectModifierPhase: slot 0 option 4
+08:43:23 party SelectModifierPhase: slot 0 option 4
+08:43:26 party SelectModifierPhase: slot 0 option 4
+08:43:29 party SelectModifierPhase: slot 0 option 4
+08:43:33 party SelectModifierPhase: slot 0 option 4
+08:43:36 party SelectModifierPhase: slot 0 option 4
+08:43:40 party SelectModifierPhase: slot 0 option 4
+08:43:43 party SelectModifierPhase: slot 0 option 4
+08:43:46 party SelectModifierPhase: slot 0 option 4
+08:43:50 party SelectModifierPhase: slot 0 option 4
+08:43:53 party SelectModifierPhase: slot 0 option 4
+08:43:57 party SelectModifierPhase: slot 0 option 4
+08:44:00 party SelectModifierPhase: slot 0 option 4
+08:44:03 party SelectModifierPhase: slot 0 option 4
+08:44:07 party SelectModifierPhase: slot 0 option 4
+08:44:10 party SelectModifierPhase: slot 0 option 4
+08:44:14 party SelectModifierPhase: slot 0 option 4
+08:44:17 party SelectModifierPhase: slot 0 option 4
+08:44:20 party SelectModifierPhase: slot 0 option 4
+08:44:24 party SelectModifierPhase: slot 0 option 4
+08:44:27 party SelectModifierPhase: slot 0 option 4
+08:44:31 party SelectModifierPhase: slot 0 option 4
+08:44:34 party SelectModifierPhase: slot 0 option 4
+08:44:38 party SelectModifierPhase: slot 0 option 4
+08:44:41 party SelectModifierPhase: slot 0 option 4
+08:44:44 party SelectModifierPhase: slot 0 option 4
+08:44:48 party SelectModifierPhase: slot 0 option 4
+08:44:51 party SelectModifierPhase: slot 0 option 4
+08:44:55 party SelectModifierPhase: slot 0 option 4
+08:44:58 party SelectModifierPhase: slot 0 option 4
+08:45:02 party SelectModifierPhase: slot 0 option 4
+08:45:05 party SelectModifierPhase: slot 0 option 4
+08:45:08 party SelectModifierPhase: slot 0 option 4
+08:45:12 party SelectModifierPhase: slot 0 option 4
+08:45:15 party SelectModifierPhase: slot 0 option 4
+08:45:19 party SelectModifierPhase: slot 0 option 4
+08:45:22 WAVE UP 47 -> 48
+08:45:24 w48 Zacian -> Bitter Blade eff=[4] stab=False PP={'Earthquake': '13/16', 'Mighty Cleave': '3/5', 'Spirit Break': '8/15', 'Bitter Blade': '7/10'} foes=[('Parasect', [6, 11], 'Effect Spore')] dbl=False
+08:45:27 REWARD pick Rare Candy (rank 1, pp_low=False, heal_need=False) from ['Rare Candy', 'Salac Berry', '5× Poké Ball']
+08:45:28 party SelectModifierPhase: slot 0 option 3
+08:45:29 WAVE UP 48 -> 49
+08:45:30 w49 Zacian -> Spirit Break eff=[1] stab=True PP={'Earthquake': '13/16', 'Mighty Cleave': '3/5', 'Spirit Break': '8/15', 'Bitter Blade': '6/10'} foes=[('Misdreavus', [7], 'Levitate')] dbl=False
+08:45:32 REWARD pick Enigma Berry (rank 20, pp_low=False, heal_need=False) from ['5× Poké Ball', 'Enigma Berry', 'X Defense']
+08:45:32 WAVE UP 49 -> 50
+08:45:34 w50 Zacian -> Spirit Break eff=[2] stab=True PP={'Earthquake': '13/16', 'Mighty Cleave': '3/5', 'Spirit Break': '7/15', 'Bitter Blade': '6/10'} foes=[('Zoroark', [16], 'Illusion (N)')] dbl=False
+08:45:40 WAVE UP 50 -> 51
+08:45:45 w51 Zacian -> Bitter Blade eff=[1, 1] stab=False PP={'Earthquake': '16/16', 'Mighty Cleave': '5/5', 'Spirit Break': '15/15', 'Bitter Blade': '10/10'} foes=[('Baltoy', [4, 13], 'Levitate'), ('Baltoy', [4, 13], 'Levitate')] dbl=True
+08:45:47 w51 Glameow -> Feint Attack eff=[2, 2] stab=False PP={'Scratch': '35/35', 'Feint Attack': '20/20', 'High Horsepower': '10/10', 'Parting Shot': '20/20'} foes=[('Baltoy', [4, 13], 'Levitate'), ('Baltoy', [4, 13], 'Levitate')] dbl=True
+08:45:52 w51 Zacian -> Spirit Break eff=[1] stab=True PP={'Earthquake': '16/16', 'Mighty Cleave': '5/5', 'Spirit Break': '15/15', 'Bitter Blade': '9/10'} foes=[('Baltoy', [4, 13], 'Levitate')] dbl=True
+08:45:53 w51 Glameow -> Feint Attack eff=[2] stab=False PP={'Scratch': '35/35', 'Feint Attack': '19/20', 'High Horsepower': '10/10', 'Parting Shot': '20/20'} foes=[('Baltoy', [4, 13], 'Levitate')] dbl=True
+08:45:57 REWARD pick 5× Poké Ball (rank 50, pp_low=False, heal_need=False) from ['5× Poké Ball', 'Super Lure', 'X Attack', 'Potion']
+08:45:58 WAVE UP 51 -> 52
+08:46:00 w52 Zacian -> Spirit Break eff=[1, 1] stab=True PP={'Earthquake': '16/16', 'Mighty Cleave': '5/5', 'Spirit Break': '14/15', 'Bitter Blade': '9/10'} foes=[('Clefairy', [17], 'Magic Guard'), ('Lunatone', [5, 13], 'Levitate')] dbl=True
+08:46:01 w52 Glameow -> Feint Attack eff=[0.5, 2] stab=False PP={'Scratch': '35/35', 'Feint Attack': '18/20', 'High Horsepower': '10/10', 'Parting Shot': '20/20'} foes=[('Clefairy', [17], 'Magic Guard'), ('Lunatone', [5, 13], 'Levitate')] dbl=True
+08:46:07 w52 Zacian -> Mighty Cleave eff=[1] stab=False PP={'Earthquake': '16/16', 'Mighty Cleave': '5/5', 'Spirit Break': '13/15', 'Bitter Blade': '9/10'} foes=[('Lunatone', [5, 13], 'Levitate')] dbl=True
+08:46:09 REWARD pick Rare Candy (rank 1, pp_low=False, heal_need=False) from ['Rare Candy', '5× Great Ball', 'Nugget', 'TM249 - Work Up']
+08:46:11 party SelectModifierPhase: slot 0 option 3
+08:46:11 WAVE UP 52 -> 53
+08:46:13 mystery encounter w53: 3 usable options -> last usable (leave)
+08:46:17 w53 Zacian -> Spirit Break eff=[1] stab=True PP={'Earthquake': '16/16', 'Mighty Cleave': '4/5', 'Spirit Break': '13/15', 'Bitter Blade': '9/10'} foes=[('Claydol', [4, 13], 'Levitate')] dbl=False
+08:46:21 w53 Zacian -> Spirit Break eff=[1] stab=True PP={'Earthquake': '16/16', 'Mighty Cleave': '4/5', 'Spirit Break': '12/15', 'Bitter Blade': '9/10'} foes=[('Claydol', [4, 13], 'Levitate')] dbl=False
+08:46:26 REWARD pick Metal Coat (rank 19, pp_low=False, heal_need=False) from ['Metal Coat', 'Magnet', '1× Egg Voucher', 'Nugget']
+08:46:27 party SelectModifierPhase: slot 0 option 3
+08:46:28 WAVE UP 53 -> 54
+08:46:29 w54 Zacian -> Mighty Cleave eff=[1, 1] stab=False PP={'Earthquake': '16/16', 'Mighty Cleave': '4/5', 'Spirit Break': '11/15', 'Bitter Blade': '9/10'} foes=[('Clefairy', [17], 'Cute Charm'), ('Elgyem', [13], 'Telepathy')] dbl=True
+08:46:33 w54 Zacian -> Spirit Break eff=[1] stab=True PP={'Earthquake': '16/16', 'Mighty Cleave': '3/5', 'Spirit Break': '11/15', 'Bitter Blade': '9/10'} foes=[('Elgyem', [13], 'Telepathy')] dbl=True
+08:46:36 w54 Zacian -> Spirit Break eff=[1] stab=True PP={'Earthquake': '16/16', 'Mighty Cleave': '3/5', 'Spirit Break': '11/15', 'Bitter Blade': '9/10'} foes=[('Elgyem', [13], 'Telepathy')] dbl=True
+08:46:40 REWARD pick Potion (rank -10, pp_low=False, heal_need=True) from ['TM020 - Hyper Beam', 'Lum Berry', 'Nugget', 'Potion']
+08:46:41 party SelectModifierPhase: slot 0 option 4
+08:46:44 party SelectModifierPhase: slot 0 option 4
+08:46:48 party SelectModifierPhase: slot 0 option 4
+08:46:51 party SelectModifierPhase: slot 0 option 4
+08:46:55 party SelectModifierPhase: slot 0 option 4
+08:46:58 party SelectModifierPhase: slot 0 option 4
+08:47:01 party SelectModifierPhase: slot 0 option 4
+08:47:05 party SelectModifierPhase: slot 0 option 4
+08:47:08 party SelectModifierPhase: slot 0 option 4
+08:47:12 party SelectModifierPhase: slot 0 option 4
+08:47:15 party SelectModifierPhase: slot 0 option 4
+08:47:18 party SelectModifierPhase: slot 0 option 4
+08:47:22 party SelectModifierPhase: slot 0 option 4
+08:47:25 party SelectModifierPhase: slot 0 option 4
+08:47:29 party SelectModifierPhase: slot 0 option 4
+08:47:32 party SelectModifierPhase: slot 0 option 4
+08:47:36 party SelectModifierPhase: slot 0 option 4
+08:47:40 party SelectModifierPhase: slot 0 option 3
+08:47:40 WAVE UP 54 -> 55
+08:47:45 w55 Zacian -> Earthquake eff=[1] stab=False PP={'Earthquake': '16/16', 'Mighty Cleave': '3/5', 'Spirit Break': '10/15', 'Bitter Blade': '9/10'} foes=[('Swampert', [10, 4], 'Torrent')] dbl=False
+08:47:48 w55 Zacian -> Spirit Break eff=[1] stab=True PP={'Earthquake': '15/16', 'Mighty Cleave': '3/5', 'Spirit Break': '10/15', 'Bitter Blade': '9/10'} foes=[('Swampert', [10, 4], 'Torrent')] dbl=False
+08:47:52 w55 Zacian -> Mighty Cleave eff=[2] stab=False PP={'Earthquake': '15/16', 'Mighty Cleave': '3/5', 'Spirit Break': '9/15', 'Bitter Blade': '9/10'} foes=[('Unfezant', [0, 2], 'Super Luck')] dbl=False
+08:47:56 w55 Zacian -> Bitter Blade eff=[2] stab=False PP={'Earthquake': '15/16', 'Mighty Cleave': '2/5', 'Spirit Break': '9/15', 'Bitter Blade': '9/10'} foes=[('Pinsir', [6], 'Hyper Cutter')] dbl=False
+08:48:01 w55 Zacian -> Spirit Break eff=[2] stab=True PP={'Earthquake': '15/16', 'Mighty Cleave': '2/5', 'Spirit Break': '9/15', 'Bitter Blade': '8/10'} foes=[('Machoke', [1], 'Guts')] dbl=False
+08:48:04 REWARD pick Revive (rank 23, pp_low=False, heal_need=False) from ['5× Ultra Ball', 'TM291 - Steel Beam', 'HP Up', 'Revive']
+08:48:04 WAVE UP 55 -> 56
+08:48:06 w56 Zacian -> Spirit Break eff=[1] stab=True PP={'Earthquake': '15/16', 'Mighty Cleave': '2/5', 'Spirit Break': '8/15', 'Bitter Blade': '8/10'} foes=[('Lunatone', [5, 13], 'Levitate')] dbl=False
+08:48:07 REWARD pick Rare Candy (rank 1, pp_low=False, heal_need=False) from ['Nugget', 'TM090 - Rain Dance', 'Rare Candy', 'Lure']
+08:48:08 WAVE UP 56 -> 57
+08:48:09 w57 Zacian -> Mighty Cleave eff=[1] stab=False PP={'Earthquake': '15/16', 'Mighty Cleave': '2/5', 'Spirit Break': '7/15', 'Bitter Blade': '8/10'} foes=[('Elgyem', [13], 'Synchronize')] dbl=False
+08:48:10 REWARD pick Revive (rank 23, pp_low=True, heal_need=False) from ['Revive', 'TM240 - Retaliate', 'Lure', 'Exp. Charm']
+08:48:12 party SelectModifierPhase: slot 1 option 3
+08:48:13 WAVE UP 57 -> 58
+08:48:14 w58 Zacian -> Bitter Blade eff=[2, 0.5] stab=False PP={'Earthquake': '15/16', 'Mighty Cleave': '1/5', 'Spirit Break': '7/15', 'Bitter Blade': '8/10'} foes=[('Bronzong', [8, 13], 'Levitate'), ('Minior', [5, 2], 'Shields Down')] dbl=True
+08:48:16 w58 Glameow -> Feint Attack eff=[2, 1] stab=False PP={'Scratch': '35/35', 'Feint Attack': '17/20', 'High Horsepower': '10/10', 'Parting Shot': '20/20'} foes=[('Bronzong', [8, 13], 'Levitate'), ('Minior', [5, 2], 'Shields Down')] dbl=True
+08:48:23 w58 Zacian -> Mighty Cleave eff=[2] stab=False PP={'Earthquake': '15/16', 'Mighty Cleave': '1/5', 'Spirit Break': '7/15', 'Bitter Blade': '7/10'} foes=[('Minior', [5, 2], 'Shields Down')] dbl=True
+08:48:24 w58 Glameow -> Feint Attack eff=[1] stab=False PP={'Scratch': '35/35', 'Feint Attack': '16/20', 'High Horsepower': '10/10', 'Parting Shot': '20/20'} foes=[('Minior', [5, 2], 'Shields Down')] dbl=True
+08:48:28 REWARD pick Dynamax Band (rank 50, pp_low=True, heal_need=False) from ['Super Lure', 'TM091 - Sunny Day', 'Dynamax Band', 'Serious Mint']
+08:48:29 WAVE UP 58 -> 59
+08:48:31 w59 Zacian -> Spirit Break eff=[1, 1] stab=True PP={'Earthquake': '15/16', 'Mighty Cleave': '0/5', 'Spirit Break': '7/15', 'Bitter Blade': '7/10'} foes=[('Claydol', [4, 13], 'Levitate'), ('Elgyem', [13], 'Telepathy')] dbl=True
+08:48:32 w59 Glameow -> Feint Attack eff=[2, 2] stab=False PP={'Scratch': '35/35', 'Feint Attack': '15/20', 'High Horsepower': '10/10', 'Parting Shot': '20/20'} foes=[('Claydol', [4, 13], 'Levitate'), ('Elgyem', [13], 'Telepathy')] dbl=True
+08:48:38 w59 Zacian -> Spirit Break eff=[1, 1] stab=True PP={'Earthquake': '15/16', 'Mighty Cleave': '0/5', 'Spirit Break': '6/15', 'Bitter Blade': '7/10'} foes=[('Claydol', [4, 13], 'Levitate'), ('Elgyem', [13], 'Telepathy')] dbl=True
+08:48:42 w59 Zacian -> Bitter Blade eff=[1] stab=False PP={'Earthquake': '15/16', 'Mighty Cleave': '0/5', 'Spirit Break': '5/15', 'Bitter Blade': '7/10'} foes=[('Elgyem', [13], 'Telepathy')] dbl=True
+08:48:44 REWARD pick Ether (rank -7, pp_low=True, heal_need=False) from ['Lum Berry', '5× Poké Ball', 'Ether', 'Map']
+08:48:46 party SelectModifierPhase: slot 0 option 3
+08:48:46 WAVE UP 59 -> 60
+08:48:51 w60 Zacian -> Spirit Break eff=[1] stab=True PP={'Earthquake': '15/16', 'Mighty Cleave': '0/5', 'Spirit Break': '5/15', 'Bitter Blade': '6/10'} foes=[('Slowking', [10, 13], 'Own Tempo')] dbl=False
+08:48:54 w60 Zacian -> Spirit Break eff=[1] stab=True PP={'Earthquake': '15/16', 'Mighty Cleave': '0/5', 'Spirit Break': '4/15', 'Bitter Blade': '6/10'} foes=[('Sigilyph', [13, 2], 'Magic Guard')] dbl=False
+08:48:57 w60 Zacian -> Bitter Blade eff=[1] stab=False PP={'Earthquake': '15/16', 'Mighty Cleave': '0/5', 'Spirit Break': '3/15', 'Bitter Blade': '6/10'} foes=[('Sigilyph', [13, 2], 'Magic Guard')] dbl=False
+08:49:01 w60 Zacian -> Spirit Break eff=[1] stab=True PP={'Earthquake': '15/16', 'Mighty Cleave': '0/5', 'Spirit Break': '3/15', 'Bitter Blade': '5/10'} foes=[('Meowstic', [13], 'Infiltrator')] dbl=False
+08:49:05 w60 Zacian -> Spirit Break eff=[1] stab=True PP={'Earthquake': '15/16', 'Mighty Cleave': '0/5', 'Spirit Break': '2/15', 'Bitter Blade': '5/10'} foes=[('Meowstic', [13], 'Infiltrator')] dbl=False
+08:49:08 w60 Zacian -> Spirit Break eff=[2] stab=True PP={'Earthquake': '15/16', 'Mighty Cleave': '0/5', 'Spirit Break': '1/15', 'Bitter Blade': '5/10'} foes=[('Malamar', [16, 13], 'Contrary')] dbl=False
+08:49:16 WAVE UP 60 -> 61
+08:49:21 w61 Zacian -> Mighty Cleave eff=[1] stab=False PP={'Earthquake': '16/16', 'Mighty Cleave': '5/5', 'Spirit Break': '15/15', 'Bitter Blade': '10/10'} foes=[('Elgyem', [13], 'Synchronize')] dbl=False
+08:49:25 REWARD pick Nugget (rank 30, pp_low=False, heal_need=False) from ['Zinc', '5× Poké Ball', 'TM240 - Retaliate', 'Nugget']
+08:49:26 party SelectModifierPhase: slot 0 option 3
+08:49:26 WAVE UP 61 -> 62
+08:49:31 w62 Zacian -> Earthquake eff=[2] stab=False PP={'Earthquake': '16/16', 'Mighty Cleave': '4/5', 'Spirit Break': '15/15', 'Bitter Blade': '10/10'} foes=[('Skuntank', [3, 16], 'Stench')] dbl=False
+08:49:37 w62 Zacian -> Earthquake eff=[2] stab=False PP={'Earthquake': '15/16', 'Mighty Cleave': '4/5', 'Spirit Break': '15/15', 'Bitter Blade': '10/10'} foes=[('Luxray', [12], 'Intimidate')] dbl=False
+08:49:53 w62 Zacian -> Mighty Cleave eff=[4] stab=False PP={'Earthquake': '14/16', 'Mighty Cleave': '4/5', 'Spirit Break': '15/15', 'Bitter Blade': '10/10'} foes=[('Yanmega', [6, 2], 'Tinted Lens')] dbl=False
+08:49:57 REWARD pick 5× Great Ball (rank 32, pp_low=False, heal_need=False) from ['5× Great Ball', 'X Sp. Atk', 'TM013 - Roar', 'Lure']
+08:49:58 WAVE UP 62 -> 63
+08:50:00 w63 Zacian -> Bitter Blade eff=[2] stab=False PP={'Earthquake': '14/16', 'Mighty Cleave': '3/5', 'Spirit Break': '15/15', 'Bitter Blade': '10/10'} foes=[('Tinkatuff', [17, 8], 'Mold Breaker')] dbl=False
+08:50:05 REWARD pick Lum Berry (rank 20, pp_low=False, heal_need=False) from ['Lum Berry', '5× Poké Ball', 'TM195 - Shadow Claw', 'Lure']
+08:50:06 party SelectModifierPhase: slot 0 option 3
+08:50:07 WAVE UP 63 -> 64
+08:50:12 w64 Zacian -> Bitter Blade eff=[4] stab=False PP={'Earthquake': '14/16', 'Mighty Cleave': '3/5', 'Spirit Break': '15/15', 'Bitter Blade': '9/10'} foes=[('Wormadam', [6, 11], 'Anticipation')] dbl=False
+08:50:16 w64 Zacian -> Earthquake eff=[2] stab=False PP={'Earthquake': '14/16', 'Mighty Cleave': '3/5', 'Spirit Break': '15/15', 'Bitter Blade': '8/10'} foes=[('Skuntank', [3, 16], 'Aftermath')] dbl=False
+08:50:19 w64 Zacian -> Mighty Cleave eff=[4] stab=False PP={'Earthquake': '13/16', 'Mighty Cleave': '3/5', 'Spirit Break': '15/15', 'Bitter Blade': '8/10'} foes=[('Mothim', [6, 2], 'Swarm')] dbl=False
+08:50:22 REWARD pick Soothe Bell (rank 12, pp_low=False, heal_need=False) from ['5× Poké Ball', 'Soothe Bell', 'Ether', 'Nugget']
+08:50:24 WAVE UP 64 -> 65
+08:50:26 w65 Zacian -> Spirit Break eff=[1, 1] stab=True PP={'Earthquake': '13/16', 'Mighty Cleave': '2/5', 'Spirit Break': '15/15', 'Bitter Blade': '8/10'} foes=[('Kadabra', [13], 'Synchronize'), ('Unown', [13], 'Levitate')] dbl=True
+08:50:27 w65 Purugly -> Feint Attack eff=[2, 2] stab=False PP={'Scratch': '35/35', 'Feint Attack': '20/20', 'High Horsepower': '10/10', 'Parting Shot': '20/20'} foes=[('Kadabra', [13], 'Synchronize'), ('Unown', [13], 'Levitate')] dbl=True
+08:50:32 w65 Zacian -> Spirit Break eff=[1] stab=True PP={'Earthquake': '13/16', 'Mighty Cleave': '2/5', 'Spirit Break': '14/15', 'Bitter Blade': '8/10'} foes=[('Unown', [13], 'Levitate')] dbl=True
+08:50:34 w65 Purugly -> Feint Attack eff=[2] stab=False PP={'Scratch': '35/35', 'Feint Attack': '19/20', 'High Horsepower': '10/10', 'Parting Shot': '20/20'} foes=[('Unown', [13], 'Levitate')] dbl=True
+08:50:37 REWARD pick Sitrus Berry (rank 20, pp_low=False, heal_need=False) from ['Sitrus Berry', 'Ether', 'TM055 - Super Fang', '5× Poké Ball']
+08:50:39 party SelectModifierPhase: slot 0 option 3
+08:50:39 WAVE UP 65 -> 66
+08:50:45 w66 Zacian -> Mighty Cleave eff=[1] stab=False PP={'Earthquake': '13/16', 'Mighty Cleave': '2/5', 'Spirit Break': '13/15', 'Bitter Blade': '8/10'} foes=[('Mismagius', [7], 'Levitate')] dbl=False
+08:50:49 w66 Zacian -> Bitter Blade eff=[2] stab=False PP={'Earthquake': '13/16', 'Mighty Cleave': '1/5', 'Spirit Break': '13/15', 'Bitter Blade': '8/10'} foes=[('Bronzong', [8, 13], 'Levitate')] dbl=False
+08:50:52 w66 Zacian -> Spirit Break eff=[1] stab=True PP={'Earthquake': '13/16', 'Mighty Cleave': '1/5', 'Spirit Break': '13/15', 'Bitter Blade': '7/10'} foes=[('Gastrodon', [10, 4], 'Sticky Hold')] dbl=False
+08:50:56 w66 Zacian -> Spirit Break eff=[1] stab=True PP={'Earthquake': '13/16', 'Mighty Cleave': '1/5', 'Spirit Break': '12/15', 'Bitter Blade': '7/10'} foes=[('Gastrodon', [10, 4], 'Sticky Hold')] dbl=False
+08:50:59 w66 Zacian -> Mighty Cleave eff=[1] stab=False PP={'Earthquake': '13/16', 'Mighty Cleave': '1/5', 'Spirit Break': '11/15', 'Bitter Blade': '7/10'} foes=[('Purugly', [0], 'Thick Fat')] dbl=False
+08:51:04 w66 Zacian -> Spirit Break eff=[1] stab=True PP={'Earthquake': '13/16', 'Mighty Cleave': '0/5', 'Spirit Break': '11/15', 'Bitter Blade': '7/10'} foes=[('Purugly', [0], 'Thick Fat')] dbl=False
+08:51:07 w66 Zacian -> Spirit Break eff=[1] stab=True PP={'Earthquake': '13/16', 'Mighty Cleave': '0/5', 'Spirit Break': '10/15', 'Bitter Blade': '7/10'} foes=[('Drifblim', [7, 2], 'Aftermath')] dbl=False
+08:51:11 w66 Zacian -> Bitter Blade eff=[1] stab=False PP={'Earthquake': '13/16', 'Mighty Cleave': '0/5', 'Spirit Break': '9/15', 'Bitter Blade': '7/10'} foes=[('Drifblim', [7, 2], 'Aftermath')] dbl=False
+08:51:13 w66 Zacian -> Spirit Break eff=[1] stab=True PP={'Earthquake': '13/16', 'Mighty Cleave': '0/5', 'Spirit Break': '9/15', 'Bitter Blade': '6/10'} foes=[('Drifblim', [7, 2], 'Aftermath')] dbl=False
+08:51:18 w66 Zacian -> Bitter Blade eff=[2] stab=False PP={'Earthquake': '13/16', 'Mighty Cleave': '0/5', 'Spirit Break': '8/15', 'Bitter Blade': '6/10'} foes=[('Yanmega', [6, 2], 'Tinted Lens')] dbl=False
+08:51:23 REWARD pick Elixir (rank -9, pp_low=True, heal_need=False) from ['Nugget', 'Soothe Bell', 'Elixir', 'Ether']
+08:51:24 WAVE UP 66 -> 67
+08:51:25 w67 Zacian -> Spirit Break eff=[1, 1] stab=True PP={'Earthquake': '13/16', 'Mighty Cleave': '0/5', 'Spirit Break': '8/15', 'Bitter Blade': '5/10'} foes=[('Claydol', [4, 13], 'Levitate'), ('Kadabra', [13], 'Inner Focus')] dbl=True
+08:51:27 w67 Purugly -> Feint Attack eff=[2, 2] stab=False PP={'Scratch': '35/35', 'Feint Attack': '18/20', 'High Horsepower': '10/10', 'Parting Shot': '20/20'} foes=[('Claydol', [4, 13], 'Levitate'), ('Kadabra', [13], 'Inner Focus')] dbl=True
+08:51:34 w67 Zacian -> Spirit Break eff=[1] stab=True PP={'Earthquake': '13/16', 'Mighty Cleave': '0/5', 'Spirit Break': '7/15', 'Bitter Blade': '5/10'} foes=[('Kadabra', [13], 'Inner Focus')] dbl=True
+08:51:35 w67 Purugly -> Feint Attack eff=[2] stab=False PP={'Scratch': '35/35', 'Feint Attack': '17/20', 'High Horsepower': '10/10', 'Parting Shot': '20/20'} foes=[('Kadabra', [13], 'Inner Focus')] dbl=True
+08:51:39 REWARD pick Elixir (rank -9, pp_low=True, heal_need=False) from ['TM120 - Secret Power', 'PP Up', '5× Poké Ball', 'Elixir']
+08:51:41 party SelectModifierPhase: slot 0 option 3
+08:51:41 WAVE UP 67 -> 68
+08:51:43 w68 Zacian -> Bitter Blade eff=[1, 2] stab=False PP={'Earthquake': '16/16', 'Mighty Cleave': '5/5', 'Spirit Break': '15/15', 'Bitter Blade': '10/10'} foes=[('Grumpig', [13], 'Thick Fat'), ('Tinkaton', [17, 8], 'Mold Breaker')] dbl=True
+08:51:45 w68 Purugly -> High Horsepower eff=[1, 2] stab=False PP={'Scratch': '35/35', 'Feint Attack': '16/20', 'High Horsepower': '10/10', 'Parting Shot': '20/20'} foes=[('Grumpig', [13], 'Thick Fat'), ('Tinkaton', [17, 8], 'Mold Breaker')] dbl=True
+08:51:50 w68 Zacian -> Bitter Blade eff=[1, 2] stab=False PP={'Earthquake': '16/16', 'Mighty Cleave': '5/5', 'Spirit Break': '15/15', 'Bitter Blade': '9/10'} foes=[('Grumpig', [13], 'Thick Fat'), ('Tinkaton', [17, 8], 'Mold Breaker')] dbl=True
+08:51:52 w68 Purugly -> High Horsepower eff=[1, 2] stab=False PP={'Scratch': '35/35', 'Feint Attack': '16/20', 'High Horsepower': '9/10', 'Parting Shot': '20/20'} foes=[('Grumpig', [13], 'Thick Fat'), ('Tinkaton', [17, 8], 'Mold Breaker')] dbl=True
+08:51:59 w68 Zacian -> Bitter Blade eff=[2] stab=False PP={'Earthquake': '16/16', 'Mighty Cleave': '5/5', 'Spirit Break': '15/15', 'Bitter Blade': '8/10'} foes=[('Tinkaton', [17, 8], 'Mold Breaker')] dbl=True
+08:52:01 w68 Purugly -> High Horsepower eff=[2] stab=False PP={'Scratch': '35/35', 'Feint Attack': '16/20', 'High Horsepower': '8/10', 'Parting Shot': '20/20'} foes=[('Tinkaton', [17, 8], 'Mold Breaker')] dbl=True
+08:52:05 REWARD pick 5× Great Ball (rank 32, pp_low=False, heal_need=False) from ['Dire Hit', 'PP Up', 'Lure', '5× Great Ball']
+08:52:06 WAVE UP 68 -> 69
+08:52:08 w69 Zacian -> Spirit Break eff=[1, 1] stab=True PP={'Earthquake': '16/16', 'Mighty Cleave': '5/5', 'Spirit Break': '15/15', 'Bitter Blade': '7/10'} foes=[('Unown', [13], 'Levitate'), ('Kadabra', [13], 'Synchronize')] dbl=True
+08:52:09 w69 Purugly -> Feint Attack eff=[2, 2] stab=False PP={'Scratch': '35/35', 'Feint Attack': '16/20', 'High Horsepower': '7/10', 'Parting Shot': '20/20'} foes=[('Unown', [13], 'Levitate'), ('Kadabra', [13], 'Synchronize')] dbl=True
+08:52:15 REWARD pick Liechi Berry (rank 20, pp_low=False, heal_need=False) from ['HP Up', '5× Poké Ball', 'Potion', 'Liechi Berry']
+08:52:16 party SelectModifierPhase: slot 0 option 3
+08:52:16 WAVE UP 69 -> 70
+08:52:17 w70 Zacian -> Bitter Blade eff=[2] stab=False PP={'Earthquake': '16/16', 'Mighty Cleave': '5/5', 'Spirit Break': '14/15', 'Bitter Blade': '7/10'} foes=[('Tinkaton', [17, 8], 'Own Tempo')] dbl=False
+08:52:23 w70 Zacian -> Earthquake eff=[2] stab=False PP={'Earthquake': '16/16', 'Mighty Cleave': '5/5', 'Spirit Break': '14/15', 'Bitter Blade': '6/10'} foes=[('Tinkaton', [17, 8], 'Own Tempo')] dbl=False
+08:52:30 WAVE UP 70 -> 71
+08:52:34 w71 Zacian -> Mighty Cleave eff=[2] stab=False PP={'Earthquake': '16/16', 'Mighty Cleave': '5/5', 'Spirit Break': '15/15', 'Bitter Blade': '10/10'} foes=[('Xatu', [13, 2], 'Synchronize')] dbl=False
+08:52:37 REWARD pick Soothe Bell (rank 12, pp_low=False, heal_need=False) from ['5× Poké Ball', 'Lure', 'Soothe Bell', 'TM093 - Psych Up']
+08:52:41 party SelectModifierPhase: slot 0 option 3
+08:52:41 WAVE UP 71 -> 72
+08:52:43 w72 Zacian -> Mighty Cleave eff=[2, 4] stab=False PP={'Earthquake': '16/16', 'Mighty Cleave': '4/5', 'Spirit Break': '15/15', 'Bitter Blade': '10/10'} foes=[('Xatu', [13, 2], 'Early Bird'), ('Talonflame', [9, 2], 'Flame Body')] dbl=True
+08:52:45 w72 Purugly -> Feint Attack eff=[2, 1] stab=False PP={'Scratch': '35/35', 'Feint Attack': '20/20', 'High Horsepower': '10/10', 'Parting Shot': '20/20'} foes=[('Xatu', [13, 2], 'Early Bird'), ('Talonflame', [9, 2], 'Flame Body')] dbl=True
+08:52:51 w72 Zacian -> Mighty Cleave eff=[4] stab=False PP={'Earthquake': '16/16', 'Mighty Cleave': '3/5', 'Spirit Break': '15/15', 'Bitter Blade': '10/10'} foes=[('Talonflame', [9, 2], 'Flame Body')] dbl=True
+08:52:52 w72 Purugly -> Scratch eff=[1] stab=True PP={'Scratch': '35/35', 'Feint Attack': '19/20', 'High Horsepower': '10/10', 'Parting Shot': '20/20'} foes=[('Talonflame', [9, 2], 'Flame Body')] dbl=True
+08:52:58 REWARD pick Elixir (rank 26, pp_low=False, heal_need=False) from ['Elixir', 'TM046 - Swift', '5× Poké Ball', 'Super Lure']
+08:53:00 party SelectModifierPhase: slot 0 option 3
+08:53:00 WAVE UP 72 -> 73
+08:53:02 w73 Zacian -> Mighty Cleave eff=[4] stab=False PP={'Earthquake': '16/16', 'Mighty Cleave': '5/5', 'Spirit Break': '15/15', 'Bitter Blade': '10/10'} foes=[('Talonflame', [9, 2], 'Flame Body')] dbl=False
+08:53:04 REWARD pick 5× Poké Ball (rank 50, pp_low=False, heal_need=False) from ['Potion', 'TM266 - Confide', 'X Accuracy', '5× Poké Ball']
+08:53:06 party SelectModifierPhase: slot 0 option 3
+08:53:07 party SelectModifierPhase: slot 0 option 3
+08:53:08 reward 5× Poké Ball cannot be applied - blacklist for wave 73, back to rewards
+08:53:09 REWARD pick X Accuracy (rank 70, pp_low=False, heal_need=False) from ['Potion', 'TM266 - Confide', 'X Accuracy']
+08:53:10 WAVE UP 73 -> 74
+08:53:11 w74 Zacian -> Spirit Break eff=[2, 0.5] stab=True PP={'Earthquake': '16/16', 'Mighty Cleave': '4/5', 'Spirit Break': '15/15', 'Bitter Blade': '10/10'} foes=[('Hawlucha', [1, 2], 'Limber'), ('Aggron', [8, 5], 'Rock Head')] dbl=True
+08:53:13 w74 Purugly -> High Horsepower eff=[0, 4] stab=False PP={'Scratch': '34/35', 'Feint Attack': '19/20', 'High Horsepower': '10/10', 'Parting Shot': '20/20'} foes=[('Hawlucha', [1, 2], 'Limber'), ('Aggron', [8, 5], 'Rock Head')] dbl=True
+08:53:20 w74 Zacian -> Bitter Blade eff=[1] stab=False PP={'Earthquake': '16/16', 'Mighty Cleave': '4/5', 'Spirit Break': '14/15', 'Bitter Blade': '10/10'} foes=[('Aggron', [8, 5], 'Rock Head')] dbl=True
+08:53:22 w74 Purugly -> High Horsepower eff=[4] stab=False PP={'Scratch': '34/35', 'Feint Attack': '19/20', 'High Horsepower': '9/10', 'Parting Shot': '20/20'} foes=[('Aggron', [8, 5], 'Rock Head')] dbl=True
+08:53:27 REWARD pick 5× Poké Ball (rank 50, pp_low=False, heal_need=False) from ['TM217 - Hone Claws', '5× Poké Ball', 'Potion', 'X Sp. Atk']
+08:53:28 WAVE UP 74 -> 75
+08:53:29 w75 Zacian -> Mighty Cleave eff=[4, 2] stab=False PP={'Earthquake': '16/16', 'Mighty Cleave': '4/5', 'Spirit Break': '14/15', 'Bitter Blade': '9/10'} foes=[('Talonflame', [9, 2], 'Flame Body'), ('Altaria', [15, 2], 'Natural Cure')] dbl=True
+08:53:31 w75 Purugly -> Scratch eff=[1, 1] stab=True PP={'Scratch': '34/35', 'Feint Attack': '19/20', 'High Horsepower': '8/10', 'Parting Shot': '20/20'} foes=[('Talonflame', [9, 2], 'Flame Body'), ('Altaria', [15, 2], 'Natural Cure')] dbl=True
+08:53:38 w75 Zacian -> Spirit Break eff=[2] stab=True PP={'Earthquake': '16/16', 'Mighty Cleave': '3/5', 'Spirit Break': '14/15', 'Bitter Blade': '9/10'} foes=[('Altaria', [15, 2], 'Natural Cure')] dbl=True
+08:53:41 REWARD pick Nugget (rank 30, pp_low=False, heal_need=False) from ['5× Poké Ball', 'X Speed', 'Lure', 'Nugget']
+08:53:42 WAVE UP 75 -> 76
+08:53:43 w76 Zacian -> Spirit Break eff=[2] stab=True PP={'Earthquake': '16/16', 'Mighty Cleave': '3/5', 'Spirit Break': '13/15', 'Bitter Blade': '9/10'} foes=[('Altaria', [15, 2], 'Natural Cure')] dbl=False
+08:53:46 REWARD pick Lansat Berry (rank 20, pp_low=False, heal_need=False) from ['Lansat Berry', 'X Sp. Atk', 'TM271 - Dazzling Gleam', '5× Poké Ball']
+08:53:48 party SelectModifierPhase: slot 0 option 3
+08:53:48 WAVE UP 76 -> 77
+08:53:49 w77 Zacian -> Bitter Blade eff=[2] stab=False PP={'Earthquake': '16/16', 'Mighty Cleave': '3/5', 'Spirit Break': '12/15', 'Bitter Blade': '9/10'} foes=[('Gogoat', [11], 'Sap Sipper')] dbl=False
+08:53:52 REWARD pick Rare Candy (rank 1, pp_low=False, heal_need=False) from ['5× Poké Ball', 'TM078 - Sleep Talk', 'Rare Candy', 'Nugget']
+08:53:53 WAVE UP 77 -> 78
+08:53:56 mystery encounter w78: 3 usable options -> last usable (leave)
+08:53:57 reward screen with no reward options - X + confirm skip
+08:53:58 reward screen with no reward options - X + confirm skip
+08:53:58 WAVE UP 78 -> 79
+08:54:01 w79 Zacian -> Mighty Cleave eff=[2] stab=False PP={'Earthquake': '16/16', 'Mighty Cleave': '3/5', 'Spirit Break': '12/15', 'Bitter Blade': '8/10'} foes=[('Pidgeot', [0, 2], 'Keen Eye')] dbl=False
+08:54:04 REWARD pick Max Ether (rank 27, pp_low=False, heal_need=False) from ['Max Ether', 'TM217 - Hone Claws', '5× Poké Ball', 'X Sp. Def']
+08:54:05 party SelectModifierPhase: slot 0 option 3000
+08:54:06 party SelectModifierPhase: slot 0 option 3000
+08:54:07 reward Max Ether cannot be applied - blacklist for wave 79, back to rewards
+08:54:08 REWARD pick 5× Poké Ball (rank 50, pp_low=False, heal_need=False) from ['TM217 - Hone Claws', '5× Poké Ball', 'X Sp. Def']
+08:54:09 WAVE UP 79 -> 80
+08:54:11 w80 Zacian -> Bitter Blade eff=[2] stab=False PP={'Earthquake': '16/16', 'Mighty Cleave': '2/5', 'Spirit Break': '12/15', 'Bitter Blade': '8/10'} foes=[('Corviknight', [2, 8], 'Pressure')] dbl=False
+08:54:16 w80 Zacian -> Bitter Blade eff=[2] stab=False PP={'Earthquake': '16/16', 'Mighty Cleave': '2/5', 'Spirit Break': '12/15', 'Bitter Blade': '6/10'} foes=[('Corviknight', [2, 8], 'Pressure')] dbl=False
+08:54:23 WAVE UP 80 -> 81
+08:54:29 w81 Zacian -> Spirit Break eff=[2] stab=True PP={'Earthquake': '16/16', 'Mighty Cleave': '5/5', 'Spirit Break': '15/15', 'Bitter Blade': '10/10'} foes=[('Salamence', [15, 2], 'Intimidate')] dbl=False
+08:54:35 REWARD pick Shell Bell (rank 4, pp_low=False, heal_need=False) from ['Shell Bell', '5× Poké Ball', 'Super Lure', 'Lansat Berry']
+08:54:36 party SelectModifierPhase: slot 0 option 3
+08:54:36 WAVE UP 81 -> 82
+08:54:38 w82 Zacian -> Spirit Break eff=[2] stab=True PP={'Earthquake': '16/16', 'Mighty Cleave': '5/5', 'Spirit Break': '14/15', 'Bitter Blade': '10/10'} foes=[('Flygon', [4, 15], 'Levitate')] dbl=False
+08:54:40 REWARD pick Nugget (rank 30, pp_low=False, heal_need=False) from ['TM266 - Confide', 'Nugget', 'Memory Mushroom', '5× Poké Ball']
+08:54:41 party SelectModifierPhase: slot 0 option 4
+08:54:43 party SelectModifierPhase: slot 0 option 4
+08:54:44 reward Nugget cannot be applied - blacklist for wave 82, back to rewards
+08:54:45 REWARD pick 5× Poké Ball (rank 50, pp_low=False, heal_need=False) from ['TM266 - Confide', 'Memory Mushroom', '5× Poké Ball']
+08:54:45 WAVE UP 82 -> 83
+08:54:47 w83 Zacian -> Spirit Break eff=[2, 4] stab=True PP={'Earthquake': '16/16', 'Mighty Cleave': '5/5', 'Spirit Break': '13/15', 'Bitter Blade': '10/10'} foes=[('Goodra', [15], 'Sap Sipper'), ('Kommo-o', [15, 1], 'Bulletproof')] dbl=True
+08:54:49 w83 Purugly -> High Horsepower eff=[1, 1] stab=False PP={'Scratch': '35/35', 'Feint Attack': '20/20', 'High Horsepower': '10/10', 'Parting Shot': '20/20'} foes=[('Goodra', [15], 'Sap Sipper'), ('Kommo-o', [15, 1], 'Bulletproof')] dbl=True
+08:54:56 w83 Zacian -> Spirit Break eff=[4] stab=True PP={'Earthquake': '16/16', 'Mighty Cleave': '5/5', 'Spirit Break': '12/15', 'Bitter Blade': '10/10'} foes=[('Kommo-o', [15, 1], 'Bulletproof')] dbl=True
+08:54:58 REWARD pick Liechi Berry (rank 20, pp_low=False, heal_need=False) from ['Lure', 'Dire Hit', 'Liechi Berry', '5× Poké Ball']
+08:54:59 WAVE UP 83 -> 84
+08:55:00 w84 Zacian -> Spirit Break eff=[2] stab=True PP={'Earthquake': '16/16', 'Mighty Cleave': '5/5', 'Spirit Break': '11/15', 'Bitter Blade': '10/10'} foes=[('Drampa', [0, 15], 'Sap Sipper')] dbl=False
+08:55:02 REWARD pick Enigma Berry (rank 20, pp_low=False, heal_need=False) from ['X Accuracy', 'TM249 - Work Up', '5× Poké Ball', 'Enigma Berry']
+08:55:03 WAVE UP 84 -> 85
+08:55:05 w85 Zacian -> Mighty Cleave eff=[1, 2] stab=False PP={'Earthquake': '16/16', 'Mighty Cleave': '5/5', 'Spirit Break': '10/15', 'Bitter Blade': '10/10'} foes=[('Goodra', [15], 'Hydration'), ('Salamence', [15, 2], 'Intimidate')] dbl=True
+08:55:09 w85 Zacian -> Spirit Break eff=[2, 2] stab=True PP={'Earthquake': '16/16', 'Mighty Cleave': '4/5', 'Spirit Break': '10/15', 'Bitter Blade': '10/10'} foes=[('Goodra', [15], 'Hydration'), ('Salamence', [15, 2], 'Intimidate')] dbl=True
+08:55:14 w85 Zacian -> Spirit Break eff=[2] stab=True PP={'Earthquake': '16/16', 'Mighty Cleave': '4/5', 'Spirit Break': '9/15', 'Bitter Blade': '10/10'} foes=[('Salamence', [15, 2], 'Intimidate')] dbl=True
+08:55:17 REWARD pick Starf Berry (rank 20, pp_low=False, heal_need=False) from ['5× Poké Ball', 'X Sp. Def', 'Starf Berry', 'TM230 - Round']
+08:55:18 WAVE UP 85 -> 86
+08:55:19 w86 Zacian -> Spirit Break eff=[2, 2] stab=True PP={'Earthquake': '16/16', 'Mighty Cleave': '4/5', 'Spirit Break': '8/15', 'Bitter Blade': '10/10'} foes=[('Flygon', [4, 15], 'Levitate'), ('Gabite', [15, 4], 'Sand Veil')] dbl=True
+08:55:27 w86 Zacian -> Spirit Break eff=[2, 2] stab=True PP={'Earthquake': '16/16', 'Mighty Cleave': '4/5', 'Spirit Break': '7/15', 'Bitter Blade': '10/10'} foes=[('Flygon', [4, 15], 'Levitate'), ('Gabite', [15, 4], 'Sand Veil')] dbl=True
+08:55:32 w86 Zacian -> Spirit Break eff=[2] stab=True PP={'Earthquake': '16/16', 'Mighty Cleave': '4/5', 'Spirit Break': '6/15', 'Bitter Blade': '10/10'} foes=[('Gabite', [15, 4], 'Sand Veil')] dbl=True
+08:55:36 REWARD pick Ether (rank -7, pp_low=True, heal_need=False) from ['Ether', 'Potion', 'TM264 - Misty Terrain', 'X Speed']
+08:55:37 party SelectModifierPhase: slot 0 option 3000
+08:55:38 party SelectModifierPhase: slot 0 option 3000
+08:55:39 reward Ether cannot be applied - blacklist for wave 86, back to rewards
+08:55:40 REWARD pick X Speed (rank 70, pp_low=True, heal_need=False) from ['Potion', 'TM264 - Misty Terrain', 'X Speed']
+08:55:41 WAVE UP 86 -> 87
+08:55:43 w87 Zacian -> Mighty Cleave eff=[2, 1] stab=False PP={'Earthquake': '16/16', 'Mighty Cleave': '4/5', 'Spirit Break': '5/15', 'Bitter Blade': '10/10'} foes=[('Salamence', [15, 2], 'Intimidate'), ('Goodra', [15], 'Sap Sipper')] dbl=True
+08:55:48 w87 Zacian -> Spirit Break eff=[2, 2] stab=True PP={'Earthquake': '16/16', 'Mighty Cleave': '3/5', 'Spirit Break': '5/15', 'Bitter Blade': '10/10'} foes=[('Salamence', [15, 2], 'Intimidate'), ('Goodra', [15], 'Sap Sipper')] dbl=True
+08:55:53 w87 Zacian -> Spirit Break eff=[2] stab=True PP={'Earthquake': '16/16', 'Mighty Cleave': '3/5', 'Spirit Break': '4/15', 'Bitter Blade': '10/10'} foes=[('Goodra', [15], 'Sap Sipper')] dbl=True
+08:55:57 w87 Zacian -> Spirit Break eff=[2] stab=True PP={'Earthquake': '16/16', 'Mighty Cleave': '3/5', 'Spirit Break': '3/15', 'Bitter Blade': '10/10'} foes=[('Goodra', [15], 'Sap Sipper')] dbl=True
+08:56:00 REWARD pick Max Ether (rank -8, pp_low=True, heal_need=False) from ['TM231 - Echoed Voice', 'Lansat Berry', 'Max Ether', 'Rare Candy']
+08:56:01 party SelectModifierPhase: slot 0 option 4
+08:56:03 party SelectModifierPhase: slot 0 option 4
+08:56:04 reward Max Ether cannot be applied - blacklist for wave 87, back to rewards
+08:56:05 REWARD pick Rare Candy (rank 1, pp_low=True, heal_need=False) from ['TM231 - Echoed Voice', 'Lansat Berry', 'Rare Candy']
+08:56:06 party SelectModifierPhase: slot 0 option 3
+08:56:06 WAVE UP 87 -> 88
+08:56:09 w88 Zacian -> Mighty Cleave eff=[2] stab=False PP={'Earthquake': '16/16', 'Mighty Cleave': '3/5', 'Spirit Break': '2/15', 'Bitter Blade': '10/10'} foes=[('Salamence', [15, 2], 'Intimidate')] dbl=False
+08:56:12 REWARD pick Ether (rank -7, pp_low=True, heal_need=False) from ['5× Great Ball', 'Dire Hit', 'Ether', 'Lure']
+08:56:12 WAVE UP 88 -> 89
+08:56:14 w89 Zacian -> Spirit Break eff=[2] stab=True PP={'Earthquake': '16/16', 'Mighty Cleave': '2/5', 'Spirit Break': '2/15', 'Bitter Blade': '10/10'} foes=[('Flygon', [4, 15], 'Levitate')] dbl=False
+08:56:18 w89 Zacian -> Spirit Break eff=[2] stab=True PP={'Earthquake': '16/16', 'Mighty Cleave': '2/5', 'Spirit Break': '1/15', 'Bitter Blade': '10/10'} foes=[('Flygon', [4, 15], 'Levitate')] dbl=False
+08:56:20 REWARD pick Ether (rank -7, pp_low=True, heal_need=False) from ['X Attack', '5× Rogue Ball', 'Lure', 'Ether']
+08:56:21 WAVE UP 89 -> 90
+08:56:26 w90 Zacian -> Mighty Cleave eff=[1] stab=False PP={'Earthquake': '16/16', 'Mighty Cleave': '2/5', 'Spirit Break': '0/15', 'Bitter Blade': '10/10'} foes=[('Dracovish', [10, 15], 'Water Absorb')] dbl=False
+08:56:29 w90 Zacian -> Mighty Cleave eff=[1] stab=False PP={'Earthquake': '16/16', 'Mighty Cleave': '1/5', 'Spirit Break': '0/15', 'Bitter Blade': '10/10'} foes=[('Dracovish', [10, 15], 'Water Absorb')] dbl=False
+08:56:32 w90 Zacian -> Bitter Blade eff=[0.5] stab=False PP={'Earthquake': '16/16', 'Mighty Cleave': '0/5', 'Spirit Break': '0/15', 'Bitter Blade': '10/10'} foes=[('Flygon', [4, 15], 'Levitate')] dbl=False
+08:56:36 w90 Zacian -> Bitter Blade eff=[0.5] stab=False PP={'Earthquake': '16/16', 'Mighty Cleave': '0/5', 'Spirit Break': '0/15', 'Bitter Blade': '9/10'} foes=[('Flygon', [4, 15], 'Levitate')] dbl=False
+08:56:40 w90 Zacian -> Earthquake eff=[1] stab=False PP={'Earthquake': '16/16', 'Mighty Cleave': '0/5', 'Spirit Break': '0/15', 'Bitter Blade': '8/10'} foes=[('Haxorus', [15], 'Rivalry')] dbl=False
+08:56:43 w90 Zacian -> Earthquake eff=[1] stab=False PP={'Earthquake': '15/16', 'Mighty Cleave': '0/5', 'Spirit Break': '0/15', 'Bitter Blade': '8/10'} foes=[('Haxorus', [15], 'Rivalry')] dbl=False
+08:56:47 w90 Zacian -> Bitter Blade eff=[0.5] stab=False PP={'Earthquake': '14/16', 'Mighty Cleave': '0/5', 'Spirit Break': '0/15', 'Bitter Blade': '8/10'} foes=[('Hydreigon', [16, 15], 'Levitate')] dbl=False
+08:56:51 w90 Zacian -> Bitter Blade eff=[0.5] stab=False PP={'Earthquake': '14/16', 'Mighty Cleave': '0/5', 'Spirit Break': '0/15', 'Bitter Blade': '7/10'} foes=[('Hydreigon', [16, 15], 'Levitate')] dbl=False
+08:56:55 w90 Zacian -> Bitter Blade eff=[0.5] stab=False PP={'Earthquake': '14/16', 'Mighty Cleave': '0/5', 'Spirit Break': '0/15', 'Bitter Blade': '6/10'} foes=[('Hydreigon', [16, 15], 'Levitate')] dbl=False
+08:57:00 w90 Zacian -> Earthquake eff=[1] stab=False PP={'Earthquake': '14/16', 'Mighty Cleave': '0/5', 'Spirit Break': '0/15', 'Bitter Blade': '5/10'} foes=[('Druddigon', [15], 'Rough Skin')] dbl=False
+08:57:03 w90 Zacian -> Earthquake eff=[1] stab=False PP={'Earthquake': '13/16', 'Mighty Cleave': '0/5', 'Spirit Break': '0/15', 'Bitter Blade': '5/10'} foes=[('Druddigon', [15], 'Rough Skin')] dbl=False
+08:57:06 w90 Zacian -> Earthquake eff=[1] stab=False PP={'Earthquake': '12/16', 'Mighty Cleave': '0/5', 'Spirit Break': '0/15', 'Bitter Blade': '5/10'} foes=[('Dracovish', [10, 15], 'Water Absorb')] dbl=False
+08:57:14 WAVE UP 90 -> 91
+08:57:19 w91 Zacian -> Bitter Blade eff=[0.5, 2] stab=False PP={'Earthquake': '16/16', 'Mighty Cleave': '5/5', 'Spirit Break': '15/15', 'Bitter Blade': '10/10'} foes=[('Golem', [5, 4], 'Sturdy'), ('Excadrill', [4, 8], 'Sand Rush')] dbl=True
+08:57:20 w91 Purugly -> High Horsepower eff=[2, 2] stab=False PP={'Scratch': '35/35', 'Feint Attack': '20/20', 'High Horsepower': '10/10', 'Parting Shot': '20/20'} foes=[('Golem', [5, 4], 'Sturdy'), ('Excadrill', [4, 8], 'Sand Rush')] dbl=True
+08:57:28 w91 Zacian -> Bitter Blade eff=[2] stab=False PP={'Earthquake': '16/16', 'Mighty Cleave': '5/5', 'Spirit Break': '15/15', 'Bitter Blade': '9/10'} foes=[('Excadrill', [4, 8], 'Sand Rush')] dbl=True
+08:57:29 w91 Purugly -> High Horsepower eff=[2] stab=False PP={'Scratch': '35/35', 'Feint Attack': '20/20', 'High Horsepower': '9/10', 'Parting Shot': '20/20'} foes=[('Excadrill', [4, 8], 'Sand Rush')] dbl=True
+08:57:37 REWARD pick 5× Poké Ball (rank 50, pp_low=False, heal_need=False) from ['Lure', 'Potion', 'X Accuracy', '5× Poké Ball']
+08:57:38 WAVE UP 91 -> 92
+08:57:39 w92 Zacian -> Spirit Break eff=[1] stab=True PP={'Earthquake': '16/16', 'Mighty Cleave': '5/5', 'Spirit Break': '15/15', 'Bitter Blade': '8/10'} foes=[('Dugtrio', [4], 'Arena Trap')] dbl=False
+08:57:41 REWARD pick Nugget (rank 30, pp_low=False, heal_need=False) from ['Lure', 'X Accuracy', 'Max Potion', 'Nugget']
+08:57:42 WAVE UP 92 -> 93
+08:57:43 w93 Zacian -> Spirit Break eff=[1] stab=True PP={'Earthquake': '16/16', 'Mighty Cleave': '5/5', 'Spirit Break': '14/15', 'Bitter Blade': '8/10'} foes=[('Dugtrio', [4], 'Arena Trap')] dbl=False
+08:57:45 REWARD pick Sitrus Berry (rank 20, pp_low=False, heal_need=False) from ['TM119 - Imprison', 'Exp. All', 'Sitrus Berry', 'Potion']
+08:57:46 party SelectModifierPhase: slot 0 option 4
+08:57:49 party SelectModifierPhase: slot 0 option 4
+08:57:53 party SelectModifierPhase: slot 0 option 4
+08:57:56 party SelectModifierPhase: slot 0 option 4
+08:58:00 party SelectModifierPhase: slot 0 option 4
+08:58:03 party SelectModifierPhase: slot 0 option 4
+08:58:06 party SelectModifierPhase: slot 0 option 4
+08:58:10 party SelectModifierPhase: slot 0 option 4
+08:58:13 party SelectModifierPhase: slot 0 option 4
+08:58:17 party SelectModifierPhase: slot 0 option 4
+08:58:20 party SelectModifierPhase: slot 0 option 4
+08:58:24 party SelectModifierPhase: slot 0 option 4
+08:58:27 party SelectModifierPhase: slot 0 option 4
+08:58:30 party SelectModifierPhase: slot 0 option 4
+08:58:34 party SelectModifierPhase: slot 0 option 4
+08:58:38 party SelectModifierPhase: slot 0 option 3
+08:58:38 WAVE UP 93 -> 94
+08:58:40 w94 Zacian -> Spirit Break eff=[1, 1] stab=True PP={'Earthquake': '16/16', 'Mighty Cleave': '5/5', 'Spirit Break': '13/15', 'Bitter Blade': '8/10'} foes=[('Rhydon', [4, 5], 'Lightning Rod'), ('Rhydon', [4, 5], 'Rock Head')] dbl=True
+08:58:42 w94 Purugly -> High Horsepower eff=[2, 2] stab=False PP={'Scratch': '35/35', 'Feint Attack': '20/20', 'High Horsepower': '8/10', 'Parting Shot': '20/20'} foes=[('Rhydon', [4, 5], 'Lightning Rod'), ('Rhydon', [4, 5], 'Rock Head')] dbl=True
+08:58:47 w94 Zacian -> Spirit Break eff=[1] stab=True PP={'Earthquake': '16/16', 'Mighty Cleave': '5/5', 'Spirit Break': '12/15', 'Bitter Blade': '8/10'} foes=[('Rhydon', [4, 5], 'Rock Head')] dbl=True
+08:58:48 w94 Purugly -> High Horsepower eff=[2] stab=False PP={'Scratch': '35/35', 'Feint Attack': '20/20', 'High Horsepower': '7/10', 'Parting Shot': '20/20'} foes=[('Rhydon', [4, 5], 'Rock Head')] dbl=True
+08:58:53 REWARD pick Sitrus Berry (rank 20, pp_low=False, heal_need=False) from ['X Sp. Def', 'Potion', '5× Poké Ball', 'Sitrus Berry']
+08:58:54 WAVE UP 94 -> 95
+08:58:59 w95 Zacian -> Earthquake eff=[1] stab=False PP={'Earthquake': '16/16', 'Mighty Cleave': '5/5', 'Spirit Break': '11/15', 'Bitter Blade': '8/10'} foes=[('Swampert', [10, 4], 'Torrent')] dbl=False
+08:59:02 w95 Zacian -> Spirit Break eff=[1] stab=True PP={'Earthquake': '15/16', 'Mighty Cleave': '5/5', 'Spirit Break': '11/15', 'Bitter Blade': '8/10'} foes=[('Swampert', [10], 'Torrent')] dbl=False
+08:59:06 w95 Zacian -> Mighty Cleave eff=[2] stab=False PP={'Earthquake': '15/16', 'Mighty Cleave': '5/5', 'Spirit Break': '10/15', 'Bitter Blade': '8/10'} foes=[('Unfezant', [0, 2], 'Super Luck')] dbl=False
+08:59:10 w95 Zacian -> Bitter Blade eff=[2] stab=False PP={'Earthquake': '15/16', 'Mighty Cleave': '4/5', 'Spirit Break': '10/15', 'Bitter Blade': '8/10'} foes=[('Pinsir', [6], 'Hyper Cutter')] dbl=False
+08:59:13 w95 Zacian -> Spirit Break eff=[2] stab=True PP={'Earthquake': '15/16', 'Mighty Cleave': '4/5', 'Spirit Break': '10/15', 'Bitter Blade': '7/10'} foes=[('Machamp', [1], 'Guts')] dbl=False
+08:59:16 w95 Zacian -> Spirit Break eff=[4] stab=True PP={'Earthquake': '15/16', 'Mighty Cleave': '4/5', 'Spirit Break': '9/15', 'Bitter Blade': '7/10'} foes=[('Kommo-o', [15, 1], 'Soundproof')] dbl=False
+08:59:20 REWARD pick Big Nugget (rank 30, pp_low=False, heal_need=False) from ['5× Ultra Ball', 'Big Nugget', 'TM116 - Knock Off', 'Exp. Charm']
+08:59:21 WAVE UP 95 -> 96
+08:59:24 w96 Zacian -> Bitter Blade eff=[0.5, 1] stab=False PP={'Earthquake': '15/16', 'Mighty Cleave': '4/5', 'Spirit Break': '8/15', 'Bitter Blade': '7/10'} foes=[('Rhydon', [4, 5], 'Lightning Rod'), ('Dugtrio', [4], 'Sand Veil')] dbl=True
+08:59:25 w96 Purugly -> High Horsepower eff=[2, 1] stab=False PP={'Scratch': '35/35', 'Feint Attack': '20/20', 'High Horsepower': '6/10', 'Parting Shot': '20/20'} foes=[('Rhydon', [4, 5], 'Lightning Rod'), ('Dugtrio', [4], 'Sand Veil')] dbl=True
+08:59:32 w96 Zacian -> Spirit Break eff=[1, 1] stab=True PP={'Earthquake': '15/16', 'Mighty Cleave': '4/5', 'Spirit Break': '8/15', 'Bitter Blade': '6/10'} foes=[('Rhydon', [4, 5], 'Lightning Rod'), ('Dugtrio', [4], 'Sand Veil')] dbl=True
+08:59:36 w96 Zacian -> Spirit Break eff=[1] stab=True PP={'Earthquake': '15/16', 'Mighty Cleave': '4/5', 'Spirit Break': '7/15', 'Bitter Blade': '6/10'} foes=[('Dugtrio', [4], 'Sand Veil')] dbl=True
+08:59:38 REWARD pick Quick Claw (rank 10, pp_low=False, heal_need=False) from ['Quick Claw', 'Super Lure', '5× Poké Ball', 'Nugget']
+08:59:40 party SelectModifierPhase: slot 0 option 3
+08:59:41 WAVE UP 96 -> 97
+08:59:42 w97 Zacian -> Bitter Blade eff=[1] stab=False PP={'Earthquake': '15/16', 'Mighty Cleave': '4/5', 'Spirit Break': '6/15', 'Bitter Blade': '6/10'} foes=[('Sandslash', [4], 'Sand Veil')] dbl=False
+08:59:45 w97 Zacian -> Spirit Break eff=[1] stab=True PP={'Earthquake': '15/16', 'Mighty Cleave': '4/5', 'Spirit Break': '6/15', 'Bitter Blade': '5/10'} foes=[('Sandslash', [4], 'Sand Veil')] dbl=False
+08:59:48 REWARD pick Ether (rank -7, pp_low=True, heal_need=False) from ['5× Poké Ball', 'X Sp. Def', 'Ganlon Berry', 'Ether']
+08:59:48 WAVE UP 97 -> 98
+08:59:50 w98 Zacian -> Spirit Break eff=[0.5, 1] stab=True PP={'Earthquake': '15/16', 'Mighty Cleave': '4/5', 'Spirit Break': '5/15', 'Bitter Blade': '5/10'} foes=[('Camerupt', [9, 4], 'Magma Armor'), ('Gliscor', [4, 2], 'Sand Veil')] dbl=True
+08:59:56 w98 Zacian -> Mighty Cleave eff=[1, 1] stab=False PP={'Earthquake': '15/16', 'Mighty Cleave': '4/5', 'Spirit Break': '4/15', 'Bitter Blade': '5/10'} foes=[('Camerupt', [9, 4], 'Magma Armor'), ('Gliscor', [4, 2], 'Sand Veil')] dbl=True
+09:00:02 w98 Zacian -> Spirit Break eff=[1] stab=True PP={'Earthquake': '15/16', 'Mighty Cleave': '3/5', 'Spirit Break': '4/15', 'Bitter Blade': '5/10'} foes=[('Gliscor', [4, 2], 'Sand Veil')] dbl=True
+09:00:06 w98 Zacian -> Spirit Break eff=[1] stab=True PP={'Earthquake': '15/16', 'Mighty Cleave': '3/5', 'Spirit Break': '3/15', 'Bitter Blade': '5/10'} foes=[('Gliscor', [4, 2], 'Sand Veil')] dbl=True
+09:00:09 REWARD pick Revive (rank 23, pp_low=True, heal_need=False) from ['Potion', '5× Poké Ball', 'X Sp. Def', 'Revive']
+09:00:11 party SelectModifierPhase: slot 1 option 3
+09:00:11 WAVE UP 98 -> 99
+09:00:13 w99 Zacian -> Bitter Blade eff=[1, 0.5] stab=False PP={'Earthquake': '15/16', 'Mighty Cleave': '3/5', 'Spirit Break': '2/15', 'Bitter Blade': '5/10'} foes=[('Sandslash', [4], 'Sand Veil'), ('Rhydon', [4, 5], 'Lightning Rod')] dbl=True
+09:00:15 w99 Purugly -> High Horsepower eff=[1, 2] stab=False PP={'Scratch': '35/35', 'Feint Attack': '20/20', 'High Horsepower': '5/10', 'Parting Shot': '20/20'} foes=[('Sandslash', [4], 'Sand Veil'), ('Rhydon', [4, 5], 'Lightning Rod')] dbl=True
+09:00:24 w99 Zacian -> Spirit Break eff=[1] stab=True PP={'Earthquake': '15/16', 'Mighty Cleave': '3/5', 'Spirit Break': '2/15', 'Bitter Blade': '4/10'} foes=[('Rhydon', [4, 5], 'Lightning Rod')] dbl=True
+09:00:27 REWARD pick Potion (rank -10, pp_low=True, heal_need=True) from ['Potion', 'TM052 - Rest', 'Ether', 'Rare Candy']
+09:00:29 party SelectModifierPhase: slot 0 option 3
+09:00:29 WAVE UP 99 -> 100
+09:00:31 w100 Zacian -> Bitter Blade eff=[2] stab=False PP={'Earthquake': '15/16', 'Mighty Cleave': '3/5', 'Spirit Break': '1/15', 'Bitter Blade': '4/10'} foes=[('Sinistcha', [11, 7], 'Hospitality')] dbl=False
+09:00:41 WAVE UP 100 -> 101
+09:00:45 w101 Zacian -> Spirit Break eff=[2] stab=True PP={'Earthquake': '16/16', 'Mighty Cleave': '5/5', 'Spirit Break': '15/15', 'Bitter Blade': '10/10'} foes=[('Machamp', [1], 'No Guard')] dbl=False
+09:00:48 REWARD pick Sitrus Berry (rank 20, pp_low=False, heal_need=False) from ['X Sp. Atk', 'TM188 - Focus Blast', '5× Poké Ball', 'Sitrus Berry', '1× Egg Voucher']
+09:00:49 WAVE UP 101 -> 102
+09:00:49 w102 Zacian -> Earthquake eff=[2] stab=False PP={'Earthquake': '16/16', 'Mighty Cleave': '5/5', 'Spirit Break': '14/15', 'Bitter Blade': '10/10'} foes=[('Golem', [5, 4], 'Sturdy')] dbl=False
+09:00:53 w102 Zacian -> Earthquake eff=[2] stab=False PP={'Earthquake': '15/16', 'Mighty Cleave': '5/5', 'Spirit Break': '14/15', 'Bitter Blade': '10/10'} foes=[('Golem', [5, 4], 'Sturdy')] dbl=False
+09:00:57 REWARD pick Leppa Berry (rank -20, pp_low=False, heal_need=False) from ['Leppa Berry', 'Potion', 'Rare Candy', '5× Poké Ball', 'Lure']
+09:00:58 party SelectModifierPhase: slot 0 option 3
+09:00:58 WAVE UP 102 -> 103
+09:01:00 mystery encounter w103: 3 usable options -> last usable (leave)
+09:01:01 reward screen with no reward options - X + confirm skip
+09:01:01 reward screen with no reward options - X + confirm skip
+09:01:02 WAVE UP 103 -> 104
+09:01:05 w104 Zacian -> Mighty Cleave eff=[2] stab=False PP={'Earthquake': '14/16', 'Mighty Cleave': '5/5', 'Spirit Break': '14/15', 'Bitter Blade': '10/10'} foes=[('Xatu', [13, 2], 'Early Bird')] dbl=False
+09:01:10 REWARD pick 5× Poké Ball (rank 50, pp_low=False, heal_need=False) from ['Lure', 'TM036 - Double Team', 'Potion', 'Memory Mushroom', '5× Poké Ball']
+09:01:11 WAVE UP 104 -> 105
+09:01:15 w105 Zacian -> Spirit Break eff=[2] stab=True PP={'Earthquake': '14/16', 'Mighty Cleave': '4/5', 'Spirit Break': '14/15', 'Bitter Blade': '10/10'} foes=[('Machamp', [1], 'No Guard')] dbl=False
+09:01:20 w105 Zacian -> Spirit Break eff=[1] stab=True PP={'Earthquake': '14/16', 'Mighty Cleave': '4/5', 'Spirit Break': '13/15', 'Bitter Blade': '10/10'} foes=[('Golurk', [4, 7], 'Klutz (N)')] dbl=False
+09:01:24 w105 Zacian -> Bitter Blade eff=[1] stab=False PP={'Earthquake': '14/16', 'Mighty Cleave': '4/5', 'Spirit Break': '12/15', 'Bitter Blade': '10/10'} foes=[('Golurk', [4, 7], 'Klutz (N)')] dbl=False
+09:01:29 REWARD pick 5× Poké Ball (rank 50, pp_low=False, heal_need=False) from ['Super Potion', 'X Attack', '5× Poké Ball', 'Super Lure', 'TM258 - Snarl']
+09:01:30 party SelectModifierPhase: slot 0 option 3
+09:01:30 WAVE UP 105 -> 106
+09:01:33 w106 Zacian -> Spirit Break eff=[2, 1] stab=True PP={'Earthquake': '14/16', 'Mighty Cleave': '4/5', 'Spirit Break': '12/15', 'Bitter Blade': '9/10'} foes=[('Mandibuzz', [16, 2], 'Big Pecks'), ('Fearow', [0, 2], 'Keen Eye')] dbl=True
+09:01:34 w106 Purugly -> Scratch eff=[1, 1] stab=True PP={'Scratch': '35/35', 'Feint Attack': '20/20', 'High Horsepower': '10/10', 'Parting Shot': '20/20'} foes=[('Mandibuzz', [16, 2], 'Big Pecks'), ('Fearow', [0, 2], 'Keen Eye')] dbl=True
+09:01:40 w106 Zacian -> Mighty Cleave eff=[2] stab=False PP={'Earthquake': '14/16', 'Mighty Cleave': '4/5', 'Spirit Break': '11/15', 'Bitter Blade': '9/10'} foes=[('Fearow', [0, 2], 'Keen Eye')] dbl=True
+09:01:41 w106 Purugly -> Scratch eff=[1] stab=True PP={'Scratch': '34/35', 'Feint Attack': '20/20', 'High Horsepower': '10/10', 'Parting Shot': '20/20'} foes=[('Fearow', [0, 2], 'Keen Eye')] dbl=True
+09:01:45 REWARD pick Rare Candy (rank 1, pp_low=False, heal_need=False) from ['5× Poké Ball', 'Lum Berry', 'Rare Candy', 'TM264 - Misty Terrain', '5× Poké Ball']
+09:01:47 party SelectModifierPhase: slot 0 option 3
+09:01:47 WAVE UP 106 -> 107
+09:01:49 w107 Zacian -> Spirit Break eff=[0.5, 2] stab=True PP={'Earthquake': '14/16', 'Mighty Cleave': '3/5', 'Spirit Break': '11/15', 'Bitter Blade': '9/10'} foes=[('Magcargo', [9, 5], 'Magma Armor'), ('Mandibuzz', [16, 2], 'Big Pecks')] dbl=True
+09:01:50 w107 Purugly -> High Horsepower eff=[4, 0] stab=False PP={'Scratch': '33/35', 'Feint Attack': '20/20', 'High Horsepower': '10/10', 'Parting Shot': '20/20'} foes=[('Magcargo', [9, 5], 'Magma Armor'), ('Mandibuzz', [16, 2], 'Big Pecks')] dbl=True
+09:01:57 w107 Zacian -> Spirit Break eff=[2] stab=True PP={'Earthquake': '14/16', 'Mighty Cleave': '3/5', 'Spirit Break': '10/15', 'Bitter Blade': '9/10'} foes=[('Mandibuzz', [16, 2], 'Big Pecks')] dbl=True
+09:01:59 w107 Purugly -> Scratch eff=[1] stab=True PP={'Scratch': '33/35', 'Feint Attack': '20/20', 'High Horsepower': '9/10', 'Parting Shot': '20/20'} foes=[('Mandibuzz', [16, 2], 'Big Pecks')] dbl=True
+09:02:02 REWARD pick 5× Poké Ball (rank 50, pp_low=False, heal_need=False) from ['Potion', 'TM036 - Double Team', '5× Poké Ball', 'X Accuracy', 'Super Lure']
+09:02:03 WAVE UP 107 -> 108
+09:02:09 w108 Zacian -> Spirit Break eff=[2] stab=True PP={'Earthquake': '14/16', 'Mighty Cleave': '3/5', 'Spirit Break': '9/15', 'Bitter Blade': '9/10'} foes=[('Hariyama', [1], 'Guts')] dbl=False
+09:02:11 w108 Zacian -> Bitter Blade eff=[2] stab=False PP={'Earthquake': '14/16', 'Mighty Cleave': '3/5', 'Spirit Break': '8/15', 'Bitter Blade': '9/10'} foes=[('Breloom', [11, 1], 'Effect Spore')] dbl=False
+09:02:15 w108 Zacian -> Spirit Break eff=[2] stab=True PP={'Earthquake': '14/16', 'Mighty Cleave': '3/5', 'Spirit Break': '8/15', 'Bitter Blade': '8/10'} foes=[('Medicham', [1, 13], 'Pure Power')] dbl=False
+09:02:18 REWARD pick Leppa Berry (rank -20, pp_low=False, heal_need=False) from ['TM050 - Flash', 'Big Nugget', 'Leppa Berry', 'Potion', '5× Great Ball']
+09:02:19 party SelectModifierPhase: slot 0 option 4
+09:02:21 party SelectModifierPhase: slot 0 option 4
+09:02:22 leppa: retry applying to Zacian
+09:02:22 party SelectModifierPhase: slot 0 option 4
+09:02:23 party SelectModifierPhase: slot 0 option 4
+09:02:24 reward Leppa Berry cannot be applied - blacklist for wave 108, back to rewards
+09:02:26 REWARD pick Big Nugget (rank 30, pp_low=False, heal_need=False) from ['TM050 - Flash', 'Big Nugget', 'Potion', '5× Great Ball']
+09:02:27 WAVE UP 108 -> 109
+09:02:28 w109 Zacian -> Mighty Cleave eff=[2] stab=False PP={'Earthquake': '14/16', 'Mighty Cleave': '3/5', 'Spirit Break': '7/15', 'Bitter Blade': '8/10'} foes=[('Fearow', [0, 2], 'Keen Eye')] dbl=False
+09:02:30 REWARD pick Leppa Berry (rank -20, pp_low=False, heal_need=False) from ['TM078 - Sleep Talk', 'Rock Tera Shard', 'Quick Claw', 'Potion', 'Leppa Berry']
+09:02:31 party SelectModifierPhase: slot 0 option 4
+09:02:35 party SelectModifierPhase: slot 0 option 4
+09:02:38 party SelectModifierPhase: slot 0 option 4
+09:02:42 party SelectModifierPhase: slot 0 option 4
+09:02:45 party SelectModifierPhase: slot 0 option 4
+09:02:48 party SelectModifierPhase: slot 0 option 4
+09:02:52 party SelectModifierPhase: slot 0 option 4
+09:02:55 party SelectModifierPhase: slot 0 option 4
+09:02:59 party SelectModifierPhase: slot 0 option 4
+09:03:02 party SelectModifierPhase: slot 0 option 4
+09:03:05 party SelectModifierPhase: slot 0 option 4
+09:03:09 party SelectModifierPhase: slot 0 option 4
+09:03:12 party SelectModifierPhase: slot 0 option 4
+09:03:16 party SelectModifierPhase: slot 0 option 4
+09:03:19 party SelectModifierPhase: slot 0 option 4
+09:03:22 party SelectModifierPhase: slot 0 option 4
+09:03:26 party SelectModifierPhase: slot 0 option 4
+09:03:29 party SelectModifierPhase: slot 0 option 4
+09:03:33 party SelectModifierPhase: slot 0 option 4
+09:03:36 party SelectModifierPhase: slot 0 option 4
+09:03:40 party SelectModifierPhase: slot 0 option 4
+09:03:43 party SelectModifierPhase: slot 0 option 4
+09:03:46 party SelectModifierPhase: slot 0 option 4
+09:03:50 party SelectModifierPhase: slot 0 option 4
+09:03:53 party SelectModifierPhase: slot 0 option 4
+09:03:57 party SelectModifierPhase: slot 0 option 3
+09:03:58 WAVE UP 109 -> 110
+09:03:59 w110 Zacian -> Mighty Cleave eff=[2] stab=False PP={'Earthquake': '14/16', 'Mighty Cleave': '2/5', 'Spirit Break': '7/15', 'Bitter Blade': '8/10'} foes=[('Pidgeot', [0, 2], 'Tangled Feet')] dbl=False
+09:04:02 w110 Zacian -> Spirit Break eff=[1] stab=True PP={'Earthquake': '14/16', 'Mighty Cleave': '1/5', 'Spirit Break': '7/15', 'Bitter Blade': '8/10'} foes=[('Pidgeot', [0, 2], 'Tangled Feet')] dbl=False
+09:04:09 WAVE UP 110 -> 111
+09:04:14 w111 Zacian -> Spirit Break eff=[1, 2] stab=True PP={'Earthquake': '16/16', 'Mighty Cleave': '5/5', 'Spirit Break': '15/15', 'Bitter Blade': '10/10'} foes=[('Grumpig', [13], 'Own Tempo'), ('Altaria', [15, 2], 'Natural Cure')] dbl=True
+09:04:15 w111 Purugly -> Feint Attack eff=[2, 1] stab=False PP={'Scratch': '35/35', 'Feint Attack': '20/20', 'High Horsepower': '10/10', 'Parting Shot': '20/20'} foes=[('Grumpig', [13], 'Own Tempo'), ('Altaria', [15, 2], 'Natural Cure')] dbl=True
+09:04:23 w111 Zacian -> Mighty Cleave eff=[2] stab=False PP={'Earthquake': '16/16', 'Mighty Cleave': '5/5', 'Spirit Break': '14/15', 'Bitter Blade': '10/10'} foes=[('Altaria', [15, 2], 'Natural Cure')] dbl=True
+09:04:24 w111 Purugly -> Scratch eff=[1] stab=True PP={'Scratch': '35/35', 'Feint Attack': '19/20', 'High Horsepower': '10/10', 'Parting Shot': '20/20'} foes=[('Altaria', [15, 2], 'Natural Cure')] dbl=True
+09:04:29 REWARD pick Rare Candy (rank 1, pp_low=False, heal_need=False) from ['TM128 - Fake Tears', 'Rare Candy', 'Potion', 'Lure', 'PP Max']
+09:04:30 party SelectModifierPhase: slot 0 option 3
+09:04:31 WAVE UP 111 -> 112
+09:04:36 w112 Zacian -> Mighty Cleave eff=[4] stab=False PP={'Earthquake': '16/16', 'Mighty Cleave': '4/5', 'Spirit Break': '14/15', 'Bitter Blade': '10/10'} foes=[('Mothim', [6, 2], 'Swarm')] dbl=False
+09:04:42 w112 Zacian -> Earthquake eff=[2] stab=False PP={'Earthquake': '16/16', 'Mighty Cleave': '3/5', 'Spirit Break': '14/15', 'Bitter Blade': '10/10'} foes=[('Drapion', [3, 16], 'Battle Armor')] dbl=False
+09:04:46 w112 Zacian -> Mighty Cleave eff=[2] stab=False PP={'Earthquake': '15/16', 'Mighty Cleave': '3/5', 'Spirit Break': '14/15', 'Bitter Blade': '10/10'} foes=[('Drifblim', [7, 2], 'Unburden')] dbl=False
+09:04:51 w112 Zacian -> Bitter Blade eff=[4] stab=False PP={'Earthquake': '15/16', 'Mighty Cleave': '2/5', 'Spirit Break': '14/15', 'Bitter Blade': '10/10'} foes=[('Wormadam', [6, 11], 'Anticipation')] dbl=False
+09:04:56 w112 Zacian -> Earthquake eff=[2] stab=False PP={'Earthquake': '15/16', 'Mighty Cleave': '2/5', 'Spirit Break': '14/15', 'Bitter Blade': '9/10'} foes=[('Luxray', [12], 'Intimidate')] dbl=False
+09:05:01 w112 Zacian -> Bitter Blade eff=[2] stab=False PP={'Earthquake': '14/16', 'Mighty Cleave': '2/5', 'Spirit Break': '14/15', 'Bitter Blade': '9/10'} foes=[('Carnivine', [11], 'Levitate')] dbl=False
+09:05:06 REWARD pick Nugget (rank 30, pp_low=False, heal_need=False) from ['Memory Mushroom', 'TM120 - Secret Power', 'Potion', 'Lure', 'Nugget']
+09:05:07 party SelectModifierPhase: slot 0 option 0
+09:05:10 party SelectModifierPhase: slot 0 option 0
+09:05:14 party SelectModifierPhase: slot 0 option 0
+09:05:17 party SelectModifierPhase: slot 0 option 0
+09:05:21 party SelectModifierPhase: slot 0 option 0
+09:05:24 party SelectModifierPhase: slot 0 option 0
+09:05:28 party SelectModifierPhase: slot 0 option 0
+09:05:31 party SelectModifierPhase: slot 0 option 0
+09:05:34 party SelectModifierPhase: slot 0 option 0
+09:05:38 WAVE UP 112 -> 113
+09:05:40 mystery encounter w113: 2 usable options -> last usable (leave)
+09:05:41 reward screen with no reward options - X + confirm skip
+09:05:42 WAVE UP 113 -> 114
+09:05:46 w114 Zacian -> Spirit Break eff=[2] stab=True PP={'Earthquake': '14/16', 'Mighty Cleave': '2/5', 'Spirit Break': '14/15', 'Bitter Blade': '8/10'} foes=[('Gallade', [13, 1], 'Sharpness')] dbl=False
+09:05:49 w114 Zacian -> Bitter Blade eff=[2] stab=False PP={'Earthquake': '14/16', 'Mighty Cleave': '2/5', 'Spirit Break': '13/15', 'Bitter Blade': '8/10'} foes=[('Bronzong', [8, 13], 'Heatproof')] dbl=False
+09:05:53 w114 Zacian -> Earthquake eff=[2] stab=False PP={'Earthquake': '14/16', 'Mighty Cleave': '2/5', 'Spirit Break': '13/15', 'Bitter Blade': '7/10'} foes=[('Bronzong', [8, 13], 'Heatproof')] dbl=False
+09:05:58 w114 Zacian -> Earthquake eff=[2] stab=False PP={'Earthquake': '13/16', 'Mighty Cleave': '2/5', 'Spirit Break': '13/15', 'Bitter Blade': '7/10'} foes=[('Drapion', [3, 16], 'Sniper')] dbl=False
+09:06:04 w114 Zacian -> Spirit Break eff=[1] stab=True PP={'Earthquake': '12/16', 'Mighty Cleave': '2/5', 'Spirit Break': '13/15', 'Bitter Blade': '7/10'} foes=[('Drapion', [3, 16], 'Sniper')] dbl=False
+09:06:09 w114 Zacian -> Spirit Break eff=[1] stab=True PP={'Earthquake': '12/16', 'Mighty Cleave': '2/5', 'Spirit Break': '12/15', 'Bitter Blade': '7/10'} foes=[('Ambipom', [0], 'Technician')] dbl=False
+09:06:12 ZACIAN FAINT/missing - stop
+09:06:12 DONE farm16

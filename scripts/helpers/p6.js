@@ -1,0 +1,1 @@
+(()=>({vis:document.visibilityState,focus:document.hasFocus(),ph:window.__pr_cam?.scene?.phaseManager?.getCurrentPhase()?.constructor?.name, q:window.__pr_cam?.scene?.phaseManager?.phaseQueue?.length, tw:window.__pr_cam?.scene?.tweens?.getTweens?.().length, paused:window.__pr_cam?.scene?.game?.loop?.running}))()

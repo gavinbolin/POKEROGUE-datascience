@@ -1,0 +1,1 @@
+﻿(()=>{const S=Phaser.GameObjects.Sprite.prototype;if(!S.__g){const so=S.setTexture;S.__g=1;S.setTexture=function(...a){if(!this.scene)return this;return so.apply(this,a)}};const P=Phaser.Cameras.Scene2D.Camera.prototype; if(!P.__hpre){const o=P.preRender;P.__hpre=1;P.preRender=function(...a){window.__pr_cam=this;return o.apply(this,a)}} return !!window.__pr_cam})()

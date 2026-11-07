@@ -1,0 +1,49 @@
+62,63c62,63
+< def pick_move(st, hist):
+<     moves = st.get("moves") or []
+---
+> def pick_move(st, hist, dead=()):
+>     moves = [m for m in (st.get("moves") or []) if m["n"] not in dead]
+128c128
+<         log(f"START farm17 (UI-state driven) mode={gi}")
+---
+>         log(f"START farm17 [nopp-guard] (UI-state driven) mode={gi}")
+132c132
+<         me_sig = None; me_t0 = time.time(); last_zlog = None; zmiss = 0
+---
+>         dead_moves = {}; me_sig = None; me_t0 = time.time(); last_zlog = None; zmiss = 0
+197c197
+<                     m = pick_move(st, hist)
+---
+>                     m = pick_move(st, hist, dead_moves.get((w, st.get('user')), ()))
+205a206,235
+>                         # no-PP guard: if fight menu still open / 'no PP' msg after ~2s, mark move dead and try others
+>                         dk = (w, st.get("user")); tried = {m["n"]}
+>                         for _ in range(5):
+>                             stuck = False
+>                             for _t in range(8):
+>                                 await asyncio.sleep(0.25); await ev(STEP_JS)
+>                                 s2 = await ev(STATE_JS) or {}
+>                                 txt = str(await ev("(()=>{try{return window.__pr_cam.scene.ui.getMessageHandler?.().message?.text||''}catch(e){return ''}})()") or "")
+>                                 if "PP" in txt and ("no" in txt.lower() or "left" in txt.lower()):
+>                                     stuck = True; break
+>                                 if s2.get("h") != "FightUiHandler": break
+>                             else:
+>                                 stuck = s2.get("h") == "FightUiHandler"
+>                             if not stuck: break
+>                             dead_moves.setdefault(dk, set()).update(tried)
+>                             log(f"NOPP stuck on {sorted(tried)} (msg={txt[:40]!r}) -> mark 0 PP, retry")
+>                             for _k in range(3): await Z(); await asyncio.sleep(0.2)  # clear message box
+>                             s2 = await ev(STATE_JS) or {}
+>                             if s2.get("h") != "FightUiHandler":
+>                                 if s2.get("h") == "CommandUiHandler":
+>                                     if s2.get("cur") != 0: await set_cursor(0)
+>                                     await Z(); await asyncio.sleep(0.4); s2 = await ev(STATE_JS) or {}
+>                                 if s2.get("h") != "FightUiHandler": break
+>                             m2 = pick_move(s2, hist, dead_moves[dk])
+>                             if m2 is None:
+>                                 left = [mm for mm in (s2.get("moves") or []) if mm["n"] not in dead_moves[dk]]
+>                                 if not left: log("NOPP no slots left - back"); await X(); break
+>                                 m2 = left[0]
+>                             tried.add(m2["n"]); log(f"NOPP fallback -> {m2['n']} (slot {m2['i']})")
+>                             await set_cursor(m2["i"]); await asyncio.sleep(0.1); await Z()

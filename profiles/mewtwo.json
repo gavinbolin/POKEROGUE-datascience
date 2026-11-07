@@ -1,0 +1,98 @@
+{
+  "_help": "MOVES 11/04 ~22:43 MT (Gavin via school): Meteor Mash protected+always kept. Target core Meteor Mash / Thunderous Kick / Psystrike; 4th slot flexible (score prefers Aura Sphere or Psychic). Protected = Meteor Mash, Thunderous Kick, Psystrike only. drop_first Disable/Life Dew/Psyshock unchanged. Prior MEWABSOL t207u-t209u primary Psychic STAB + Mega stones.",
+  "name": "Mewtwo",
+  "species": [
+    150
+  ],
+  "signature_items": [],
+  "learn_moves": true,
+  "learn_mode": "score",
+  "replace_margin": 1.1,
+  "stats": {
+    "atk": 110,
+    "spatk": 154
+  },
+  "stab_types": [
+    13
+  ],
+  "recharge_moves": [
+    "Hyper Beam",
+    "Giga Impact",
+    "Eternabeam",
+    "Blast Burn",
+    "Hydro Cannon",
+    "Frenzy Plant",
+    "Roar of Time",
+    "Rock Wrecker",
+    "Prismatic Laser",
+    "Meteor Assault"
+  ],
+  "self_drop_moves": [
+    "Draco Meteor",
+    "Overheat",
+    "Leaf Storm",
+    "Psycho Boost",
+    "Fleur Cannon",
+    "Close Combat",
+    "Superpower",
+    "V-create",
+    "Make It Rain",
+    "Clanging Scales"
+  ],
+  "status_values": {
+    "Recover": 45,
+    "Calm Mind": 40,
+    "Nasty Plot": 35,
+    "Life Dew": 10,
+    "Disable": 5,
+    "Barrier": 10,
+    "Amnesia": 15
+  },
+  "protected_moves": [
+    "Meteor Mash",
+    "Thunderous Kick",
+    "Psystrike"
+  ],
+  "wanted_moves": [
+    "Meteor Mash",
+    "Thunderous Kick",
+    "Psystrike",
+    "Aura Sphere",
+    "Psychic",
+    "Recover",
+    "Calm Mind"
+  ],
+  "replaceable_moves": [],
+  "replace_normal_type": true,
+  "good_moves": [
+    "Aura Sphere",
+    "Psychic"
+  ],
+  "primary_move": "Psystrike",
+  "spread_moves": [],
+  "drop_first": [
+    "Disable",
+    "Life Dew",
+    "Psyshock"
+  ],
+  "starter_moveset": [],
+  "target_moveset": [
+    "Meteor Mash",
+    "Thunderous Kick",
+    "Psystrike"
+  ],
+  "extra_type_caps": {},
+  "pp_up_pref": {
+    "items": [
+      "pp up",
+      "pp max"
+    ],
+    "tiers": [
+      "GREAT",
+      "ULTRA"
+    ],
+    "rank_bonus": 3,
+    "max_pp_at_most": 10
+  },
+  "role": "primary"
+}

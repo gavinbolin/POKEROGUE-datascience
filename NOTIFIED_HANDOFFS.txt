@@ -1,0 +1,23 @@
+2026-11-04 22:29 wave115 run end - delivered to Gavin
+2026-11-04 23:28 wave110 run end (Bugsy Kleavor) - delivered to Gavin
+2026-11-04 shiny Rattata wave27 - delivered
+2026-11-05 00:17 wave80 run end (Carracosta) - handed off
+2026-11-05 01:18 wave115 run end (Sylveon) - handed off
+2026-11-05 04:42 wave188 run end (Trainer Karen Weavile) - handed off
+2026-11-05 06:58 wave145 run end (trainer, Rayquaza/Pidgeot) - handed off
+2026-11-05 08:46 wave115 run end (Trainer Guzma Golisopod) - handed off
+2026-11-05 10:06 wave68 double shiny Cofagrigus+Golett stop (asked Gavin which to keep) - handed off
+2026-11-05 11:05 wave112 run end (Trainer Magma Grunts Magcargo) - handed off
+2026-11-05 11:58 wave145 run end (trainer Rayquaza/Goodra/Glimmora) - handed off
+2026-11-05 12:24 wave39 shiny Poliwag missed (Stunfisk Discharge KO'd it) - handed off
+2026-11-05 12:34 wave60 run end (Gym Leader Burgh, Leavanny) - handed off (also re-sent Poliwag miss, earlier handoff aborted)
+2026-11-05 13:17 wave110 run end (trainer Torterra/Roserade) - handed off
+2026-11-05 13:42 wave66 run end (trainer Gothitelle/Tsareena) - handed off
+2026-11-05 14:32 wave89 run end (Bug-Type Superfan trainer, Wonder Guard Shedinja/Kleavor) - handed off
+2026-11-05 15:10 wave115 run end (trainer Rhyperior/Nidoking) - handed off
+2026-11-05 16:50 wave184 run end (Elite Four Bertha Rhyperior) - handed off
+2026-11-05 17:50 wave114 run end (Team Plasma Sage Zinzolin Vanilluxe) - handed off
+2026-11-05 19:14 wave115 run end (Team Skull Boss Guzma Scizor) - handed off
+2026-11-06 08:56 Classic w91 shiny Seviper Lv66 var1 Caught (Rogue Ball) — no user handoff
+2026-11-06 21:30 Classic w37 shiny Nidorino Lv25 var3 Caught (Great Ball, doubles vs Nymble; party +1) - successful catch - no user handoff
+2026-11-06 22:44 Classic w90 run end (Gardevoir/Grumpig doubles all-faint) — candy reduce noop (384/63 vr2), Rayquaza 1 egg (6->0), Abra no egg (candy 10), newrun 384/63/263/327/401 slot0, PID 76824 — handed off

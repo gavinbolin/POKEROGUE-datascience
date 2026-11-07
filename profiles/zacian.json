@@ -1,0 +1,14 @@
+{
+  "_help": "Primary sweeper profile. Lower-case not needed. species = PokeRogue species ids. learn_moves=false keeps the old behaviour (decline every new move/TM).",
+  "name": "Zacian",
+  "species": [888],
+  "signature_items": ["Rusted Sword", "Ancient Sword"],
+  "learn_moves": false,
+  "protected_moves": [],
+  "wanted_moves": [],
+  "replaceable_moves": [],
+  "replace_normal_type": false,
+  "good_moves": [],
+  "primary_move": null,
+  "spread_moves": []
+}

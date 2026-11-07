@@ -1,0 +1,82 @@
+{
+  "_help": "Gavin 10/31 voice: Lugia candy grind, same learn_mode=score as Eternatus: score = power x acc x STAB(1.5 Psychic/Flying) x (own attack stat / higher attack stat), x0.6 recharge, x0.8 self-drop, +8 per type newly hit super-effectively; status moves use status_values. Replaces weakest non-protected move if new score > weakest x replace_margin; never drops last damaging STAB move. Air Cutter (60 Flying STAB ~85.5) always beats Weather Ball (50 Normal, 50) so Weather Ball goes. Lumina Crash (rare 4th egg move, 80 Psychic STAB =120) and Aeroblast are protected. Stats = HP 106 Atk 90 Def 130 SpA 90 SpD 154 Spe 110. Level-up: Gust/Whirlwind/Weather Ball 1, Ancient Power 5, Mist 9, Swift 11, Air Cutter 15, Safeguard 18, Extrasensory 23, Calm Mind 27, Punishment 29, Air Slash 35, Recover 43, Dragon Rush 50, Rain Dance 57, Hydro Pump 65, Aeroblast 71, Future Sight 79, Natural Gift 85, Sky Attack 99. Egg: Stored Power, Steam Eruption, Aura Sphere, Lumina Crash.",
+  "name": "Lugia",
+  "species": [
+    249
+  ],
+  "signature_items": [],
+  "learn_moves": true,
+  "learn_mode": "fixed",
+  "replace_margin": 1.1,
+  "stats": {
+    "atk": 90,
+    "spatk": 90
+  },
+  "stab_types": [
+    2,
+    13
+  ],
+  "recharge_moves": [
+    "Hyper Beam",
+    "Giga Impact",
+    "Sky Attack",
+    "Blast Burn",
+    "Hydro Cannon",
+    "Frenzy Plant",
+    "Prismatic Laser",
+    "Meteor Assault"
+  ],
+  "self_drop_moves": [
+    "Draco Meteor",
+    "Overheat",
+    "Leaf Storm",
+    "Psycho Boost",
+    "Close Combat",
+    "Superpower",
+    "Brave Bird",
+    "Double-Edge",
+    "Take Down"
+  ],
+  "status_values": {
+    "Recover": 45,
+    "Roost": 45,
+    "Calm Mind": 40,
+    "Cosmic Power": 25,
+    "Agility": 12,
+    "Rain Dance": 5,
+    "Safeguard": 3,
+    "Mist": 2,
+    "Whirlwind": 1
+  },
+  "protected_moves": [
+    "Lumina Crash",
+    "Aura Sphere",
+    "Ancient Power"
+  ],
+  "wanted_moves": [],
+  "replaceable_moves": [],
+  "replace_normal_type": true,
+  "good_moves": [],
+  "primary_move": "Aeroblast",
+  "spread_moves": [],
+  "max_one_damaging_of_types": [
+    13
+  ],
+  "decline_moves": [
+    "Future Sight",
+    "Extrasensory",
+    "Stored Power",
+    "Psychic",
+    "Psycho Cut",
+    "Zen Headbutt"
+  ],
+  "avoid_in_battle": [
+    "Future Sight"
+  ],
+  "_help2": "Gavin t148u 10/31 15:20: Lumina Crash is Lugia's ONLY Psychic damaging move (never learn another Psychic move; an existing extra Psychic move like Future Sight is the first to be replaced and is not used in battle). Ancient Power (Rock coverage) and Air Slash (replaced Air Cutter) are kept.",
+  "_help3": "Gavin t154u+t155u 10/31: FIXED loadout. Lumina Crash/Aura Sphere/Ancient Power protected forever. 4th = FLEX slot (first non-protected move, now Weather Ball). Before Aeroblast: damaging Flying (type 2) offers replace flex only if score > flex*1.10; non-Flying declined. Aeroblast always replaces flex; after that decline everything. Logged with both scores.",
+  "flex_final": "Aeroblast",
+  "flex_types": [
+    2
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "_help": "Gavin t200u/t201u 11/04: Eternatus is PRIMARY (lead, slot 1). No good egg moves yet -> learn level-up moves via learn_mode=score (STAB Dragon/Poison or strong coverage replaces the weakest/least useful move; protected moves and best attack never dropped). Gavin t139u/t141u 10/31: Eternatus candy grind. learn_mode=score: every offered move (level-up or TM) is scored = power x acc x STAB(1.5 Poison/Dragon) x (own attack stat / higher attack stat), x0.6 recharge, x0.8 self-drop, +8 per type it newly hits super-effectively; status moves use status_values. Replaces the weakest non-protected move if the new score > weakest x replace_margin; never drops the last damaging STAB move. Stats = game base stats (HP 140 Atk 85 Def 95 SpA 145 SpD 95 Spe 130). Level-up: Venoshock/Toxic 8, Incinerate 16, Dragon Dance 24, Cross Poison 32, Dragon Pulse 40, Flamethrower 48, Dynamax Cannon 56, Cosmic Power 64, Recover 72, Hyper Beam 80, Eternabeam 88, Outrage 96. t205u/t206u 11/4: target_moveset = final set; target moves always accepted (replace drop_first then weakest non-target), never forgotten; non-targets declined once all 4 known; extra_type_caps {'15':1} = max one non-target Dragon move; pp_up_pref nudges Great/Ultra PP Up/PP Max +3 within tier when a target move has max PP <=10, and PP Up targets the lowest-max-PP target move.",
+  "name": "Eternatus",
+  "species": [
+    890
+  ],
+  "signature_items": [],
+  "learn_moves": true,
+  "learn_mode": "score",
+  "replace_margin": 1.1,
+  "stats": {
+    "atk": 85,
+    "spatk": 145
+  },
+  "stab_types": [
+    3,
+    15
+  ],
+  "recharge_moves": [
+    "Hyper Beam",
+    "Giga Impact",
+    "Eternabeam",
+    "Blast Burn",
+    "Hydro Cannon",
+    "Frenzy Plant",
+    "Roar of Time",
+    "Rock Wrecker",
+    "Prismatic Laser",
+    "Meteor Assault"
+  ],
+  "self_drop_moves": [
+    "Draco Meteor",
+    "Overheat",
+    "Leaf Storm",
+    "Psycho Boost",
+    "Fleur Cannon",
+    "Close Combat",
+    "Superpower",
+    "V-create",
+    "Make It Rain",
+    "Clanging Scales"
+  ],
+  "status_values": {
+    "Recover": 45,
+    "Cosmic Power": 25,
+    "Calm Mind": 35,
+    "Nasty Plot": 35,
+    "Toxic": 20,
+    "Agility": 12,
+    "Confuse Ray": 8,
+    "Dragon Dance": 5
+  },
+  "protected_moves": [
+    "Malignant Chain",
+    "Dragon Energy",
+    "Dynamax Cannon",
+    "Flamethrower"
+  ],
+  "wanted_moves": [],
+  "replaceable_moves": [],
+  "replace_normal_type": true,
+  "good_moves": [],
+  "primary_move": "Dynamax Cannon",
+  "spread_moves": [
+    "Sludge Wave",
+    "Heat Wave"
+  ],
+  "role": "primary",
+  "target_moveset": [
+    "Malignant Chain",
+    "Dragon Energy",
+    "Dynamax Cannon",
+    "Flamethrower"
+  ],
+  "extra_type_caps": {
+    "15": 1
+  },
+  "pp_up_pref": {
+    "items": [
+      "pp up",
+      "pp max"
+    ],
+    "tiers": [
+      "GREAT",
+      "ULTRA"
+    ],
+    "rank_bonus": 3,
+    "max_pp_at_most": 10
+  },
+  "drop_first": [
+    "Poison Tail",
+    "Body Press"
+  ]
+}

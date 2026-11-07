@@ -1,0 +1,1 @@
+(()=>{const S=Phaser.GameObjects.Sprite.prototype;if(!S.__g){const o=S.setTexture;S.__g=1;S.setTexture=function(...a){if(!this.scene)return this;return o.apply(this,a)}};const L=window.__pr_cam.scene.game.loop;const f0=L.frame;L.raf.stop();L.raf.start(L.step.bind(L),L.forceSetTimeOut,L._target);return f0})()

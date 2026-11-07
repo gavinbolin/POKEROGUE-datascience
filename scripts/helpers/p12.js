@@ -1,0 +1,1 @@
+(()=>{const h=window.__pr_cam.scene.ui.getHandler();return {row:h.rowCursor,cur:h.cursor,n:(h.options||[]).length,names:(h.options||[]).map(x=>x.modifierTypeOption?.type?.name),shop:(h.shopOptionsRows||[]).flat().map(x=>x.modifierTypeOption?.type?.name),ks:Object.keys(h).filter(k=>/opt|row|lock|reroll/i.test(k))}})()

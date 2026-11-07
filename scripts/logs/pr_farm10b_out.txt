@@ -1,0 +1,13 @@
+18:55:46 START farm10b mode=Classic wave=35 t=2162 luck=14
+18:55:50 wave=36 t=2206 mode=Classic biome=Tall Grass luck=14 alive=6 lead=Zacian L26 hp=91/91
+18:55:54 wave=36 t=2206 mode=Classic biome=Tall Grass luck=14 alive=6 lead=Zacian L26 hp=91/91
+18:56:04 wave=36 t=2206 mode=Classic biome=Tall Grass luck=14 alive=6 lead=Zacian L26 hp=91/91
+18:56:07 wave=36 t=2206 mode=Classic biome=Tall Grass luck=14 alive=6 lead=Zacian L26 hp=91/91
+18:56:11 wave=36 t=2206 mode=Classic biome=Tall Grass luck=14 alive=6 lead=Zacian L26 hp=91/91
+18:56:15 wave=36 t=2206 mode=Classic biome=Tall Grass luck=14 alive=6 lead=Zacian L26 hp=91/91
+18:56:15 unstick cancel+act+faint
+18:56:28 wave=36 t=2206 mode=Classic biome=Tall Grass luck=14 alive=6 lead=Zacian L26 hp=91/91
+18:56:32 wave=36 t=2206 mode=Classic biome=Tall Grass luck=14 alive=6 lead=Zacian L26 hp=91/91
+18:56:41 wave=36 t=2206 mode=Classic biome=Tall Grass luck=14 alive=6 lead=Zacian L26 hp=91/91
+18:56:44 wave=36 t=2206 mode=Classic biome=Tall Grass luck=14 alive=6 lead=Zacian L26 hp=91/91
+18:56:49 wave=36 t=2264 mode=Classic biome=Tall Grass luck=11 alive=5 lead=Zacian L27 hp=90/95

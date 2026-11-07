@@ -1,0 +1,64 @@
+{
+  "_help": "Gavin 10/30 (t136u). protected = never forgotten. wanted = always learn (level-up or TM). good_moves = learn only by replacing a replaceable/normal-type/filler move. primary_move = attacked with first whenever it can hit; spread_moves are never used while a wild shiny is on the field.",
+  "name": "Rayquaza",
+  "species": [
+    384
+  ],
+  "signature_items": [],
+  "learn_moves": true,
+  "protected_moves": [
+    "Core Enforcer",
+    "V-create"
+  ],
+  "wanted_moves": [
+    "Hyper Voice",
+    "Air Slash"
+  ],
+  "replaceable_moves": [
+    "Hyper Beam",
+    "Twister",
+    "Ancient Power",
+    "Scary Face",
+    "Rest"
+  ],
+  "replace_normal_type": true,
+  "good_moves": [
+    "Dragon Ascent",
+    "Outrage",
+    "Draco Meteor",
+    "Dragon Pulse",
+    "Dragon Claw",
+    "Dragon Rush",
+    "Dragon Darts",
+    "Brave Bird",
+    "Hurricane",
+    "Aeroblast",
+    "Fly",
+    "Bounce",
+    "Acrobatics",
+    "Dual Wingbeat",
+    "Earthquake",
+    "Flamethrower",
+    "Fire Blast",
+    "Overheat",
+    "Thunderbolt",
+    "Thunder",
+    "Ice Beam",
+    "Stone Edge",
+    "Iron Head",
+    "Iron Tail",
+    "Superpower",
+    "Close Combat",
+    "Focus Blast"
+  ],
+  "primary_move": "Core Enforcer",
+  "spread_moves": [
+    "Core Enforcer",
+    "Hyper Voice",
+    "Twister",
+    "Earthquake",
+    "Surf",
+    "Heat Wave",
+    "Blizzard"
+  ]
+}

@@ -1,0 +1,1 @@
+(()=>{const s=window.__pr_cam.scene;const me=s.currentBattle?.mysteryEncounter;return {h:s.ui.getHandler().constructor.name,type:me?.encounterType,opts:me?.options?.map(o=>JSON.stringify(o.dialogue?.buttonLabel||o.optionMode)),wave:s.currentBattle.waveIndex}})()

@@ -1,0 +1,678 @@
+{
+ "_readme": "Single source of truth for pr_farm17 reward ranking. Edit THIS file; ITEM_PRIORITY.md is regenerated from it. Lower rank = better. Rules are checked top-down, first match wins; 'when' uses named flags (and/or/not). Order: specials first, then tier (MASTER>ROGUE>ULTRA>GREAT>COMMON, read from the card), then rank within tier. 'min_tier' lifts an item to at least that tier (candy/Soothe Bell/vouchers = farm goal items sit at the top of Ultra, below Rogue/Master, as before). Items with rank >= junk_threshold are junk regardless of tier (reroll trigger). The farm reloads this file automatically when it changes.",
+ "version": 2,
+ "tier_order": {
+  "COMMON": 0,
+  "GREAT": 1,
+  "ULTRA": 2,
+  "ROGUE": 3,
+  "MASTER": 4,
+  "LUXURY": 5
+ },
+ "junk_threshold": 93,
+ "default_rank": 50,
+ "specials": {
+  "role_revive": -300,
+  "sword": -290,
+  "prism_scale": -290,
+  "dna_pair": -250,
+  "emergency_heal": -240
+ },
+ "special_notes": {
+  "role_revive": "Revive/Max Revive/Sacred Ash when Zacian or secondary fainted",
+  "sword": "Rusted/Ancient Sword while Zacian in party",
+  "prism_scale": "while secondary is Feebas",
+  "dna_pair": "DNA Splicers when unfused Kricketot/Kricketune + Zigzagoon/Linoone",
+  "emergency_heal": "Full Restore/Max Potion/heal when Zacian <25% HP and next wave risky"
+ },
+ "flags": [
+  "lure_active",
+  "out_of_balls",
+  "holding_balls",
+  "heal_need",
+  "role_low",
+  "pp_crit",
+  "pp_low",
+  "secondary_in_party",
+  "ally_dead",
+  "zhp_low",
+  "zacian_fainted",
+  "voucher_crit",
+  "emergency"
+ ],
+ "match_modes": {
+  "substring": "name contains",
+  "word": "whole word",
+  "prefix": "name starts with",
+  "prefix_or_substring": "'x ' as prefix, others substring",
+  "menu": "'tm' as prefix, others substring",
+  "ball": "name ends with ' ball' and contains the pattern"
+ },
+ "rules": [
+  {
+   "id": "tera_shard",
+   "match": [
+    "tera shard"
+   ],
+   "mode": "substring",
+   "when": null,
+   "rank": 97,
+   "tier": "GREAT",
+   "shop_buyable": false,
+   "notes": "never take; junk"
+  },
+  {
+   "id": "eviolite",
+   "match": [
+    "eviolite"
+   ],
+   "mode": "substring",
+   "when": null,
+   "rank": 96,
+   "tier": "ULTRA",
+   "shop_buyable": false,
+   "notes": "useless on Zacian; junk"
+  },
+  {
+   "id": "soothe_bell",
+   "match": [
+    "soothe bell"
+   ],
+   "mode": "substring",
+   "when": null,
+   "rank": -99.5,
+   "min_tier": "ULTRA",
+   "tier": "GREAT",
+   "shop_buyable": false,
+   "notes": "top of its tier; goes to secondary until 3 stacks, then Zacian"
+  },
+  {
+   "id": "rarer_candy",
+   "match": [
+    "rarer candy"
+   ],
+   "mode": "substring",
+   "when": null,
+   "rank": -56,
+   "min_tier": "ULTRA",
+   "tier": "ULTRA",
+   "shop_buyable": false,
+   "notes": "candy; just above Rare Candy within tier"
+  },
+  {
+   "id": "candy",
+   "match": [
+    "candy jar",
+    "rare candy"
+   ],
+   "mode": "substring",
+   "when": null,
+   "rank": -55,
+   "min_tier": "ULTRA",
+   "tier": "COMMON/ULTRA",
+   "shop_buyable": false,
+   "notes": "candy priority"
+  },
+  {
+   "id": "voucher",
+   "match": [
+    "voucher"
+   ],
+   "mode": "substring",
+   "when": "not voucher_crit",
+   "rank": -50,
+   "min_tier": "ULTRA",
+   "tier": "GREAT/ROGUE/MASTER",
+   "shop_buyable": false,
+   "notes": "egg vouchers; skipped only in emergency"
+  },
+  {
+   "id": "zacian_revive",
+   "match": [
+    "revive",
+    "sacred ash"
+   ],
+   "mode": "substring",
+   "when": "zacian_fainted",
+   "rank": -50,
+   "tier": "",
+   "shop_buyable": true,
+   "notes": "(role revive special -300 normally fires first)"
+  },
+  {
+   "id": "role_heal",
+   "match": [
+    "full restore",
+    "max potion",
+    "hyper potion",
+    "sitrus berry",
+    "super potion",
+    "potion"
+   ],
+   "mode": "substring",
+   "when": "role_low",
+   "rank": -45,
+   "step": 0.1,
+   "tier": "",
+   "shop_buyable": true,
+   "notes": "Zacian/secondary <75% HP; index order = list order"
+  },
+  {
+   "id": "heal_need",
+   "match": [
+    "full restore",
+    "max potion",
+    "hyper potion",
+    "sitrus berry",
+    "super potion",
+    "potion"
+   ],
+   "mode": "substring",
+   "when": "heal_need",
+   "rank": -40,
+   "step": 1,
+   "tier": "",
+   "shop_buyable": true,
+   "notes": "Zacian <80%, or <99.9% before a risky wave; within tier only"
+  },
+  {
+   "id": "vitamins",
+   "match": [
+    "hp up",
+    "protein",
+    "iron",
+    "calcium",
+    "zinc",
+    "carbos",
+    "base stat"
+   ],
+   "mode": "word",
+   "when": null,
+   "rank": -30,
+   "tier": "",
+   "shop_buyable": false,
+   "notes": "vitamins (TMs excluded)"
+  },
+  {
+   "id": "leppa_pp_short",
+   "match": [
+    "leppa"
+   ],
+   "mode": "substring",
+   "when": "pp_crit or pp_low",
+   "rank": -20,
+   "tier": "COMMON",
+   "shop_buyable": false,
+   "notes": ""
+  },
+  {
+   "id": "leppa",
+   "match": [
+    "leppa"
+   ],
+   "mode": "substring",
+   "when": null,
+   "rank": 30,
+   "tier": "COMMON",
+   "shop_buyable": false,
+   "notes": ""
+  },
+  {
+   "id": "pp_crit",
+   "match": [
+    "max elixir",
+    "elixir",
+    "max ether",
+    "ether"
+   ],
+   "mode": "substring",
+   "when": "pp_crit",
+   "rank": -10,
+   "step": 0.1,
+   "tier": "",
+   "shop_buyable": true,
+   "notes": ""
+  },
+  {
+   "id": "pp_low",
+   "match": [
+    "max elixir",
+    "elixir",
+    "max ether",
+    "ether"
+   ],
+   "mode": "substring",
+   "when": "pp_low",
+   "rank": 45,
+   "step": 0.1,
+   "tier": "",
+   "shop_buyable": true,
+   "notes": "fixed dead branch: low PP (<40%) makes them a mid pick"
+  },
+  {
+   "id": "pp_fine",
+   "match": [
+    "max elixir",
+    "elixir",
+    "max ether",
+    "ether"
+   ],
+   "mode": "substring",
+   "when": null,
+   "rank": 94,
+   "tier": "",
+   "shop_buyable": true,
+   "notes": "junk when PP fine"
+  },
+  {
+   "id": "menu_items",
+   "match": [
+    "tm",
+    "memory mushroom",
+    "mint",
+    "dna splicers"
+   ],
+   "mode": "menu",
+   "when": null,
+   "rank": 99,
+   "tier": "",
+   "shop_buyable": false,
+   "notes": "open teach/party menus; junk (DNA pair handled by special -250)"
+  },
+  {
+   "id": "ball_out",
+   "match": [
+    "master ball",
+    "rogue ball",
+    "ultra ball",
+    "great ball",
+    "poke ball"
+   ],
+   "mode": "ball",
+   "when": "out_of_balls",
+   "rank": -200,
+   "step": 0.1,
+   "tier": "",
+   "shop_buyable": false,
+   "notes": "out of balls: top of own tier, best ball first"
+  },
+  {
+   "id": "ball_good",
+   "match": [
+    "master ball",
+    "rogue ball"
+   ],
+   "mode": "ball",
+   "when": "holding_balls",
+   "rank": 92,
+   "tier": "MASTER/ROGUE",
+   "shop_buyable": false,
+   "notes": "bottom of own tier (still beats lower tiers)"
+  },
+  {
+   "id": "ball_junk",
+   "match": [
+    "ultra ball",
+    "great ball",
+    "poke ball"
+   ],
+   "mode": "ball",
+   "when": "holding_balls",
+   "rank": 98,
+   "tier": "",
+   "shop_buyable": false,
+   "notes": "junk while any ball held"
+  },
+  {
+   "id": "lure_active",
+   "match": [
+    "lure"
+   ],
+   "mode": "substring",
+   "when": "lure_active",
+   "rank": 100.5,
+   "tier": "",
+   "shop_buyable": false,
+   "notes": "worst of all while a lure is active"
+  },
+  {
+   "id": "lure_secondary",
+   "match": [
+    "lure"
+   ],
+   "mode": "substring",
+   "when": "secondary_in_party",
+   "rank": -15,
+   "tier": "",
+   "shop_buyable": false,
+   "notes": "keep a lure up for doubles (within tier)"
+  },
+  {
+   "id": "lure",
+   "match": [
+    "lure"
+   ],
+   "mode": "substring",
+   "when": null,
+   "rank": 88,
+   "tier": "",
+   "shop_buyable": false,
+   "notes": ""
+  },
+  {
+   "id": "x_special",
+   "match": [
+    "x sp. atk",
+    "x sp. def",
+    "x accuracy"
+   ],
+   "mode": "prefix",
+   "when": null,
+   "rank": 96,
+   "tier": "",
+   "shop_buyable": false,
+   "notes": "battle items; junk"
+  },
+  {
+   "id": "x_items",
+   "match": [
+    "x ",
+    "dire hit"
+   ],
+   "mode": "prefix_or_substring",
+   "when": null,
+   "rank": 93,
+   "tier": "",
+   "shop_buyable": false,
+   "notes": "X Atk/Def/Spd, Dire Hit; junk (reroll)"
+  },
+  {
+   "id": "revive_unneeded",
+   "match": [
+    "revive"
+   ],
+   "mode": "substring",
+   "when": "not ally_dead",
+   "rank": 90,
+   "tier": "",
+   "shop_buyable": true,
+   "notes": ""
+  },
+  {
+   "id": "potion_unneeded",
+   "match": [
+    "potion"
+   ],
+   "mode": "substring",
+   "when": "not zhp_low",
+   "rank": 80,
+   "tier": "",
+   "shop_buyable": true,
+   "notes": ""
+  },
+  {
+   "id": "pri_max_revive",
+   "match": [
+    "max revive"
+   ],
+   "mode": "substring",
+   "when": null,
+   "rank": 2,
+   "tier": "",
+   "shop_buyable": true,
+   "notes": ""
+  },
+  {
+   "id": "pri_leftovers",
+   "match": [
+    "leftovers"
+   ],
+   "mode": "substring",
+   "when": null,
+   "rank": 3,
+   "tier": "",
+   "shop_buyable": false,
+   "notes": ""
+  },
+  {
+   "id": "pri_shell_bell",
+   "match": [
+    "shell bell"
+   ],
+   "mode": "substring",
+   "when": null,
+   "rank": 4,
+   "tier": "",
+   "shop_buyable": false,
+   "notes": ""
+  },
+  {
+   "id": "pri_kings_rock",
+   "match": [
+    "king's rock"
+   ],
+   "mode": "substring",
+   "when": null,
+   "rank": 8,
+   "tier": "",
+   "shop_buyable": false,
+   "notes": ""
+  },
+  {
+   "id": "pri_scope_lens",
+   "match": [
+    "scope lens"
+   ],
+   "mode": "substring",
+   "when": null,
+   "rank": 9,
+   "tier": "",
+   "shop_buyable": false,
+   "notes": ""
+  },
+  {
+   "id": "pri_quick_claw",
+   "match": [
+    "quick claw"
+   ],
+   "mode": "substring",
+   "when": null,
+   "rank": 10,
+   "tier": "",
+   "shop_buyable": false,
+   "notes": ""
+  },
+  {
+   "id": "pri_focus_band",
+   "match": [
+    "focus band"
+   ],
+   "mode": "substring",
+   "when": null,
+   "rank": 11,
+   "tier": "",
+   "shop_buyable": false,
+   "notes": ""
+  },
+  {
+   "id": "pri_lucky_egg",
+   "match": [
+    "lucky egg"
+   ],
+   "mode": "substring",
+   "when": null,
+   "rank": 13,
+   "tier": "",
+   "shop_buyable": false,
+   "notes": ""
+  },
+  {
+   "id": "pri_exp_all",
+   "match": [
+    "exp. all"
+   ],
+   "mode": "substring",
+   "when": null,
+   "rank": 14,
+   "tier": "",
+   "shop_buyable": false,
+   "notes": ""
+  },
+  {
+   "id": "pri_exp_share",
+   "match": [
+    "exp. share"
+   ],
+   "mode": "substring",
+   "when": null,
+   "rank": 14,
+   "tier": "",
+   "shop_buyable": false,
+   "notes": ""
+  },
+  {
+   "id": "pri_golden",
+   "match": [
+    "golden"
+   ],
+   "mode": "substring",
+   "when": null,
+   "rank": 15,
+   "tier": "",
+   "shop_buyable": false,
+   "notes": ""
+  },
+  {
+   "id": "pri_silk_scarf",
+   "match": [
+    "silk scarf"
+   ],
+   "mode": "substring",
+   "when": null,
+   "rank": 16,
+   "tier": "",
+   "shop_buyable": false,
+   "notes": ""
+  },
+  {
+   "id": "pri_fairy_feather",
+   "match": [
+    "fairy feather"
+   ],
+   "mode": "substring",
+   "when": null,
+   "rank": 18,
+   "tier": "",
+   "shop_buyable": false,
+   "notes": ""
+  },
+  {
+   "id": "pri_metal_coat",
+   "match": [
+    "metal coat"
+   ],
+   "mode": "substring",
+   "when": null,
+   "rank": 19,
+   "tier": "",
+   "shop_buyable": false,
+   "notes": ""
+  },
+  {
+   "id": "pri_berry",
+   "match": [
+    "berry"
+   ],
+   "mode": "substring",
+   "when": null,
+   "rank": 20,
+   "tier": "",
+   "shop_buyable": false,
+   "notes": ""
+  },
+  {
+   "id": "pri_full_restore",
+   "match": [
+    "full restore"
+   ],
+   "mode": "substring",
+   "when": null,
+   "rank": 21,
+   "tier": "",
+   "shop_buyable": true,
+   "notes": ""
+  },
+  {
+   "id": "pri_max_potion",
+   "match": [
+    "max potion"
+   ],
+   "mode": "substring",
+   "when": null,
+   "rank": 22,
+   "tier": "",
+   "shop_buyable": true,
+   "notes": ""
+  },
+  {
+   "id": "pri_revive",
+   "match": [
+    "revive"
+   ],
+   "mode": "substring",
+   "when": null,
+   "rank": 23,
+   "tier": "",
+   "shop_buyable": true,
+   "notes": ""
+  },
+  {
+   "id": "pri_hyper_potion",
+   "match": [
+    "hyper potion"
+   ],
+   "mode": "substring",
+   "when": null,
+   "rank": 24,
+   "tier": "",
+   "shop_buyable": true,
+   "notes": ""
+  },
+  {
+   "id": "pri_super_potion",
+   "match": [
+    "super potion"
+   ],
+   "mode": "substring",
+   "when": null,
+   "rank": 29,
+   "tier": "",
+   "shop_buyable": true,
+   "notes": ""
+  },
+  {
+   "id": "pri_nugget",
+   "match": [
+    "nugget"
+   ],
+   "mode": "substring",
+   "when": null,
+   "rank": 30,
+   "tier": "",
+   "shop_buyable": false,
+   "notes": ""
+  },
+  {
+   "id": "pri_potion",
+   "match": [
+    "potion"
+   ],
+   "mode": "substring",
+   "when": null,
+   "rank": 33,
+   "tier": "",
+   "shop_buyable": true,
+   "notes": ""
+  }
+ ]
+}

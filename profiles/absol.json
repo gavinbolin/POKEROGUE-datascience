@@ -1,0 +1,46 @@
+{
+  "_help": "MOVES 11/04 ~22:43 MT (Gavin via school): target Night Slash / Spirit Break / Sacred Sword / Cross Poison. Protect Spirit Break, Sacred Sword, Cross Poison; Night Slash via slot_replace index 0 only (replace move slot 1 only) until learned, then protected via target_moveset merge. Decline all other learns while Night Slash pending. Prior MEWABSOL secondary + Absolite mega.",
+  "name": "Absol",
+  "role": "secondary",
+  "species": [
+    359
+  ],
+  "mega": "Mega Bracelet -380, Absolite -370 -> Absol only",
+  "signature_items": [],
+  "learn_moves": true,
+  "learn_mode": "score",
+  "replace_margin": 1.1,
+  "stats": {
+    "atk": 130,
+    "spatk": 75
+  },
+  "stab_types": [
+    16
+  ],
+  "protected_moves": [
+    "Spirit Break",
+    "Sacred Sword",
+    "Cross Poison"
+  ],
+  "wanted_moves": [
+    "Night Slash",
+    "Spirit Break",
+    "Sacred Sword",
+    "Cross Poison"
+  ],
+  "replaceable_moves": [],
+  "replace_normal_type": false,
+  "good_moves": [],
+  "primary_move": null,
+  "spread_moves": [],
+  "target_moveset": [
+    "Night Slash",
+    "Spirit Break",
+    "Sacred Sword",
+    "Cross Poison"
+  ],
+  "slot_replace": {
+    "Night Slash": 0
+  },
+  "drop_first": []
+}

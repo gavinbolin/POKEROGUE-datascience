@@ -1,0 +1,423 @@
+09:50:23 START farm17 [nopp-guard] (UI-state driven) mode=Classic
+09:50:23 ZHP w6 31/35 onField=True ph=CommandPhase
+09:50:23 w6 Zacian -> Earthquake eff=[2] stab=False PP={'Earthquake': '10/10', 'Mighty Cleave': '5/5', 'Spirit Break': '12/15', 'Bitter Blade': '8/10'} foes=[('Nidoran♀', [3], 'Rivalry')] dbl=False
+09:50:26 REWARD pick X Sp. Atk (rank 70, pp_low=False, heal_need=False, zhp=89%, risky_next=False) from ['X Sp. Atk', '5× Poké Ball', 'TM110 - Helping Hand']
+09:50:26 WAVE UP 6 -> 7
+09:50:28 w7 Zacian -> Spirit Break eff=[2] stab=True PP={'Earthquake': '9/10', 'Mighty Cleave': '5/5', 'Spirit Break': '12/15', 'Bitter Blade': '8/10'} foes=[('Poochyena', [16], 'Quick Feet')] dbl=False
+09:50:31 REWARD pick Leppa Berry (rank -20, pp_low=False, heal_need=True, zhp=89%, risky_next=True) from ['Rare Candy', 'Leppa Berry', '5× Poké Ball']
+09:50:31 reward cursor 0 != 1 - re-set
+09:50:32 party opts=[3, 6, 7, 12, -1] labels=['Apply', 'Summary', 'Pokédex', 'Rename', 'Cancel'] -> 0
+09:50:32 party SelectModifierPhase: slot 0 option 3
+09:50:33 Zacian switched OUT (alive) - not a faint
+09:50:33 ZHP w8 31/35 onField=False ph=ShowTrainerPhase
+09:50:33 WAVE UP 7 -> 8
+09:50:35 ZHP w8 31/35 onField=True ph=ShowAbilityPhase
+09:50:37 w8 Zacian -> Mighty Cleave eff=[2] stab=False PP={'Earthquake': '9/10', 'Mighty Cleave': '5/5', 'Spirit Break': '11/15', 'Bitter Blade': '8/10'} foes=[('Cyndaquil', [9], 'Blaze')] dbl=False
+09:50:40 w8 Zacian -> Mighty Cleave eff=[2] stab=False PP={'Earthquake': '9/10', 'Mighty Cleave': '4/5', 'Spirit Break': '11/15', 'Bitter Blade': '8/10'} foes=[('Taillow', [0, 2], 'Guts')] dbl=False
+09:50:42 ZHP w8 34/38 onField=True ph=TrainerVictoryPhase
+09:50:46 REWARD pick Nugget (rank 30, pp_low=False, heal_need=True, zhp=89%, risky_next=True) from ['PP Up', 'Dire Hit', 'Nugget']
+09:50:46 reward cursor 0 != 2 - re-set
+09:50:47 WAVE UP 8 -> 9
+09:50:48 w9 Zacian -> Spirit Break eff=[1] stab=True PP={'Earthquake': '9/10', 'Mighty Cleave': '3/5', 'Spirit Break': '11/15', 'Bitter Blade': '8/10'} foes=[('Rookidee', [2], 'Unnerve')] dbl=False
+09:50:51 REWARD pick Candy Jar (rank 50, pp_low=False, heal_need=True, zhp=89%, risky_next=True) from ['5× Poké Ball', 'TM036 - Double Team', 'Candy Jar']
+09:50:51 reward cursor 0 != 2 - re-set
+09:50:52 WAVE UP 9 -> 10
+09:50:54 w10 Zacian -> Mighty Cleave eff=[2] stab=False PP={'Earthquake': '9/10', 'Mighty Cleave': '3/5', 'Spirit Break': '10/15', 'Bitter Blade': '8/10'} foes=[('Starly', [0, 2], 'Keen Eye')] dbl=False
+09:50:55 ZHP w10 29/38 onField=True ph=MoveEffectPhase
+09:50:57 ZHP w10 32/41 onField=True ph=ModifierRewardPhase
+09:50:58 ZHP w10 41/41 onField=True ph=PartyHealPhase
+09:51:01 Zacian switched OUT (alive) - not a faint
+09:51:01 ZHP w11 41/41 onField=False ph=ShowTrainerPhase
+09:51:01 WAVE UP 10 -> 11
+09:51:04 ZHP w11 41/41 onField=True ph=SummonPhase
+09:51:06 w11 Zacian -> Spirit Break eff=[1] stab=True PP={'Earthquake': '10/10', 'Mighty Cleave': '5/5', 'Spirit Break': '15/15', 'Bitter Blade': '10/10'} foes=[('Bidoof', [0], 'Unaware')] dbl=False
+09:51:08 REWARD pick Dire Hit (rank 70, pp_low=False, heal_need=False, zhp=100%, risky_next=False) from ['Dire Hit', '5× Poké Ball', 'Super Lure']
+09:51:09 WAVE UP 11 -> 12
+09:51:10 w12 Zacian -> Spirit Break eff=[1] stab=True PP={'Earthquake': '10/10', 'Mighty Cleave': '5/5', 'Spirit Break': '14/15', 'Bitter Blade': '10/10'} foes=[('Zigzagoon', [0], 'Pickup')] dbl=False
+09:51:13 ZHP w12 44/44 onField=True ph=LearnMovePhase
+09:51:14 REWARD pick X Speed (rank 70, pp_low=False, heal_need=False, zhp=100%, risky_next=False) from ['5× Poké Ball', 'X Speed', 'TM256 - Tail Slap']
+09:51:15 reward cursor 0 != 1 - re-set
+09:51:16 Zacian switched OUT (alive) - not a faint
+09:51:16 ZHP w13 44/44 onField=False ph=NextEncounterPhase
+09:51:16 WAVE UP 12 -> 13
+09:51:18 ZHP w13 44/44 onField=True ph=ShowAbilityPhase
+09:51:20 w13 Zacian -> Mighty Cleave eff=[1] stab=False PP={'Earthquake': '10/10', 'Mighty Cleave': '5/5', 'Spirit Break': '13/15', 'Bitter Blade': '10/10'} foes=[('Azurill', [0, 17], 'Thick Fat')] dbl=False
+09:51:23 w13 Zacian -> Mighty Cleave eff=[2] stab=False PP={'Earthquake': '10/10', 'Mighty Cleave': '4/5', 'Spirit Break': '13/15', 'Bitter Blade': '10/10'} foes=[('Magby', [9], 'Flame Body')] dbl=False
+09:51:25 ZHP w13 47/47 onField=True ph=SwitchSummonPhase
+09:51:26 w13 Zacian -> Spirit Break eff=[1] stab=True PP={'Earthquake': '10/10', 'Mighty Cleave': '3/5', 'Spirit Break': '13/15', 'Bitter Blade': '10/10'} foes=[('Munchlax', [0], 'Pickup')] dbl=False
+09:51:28 ZHP w13 50/50 onField=True ph=SwitchSummonPhase
+09:51:29 w13 Zacian -> Spirit Break eff=[2] stab=True PP={'Earthquake': '10/10', 'Mighty Cleave': '3/5', 'Spirit Break': '12/15', 'Bitter Blade': '10/10'} foes=[('Riolu', [1], 'Inner Focus')] dbl=False
+09:51:32 ZHP w13 54/54 onField=True ph=TrainerVictoryPhase
+09:51:33 REWARD pick Leppa Berry (rank -20, pp_low=False, heal_need=False, zhp=100%, risky_next=True) from ['TM251 - Wild Charge', 'Lure', 'Leppa Berry']
+09:51:33 reward cursor 0 != 2 - re-set
+09:51:34 party opts=[3, 6, 7, 12, -1] labels=['Apply', 'Summary', 'Pokédex', 'Rename', 'Cancel'] -> 0
+09:51:34 party SelectModifierPhase: slot 0 option 3
+09:51:35 WAVE UP 13 -> 14
+09:51:36 w14 Zacian -> Mighty Cleave eff=[2] stab=False PP={'Earthquake': '10/10', 'Mighty Cleave': '3/5', 'Spirit Break': '11/15', 'Bitter Blade': '10/10'} foes=[('Starly', [0, 2], 'Keen Eye')] dbl=False
+09:51:39 REWARD pick Rare Candy (rank 1, pp_low=False, heal_need=False, zhp=100%, risky_next=True) from ['5× Poké Ball', 'Rare Candy', 'Lure']
+09:51:39 reward cursor 0 != 1 - re-set
+09:51:41 party opts=[3, 6, 7, 12, -1] labels=['Apply', 'Summary', 'Pokédex', 'Rename', 'Cancel'] -> 0
+09:51:41 party SelectModifierPhase: slot 0 option 3
+09:51:41 ZHP w15 60/60 onField=True ph=NextEncounterPhase
+09:51:41 WAVE UP 14 -> 15
+09:51:42 w15 Zacian -> Spirit Break eff=[1] stab=True PP={'Earthquake': '10/10', 'Mighty Cleave': '2/5', 'Spirit Break': '11/15', 'Bitter Blade': '10/10'} foes=[('Lechonk', [0], 'Gluttony')] dbl=False
+09:51:44 REWARD pick Rare Candy (rank 1, pp_low=False, heal_need=False, zhp=100%, risky_next=False) from ['Rare Candy', '1× Egg Voucher', '5× Great Ball']
+09:51:45 party opts=[3, 6, 7, 12, -1] labels=['Apply', 'Summary', 'Pokédex', 'Rename', 'Cancel'] -> 0
+09:51:46 party SelectModifierPhase: slot 0 option 3
+09:51:46 ZHP w16 66/66 onField=True ph=NextEncounterPhase
+09:51:46 WAVE UP 15 -> 16
+09:51:48 w16 Zacian -> Spirit Break eff=[1] stab=True PP={'Earthquake': '10/10', 'Mighty Cleave': '2/5', 'Spirit Break': '10/15', 'Bitter Blade': '10/10'} foes=[('Lechonk', [0], 'Aroma Veil')] dbl=False
+09:51:50 REWARD pick Lum Berry (rank 20, pp_low=False, heal_need=False, zhp=100%, risky_next=False) from ['Lum Berry', '5× Poké Ball', 'X Speed']
+09:51:51 party opts=[3, 6, 7, 12, -1] labels=['Apply', 'Summary', 'Pokédex', 'Rename', 'Cancel'] -> 0
+09:51:51 party SelectModifierPhase: slot 0 option 3
+09:51:51 WAVE UP 16 -> 17
+09:51:53 w17 Zacian -> Mighty Cleave eff=[1] stab=False PP={'Earthquake': '10/10', 'Mighty Cleave': '2/5', 'Spirit Break': '9/15', 'Bitter Blade': '10/10'} foes=[('Bidoof', [0], 'Moody')] dbl=False
+09:51:54 REWARD pick Lum Berry (rank 20, pp_low=True, heal_need=False, zhp=100%, risky_next=True) from ['X Sp. Atk', '5× Poké Ball', 'Lum Berry']
+09:51:54 reward cursor 0 != 2 - re-set
+09:51:56 party opts=[3, 6, 7, 12, -1] labels=['Apply', 'Summary', 'Pokédex', 'Rename', 'Cancel'] -> 0
+09:51:56 party SelectModifierPhase: slot 0 option 3
+09:51:56 WAVE UP 17 -> 18
+09:51:58 w18 Zacian -> Spirit Break eff=[1] stab=True PP={'Earthquake': '10/10', 'Mighty Cleave': '1/5', 'Spirit Break': '9/15', 'Bitter Blade': '10/10'} foes=[('Lechonk', [0], 'Aroma Veil')] dbl=False
+09:51:59 REWARD pick Rare Candy (rank 1, pp_low=True, heal_need=False, zhp=100%, risky_next=False) from ['5× Poké Ball', 'Rare Candy', 'PP Max']
+09:52:00 reward cursor 0 != 1 - re-set
+09:52:01 party opts=[3, 6, 7, 12, -1] labels=['Apply', 'Summary', 'Pokédex', 'Rename', 'Cancel'] -> 0
+09:52:01 party SelectModifierPhase: slot 0 option 3
+09:52:02 ZHP w19 73/73 onField=True ph=NextEncounterPhase
+09:52:02 WAVE UP 18 -> 19
+09:52:03 w19 Zacian -> Spirit Break eff=[1] stab=True PP={'Earthquake': '10/10', 'Mighty Cleave': '1/5', 'Spirit Break': '8/15', 'Bitter Blade': '10/10'} foes=[('Skwovet', [0], 'Cheek Pouch')] dbl=False
+09:52:05 REWARD pick Rare Candy (rank 1, pp_low=True, heal_need=False, zhp=100%, risky_next=True) from ['Rare Candy', '1× Egg Voucher Plus', 'TM271 - Dazzling Gleam']
+09:52:06 party opts=[3, 6, 7, 12, -1] labels=['Apply', 'Summary', 'Pokédex', 'Rename', 'Cancel'] -> 0
+09:52:06 party SelectModifierPhase: slot 0 option 3
+09:52:07 ZHP w19 79/79 onField=True ph=LearnMovePhase
+09:52:09 Zacian switched OUT (alive) - not a faint
+09:52:09 ZHP w20 79/79 onField=False ph=NextEncounterPhase
+09:52:09 WAVE UP 19 -> 20
+09:52:11 ZHP w20 79/79 onField=True ph=ShowAbilityPhase
+09:52:13 w20 Zacian -> Mighty Cleave eff=[1] stab=False PP={'Earthquake': '10/10', 'Mighty Cleave': '1/5', 'Spirit Break': '7/15', 'Bitter Blade': '10/10'} foes=[('Oshawott', [10], 'Torrent')] dbl=False
+09:52:16 w20 Zacian -> Spirit Break eff=[1] stab=True PP={'Earthquake': '10/10', 'Mighty Cleave': '5/5', 'Spirit Break': '7/15', 'Bitter Blade': '10/10'} foes=[('Panpour', [10], 'Gluttony')] dbl=False
+09:52:24 Zacian switched OUT (alive) - not a faint
+09:52:24 ZHP w21 79/79 onField=False ph=ShowTrainerPhase
+09:52:24 WAVE UP 20 -> 21
+09:52:26 ZHP w21 79/79 onField=True ph=SummonPhase
+09:52:28 w21 Zacian -> Spirit Break eff=[1] stab=True PP={'Earthquake': '10/10', 'Mighty Cleave': '5/5', 'Spirit Break': '15/15', 'Bitter Blade': '10/10'} foes=[('Lillipup', [0], 'Pickup')] dbl=False
+09:52:31 REWARD pick Lum Berry (rank 20, pp_low=False, heal_need=False, zhp=100%, risky_next=False) from ['X Attack', 'Lure', 'Lum Berry']
+09:52:31 reward cursor 0 != 2 - re-set
+09:52:32 party opts=[3, 6, 7, 12, -1] labels=['Apply', 'Summary', 'Pokédex', 'Rename', 'Cancel'] -> 0
+09:52:32 party SelectModifierPhase: slot 0 option 3
+09:52:34 party opts=[3, 6, 7, 12, -1] labels=['Apply', 'Summary', 'Pokédex', 'Rename', 'Cancel'] -> 0
+09:52:34 party SelectModifierPhase: slot 0 option 3
+09:52:35 reward Lum Berry cannot be applied - blacklist for wave 21, back to rewards
+09:52:36 REWARD pick X Attack (rank 70, pp_low=False, heal_need=False, zhp=100%, risky_next=False) from ['X Attack', 'Lure']
+09:52:36 WAVE UP 21 -> 22
+09:52:37 w22 Zacian -> Mighty Cleave eff=[1] stab=False PP={'Earthquake': '10/10', 'Mighty Cleave': '5/5', 'Spirit Break': '14/15', 'Bitter Blade': '10/10'} foes=[('Lillipup', [0], 'Pickup')] dbl=False
+09:52:39 REWARD pick Ganlon Berry (rank 20, pp_low=False, heal_need=False, zhp=100%, risky_next=False) from ['Ganlon Berry', 'X Speed', '5× Poké Ball']
+09:52:40 party opts=[3, 6, 7, 12, -1] labels=['Apply', 'Summary', 'Pokédex', 'Rename', 'Cancel'] -> 0
+09:52:41 party SelectModifierPhase: slot 0 option 3
+09:52:41 WAVE UP 22 -> 23
+09:52:42 w23 Zacian -> Earthquake eff=[4] stab=False PP={'Earthquake': '10/10', 'Mighty Cleave': '4/5', 'Spirit Break': '14/15', 'Bitter Blade': '10/10'} foes=[('Varoom', [8, 3], 'Overcoat')] dbl=False
+09:52:45 REWARD pick X Accuracy (rank 70, pp_low=False, heal_need=False, zhp=100%, risky_next=False) from ['5× Poké Ball', 'Lure', 'X Accuracy']
+09:52:45 reward cursor 0 != 2 - re-set
+09:52:46 WAVE UP 23 -> 24
+09:52:47 w24 Zacian -> Spirit Break eff=[1] stab=True PP={'Earthquake': '9/10', 'Mighty Cleave': '4/5', 'Spirit Break': '14/15', 'Bitter Blade': '10/10'} foes=[('Lillipup', [0], 'Pickup')] dbl=False
+09:52:50 ZHP w24 82/82 onField=True ph=SelectModifierPhase
+09:52:50 REWARD pick Lum Berry (rank 20, pp_low=False, heal_need=False, zhp=100%, risky_next=True) from ['Lum Berry', '5× Poké Ball', 'TM264 - Misty Terrain']
+09:52:51 party opts=[3, 6, 7, 12, -1] labels=['Apply', 'Summary', 'Pokédex', 'Rename', 'Cancel'] -> 0
+09:52:51 party SelectModifierPhase: slot 0 option 3
+09:52:52 party opts=[3, 6, 7, 12, -1] labels=['Apply', 'Summary', 'Pokédex', 'Rename', 'Cancel'] -> 0
+09:52:52 party SelectModifierPhase: slot 0 option 3
+09:52:53 reward Lum Berry cannot be applied - blacklist for wave 24, back to rewards
+09:52:54 REWARD pick 5× Poké Ball (rank 88, pp_low=False, heal_need=False, zhp=100%, risky_next=True) from ['5× Poké Ball', 'TM264 - Misty Terrain']
+09:52:55 Zacian switched OUT (alive) - not a faint
+09:52:55 ZHP w25 82/82 onField=False ph=NextEncounterPhase
+09:52:55 WAVE UP 24 -> 25
+09:52:57 ZHP w25 82/82 onField=True ph=ShowAbilityPhase
+09:52:59 w25 Zacian -> Mighty Cleave eff=[2] stab=False PP={'Earthquake': '9/10', 'Mighty Cleave': '4/5', 'Spirit Break': '13/15', 'Bitter Blade': '10/10'} foes=[('Quilava', [9], 'Blaze')] dbl=False
+09:53:01 ZHP w25 85/85 onField=True ph=SwitchSummonPhase
+09:53:02 w25 Zacian -> Bitter Blade eff=[1] stab=False PP={'Earthquake': '9/10', 'Mighty Cleave': '3/5', 'Spirit Break': '13/15', 'Bitter Blade': '10/10'} foes=[('Gastly', [7, 3], 'Levitate')] dbl=False
+09:53:05 w25 Zacian -> Mighty Cleave eff=[2] stab=False PP={'Earthquake': '9/10', 'Mighty Cleave': '3/5', 'Spirit Break': '13/15', 'Bitter Blade': '9/10'} foes=[('Taillow', [0, 2], 'Guts')] dbl=False
+09:53:10 REWARD pick 1× Egg Voucher (rank 50, pp_low=False, heal_need=False, zhp=100%, risky_next=True) from ['TM291 - Steel Beam', '1× Egg Voucher', 'PP Up']
+09:53:10 reward cursor 0 != 1 - re-set
+09:53:11 WAVE UP 25 -> 26
+09:53:12 w26 Zacian -> Mighty Cleave eff=[2] stab=False PP={'Earthquake': '9/10', 'Mighty Cleave': '2/5', 'Spirit Break': '13/15', 'Bitter Blade': '9/10'} foes=[('Houndour', [16, 9], 'Early Bird')] dbl=False
+09:53:14 REWARD pick PP Up (rank 50, pp_low=True, heal_need=False, zhp=100%, risky_next=False) from ['X Defense', 'Super Lure', 'PP Up']
+09:53:14 reward cursor 0 != 2 - re-set
+09:53:16 PP item -> Mighty Cleave 1/5 (labels=['Earthquake', 'Mighty Cleave', 'Spirit Break', 'Bitter Blade', 'Cancel'])
+09:53:16 party SelectModifierPhase: slot 0 option 3001
+09:53:16 Zacian switched OUT (alive) - not a faint
+09:53:16 ZHP w27 85/85 onField=False ph=ShowTrainerPhase
+09:53:16 WAVE UP 26 -> 27
+09:53:18 mystery encounter w27: 3 options -> TOP option (0)
+09:53:20 option select in MysteryEncounterPhase - take default
+09:53:21 ZHP w27 85/85 onField=True ph=ShowAbilityPhase
+09:53:23 w27 Zacian -> Earthquake eff=[2] stab=False PP={'Earthquake': '9/10', 'Mighty Cleave': '2/6', 'Spirit Break': '13/15', 'Bitter Blade': '9/10'} foes=[('Pikachu', [12], 'Static')] dbl=False
+09:53:24 ZHP w27 81/85 onField=True ph=MoveEffectPhase
+09:53:26 REWARD pick Sitrus Berry (rank -37, pp_low=True, heal_need=True, zhp=95%, risky_next=True) from ['Leppa Berry', 'Enigma Berry', 'Leppa Berry', 'Sitrus Berry', 'Sitrus Berry']
+09:53:26 reward cursor 0 != 3 - re-set
+09:53:28 party opts=[3, 6, 7, 12, -1] labels=['Apply', 'Summary', 'Pokédex', 'Rename', 'Cancel'] -> 0
+09:53:28 party SelectModifierPhase: slot 0 option 3
+09:53:28 WAVE UP 27 -> 28
+09:53:30 w28 Zacian -> Mighty Cleave eff=[2] stab=False PP={'Earthquake': '8/10', 'Mighty Cleave': '2/6', 'Spirit Break': '13/15', 'Bitter Blade': '9/10'} foes=[('Houndour', [16, 9], 'Early Bird')] dbl=False
+09:53:31 REWARD pick Rare Candy (rank 1, pp_low=True, heal_need=False, zhp=95%, risky_next=False) from ['5× Poké Ball', 'Rare Candy', 'Relic Gold']
+09:53:32 reward cursor 0 != 1 - re-set
+09:53:33 party opts=[3, 6, 7, 12, -1] labels=['Apply', 'Summary', 'Pokédex', 'Rename', 'Cancel'] -> 0
+09:53:33 party SelectModifierPhase: slot 0 option 3
+09:53:34 ZHP w29 91/95 onField=True ph=NextEncounterPhase
+09:53:34 WAVE UP 28 -> 29
+09:53:35 w29 Zacian -> Spirit Break eff=[1] stab=True PP={'Earthquake': '8/10', 'Mighty Cleave': '1/6', 'Spirit Break': '13/15', 'Bitter Blade': '9/10'} foes=[('Zigzagoon', [0], 'Gluttony')] dbl=False
+09:53:37 REWARD pick Rare Candy (rank 1, pp_low=True, heal_need=True, zhp=96%, risky_next=True) from ['Rare Candy', 'Lure', '5× Poké Ball']
+09:53:38 party opts=[3, 6, 7, 12, -1] labels=['Apply', 'Summary', 'Pokédex', 'Rename', 'Cancel'] -> 0
+09:53:38 party SelectModifierPhase: slot 0 option 3
+09:53:39 ZHP w30 100/104 onField=True ph=NextEncounterPhase
+09:53:39 WAVE UP 29 -> 30
+09:53:40 w30 Zacian -> Spirit Break eff=[1] stab=True PP={'Earthquake': '8/10', 'Mighty Cleave': '1/6', 'Spirit Break': '12/15', 'Bitter Blade': '9/10'} foes=[('Fidough', [17], 'Own Tempo')] dbl=False
+09:53:42 ZHP w30 104/104 onField=True ph=PartyHealPhase
+09:53:45 Zacian switched OUT (alive) - not a faint
+09:53:45 ZHP w31 104/104 onField=False ph=ShowTrainerPhase
+09:53:45 WAVE UP 30 -> 31
+09:53:48 ZHP w31 104/104 onField=True ph=SummonPhase
+09:53:50 w31 Zacian -> Spirit Break eff=[2] stab=True PP={'Earthquake': '10/10', 'Mighty Cleave': '6/6', 'Spirit Break': '15/15', 'Bitter Blade': '10/10'} foes=[('Maschiff', [16], 'Run Away')] dbl=False
+09:53:52 REWARD pick Rare Candy (rank 1, pp_low=False, heal_need=False, zhp=100%, risky_next=False) from ['Rare Candy', '5× Rogue Ball', 'Lure']
+09:53:54 party opts=[3, 6, 7, 12, -1] labels=['Apply', 'Summary', 'Pokédex', 'Rename', 'Cancel'] -> 0
+09:53:54 party SelectModifierPhase: slot 0 option 3
+09:53:54 ZHP w31 113/113 onField=True ph=LearnMovePhase
+09:53:56 WAVE UP 31 -> 32
+09:53:57 w32 Zacian -> Mighty Cleave eff=[1] stab=False PP={'Earthquake': '10/10', 'Mighty Cleave': '6/6', 'Spirit Break': '14/15', 'Bitter Blade': '10/10'} foes=[('Rattata', [0], 'Run Away')] dbl=False
+09:53:58 ZHP w32 107/113 onField=True ph=MoveEffectPhase
+09:53:59 REWARD pick Lansat Berry (rank 20, pp_low=False, heal_need=False, zhp=95%, risky_next=False) from ['Lure', '5× Great Ball', 'Lansat Berry']
+09:53:59 reward cursor 0 != 2 - re-set
+09:54:01 party opts=[3, 6, 7, 12, -1] labels=['Apply', 'Summary', 'Pokédex', 'Rename', 'Cancel'] -> 0
+09:54:01 party SelectModifierPhase: slot 0 option 3
+09:54:01 WAVE UP 32 -> 33
+09:54:03 w33 Zacian -> Spirit Break eff=[4] stab=True PP={'Earthquake': '10/10', 'Mighty Cleave': '5/6', 'Spirit Break': '14/15', 'Bitter Blade': '10/10'} foes=[('Scraggy', [16, 1], 'Shed Skin')] dbl=False
+09:54:05 REWARD pick 5× Poké Ball (rank 88, pp_low=False, heal_need=False, zhp=95%, risky_next=False) from ['Memory Mushroom', 'TM188 - Focus Blast', '5× Poké Ball']
+09:54:05 reward cursor 0 != 2 - re-set
+09:54:06 WAVE UP 33 -> 34
+09:54:08 w34 Zacian -> Spirit Break eff=[1] stab=True PP={'Earthquake': '10/10', 'Mighty Cleave': '5/6', 'Spirit Break': '13/15', 'Bitter Blade': '10/10'} foes=[('Glameow', [0], 'Limber')] dbl=False
+09:54:09 REWARD pick Apicot Berry (rank 20, pp_low=False, heal_need=True, zhp=95%, risky_next=True) from ['5× Poké Ball', 'Apicot Berry', 'X Sp. Def']
+09:54:10 reward cursor 0 != 1 - re-set
+09:54:11 party opts=[3, 6, 7, 12, -1] labels=['Apply', 'Summary', 'Pokédex', 'Rename', 'Cancel'] -> 0
+09:54:11 party SelectModifierPhase: slot 0 option 3
+09:54:12 Zacian switched OUT (alive) - not a faint
+09:54:12 ZHP w35 107/113 onField=False ph=ShowTrainerPhase
+09:54:12 WAVE UP 34 -> 35
+09:54:14 ZHP w35 107/113 onField=True ph=SummonPhase
+09:54:16 w35 Zacian -> Mighty Cleave eff=[1] stab=False PP={'Earthquake': '10/10', 'Mighty Cleave': '5/6', 'Spirit Break': '12/15', 'Bitter Blade': '10/10'} foes=[('Komala', [0], 'Comatose')] dbl=False
+09:54:19 w35 Zacian -> Spirit Break eff=[1] stab=True PP={'Earthquake': '10/10', 'Mighty Cleave': '4/6', 'Spirit Break': '12/15', 'Bitter Blade': '10/10'} foes=[('Gumshoos', [0], 'Stakeout')] dbl=False
+09:54:22 REWARD pick Lum Berry (rank 20, pp_low=False, heal_need=True, zhp=95%, risky_next=True) from ['X Sp. Def', 'Lum Berry', '5× Poké Ball']
+09:54:22 reward cursor 0 != 1 - re-set
+09:54:23 party opts=[3, 6, 7, 12, -1] labels=['Apply', 'Summary', 'Pokédex', 'Rename', 'Cancel'] -> 0
+09:54:24 party SelectModifierPhase: slot 0 option 3
+09:54:25 party opts=[3, 6, 7, 12, -1] labels=['Apply', 'Summary', 'Pokédex', 'Rename', 'Cancel'] -> 0
+09:54:25 party SelectModifierPhase: slot 0 option 3
+09:54:26 reward Lum Berry cannot be applied - blacklist for wave 35, back to rewards
+09:54:27 REWARD pick X Sp. Def (rank 70, pp_low=False, heal_need=True, zhp=95%, risky_next=True) from ['X Sp. Def', '5× Poké Ball']
+09:54:28 WAVE UP 35 -> 36
+09:54:30 w36 Zacian -> Earthquake eff=[2] stab=False PP={'Earthquake': '10/10', 'Mighty Cleave': '4/6', 'Spirit Break': '11/15', 'Bitter Blade': '10/10'} foes=[('Grimer', [3], 'Sticky Hold')] dbl=False
+09:54:32 REWARD pick Sitrus Berry (rank 20, pp_low=False, heal_need=False, zhp=95%, risky_next=False) from ['X Accuracy', '5× Poké Ball', 'Sitrus Berry']
+09:54:33 reward cursor 0 != 2 - re-set
+09:54:34 party opts=[3, 6, 7, 12, -1] labels=['Apply', 'Summary', 'Pokédex', 'Rename', 'Cancel'] -> 0
+09:54:34 party SelectModifierPhase: slot 0 option 3
+09:54:35 party opts=[3, 6, 7, 12, -1] labels=['Apply', 'Summary', 'Pokédex', 'Rename', 'Cancel'] -> 0
+09:54:35 party SelectModifierPhase: slot 0 option 3
+09:54:36 reward Sitrus Berry cannot be applied - blacklist for wave 36, back to rewards
+09:54:37 REWARD pick X Accuracy (rank 70, pp_low=False, heal_need=False, zhp=95%, risky_next=False) from ['X Accuracy', '5× Poké Ball']
+09:54:38 WAVE UP 36 -> 37
+09:54:39 w37 Zacian -> Spirit Break eff=[1] stab=True PP={'Earthquake': '9/10', 'Mighty Cleave': '4/6', 'Spirit Break': '11/15', 'Bitter Blade': '10/10'} foes=[('Glameow', [0], 'Own Tempo')] dbl=False
+09:54:41 REWARD pick Big Nugget (rank 30, pp_low=False, heal_need=True, zhp=95%, risky_next=True) from ['Candy Jar', 'Lure', 'Big Nugget']
+09:54:42 WAVE UP 37 -> 38
+09:54:44 w38 Zacian -> Earthquake eff=[2] stab=False PP={'Earthquake': '9/10', 'Mighty Cleave': '4/6', 'Spirit Break': '10/15', 'Bitter Blade': '10/10'} foes=[('Koffing', [3], 'Neutralizing Gas')] dbl=False
+09:54:48 REWARD pick Dire Hit (rank 70, pp_low=False, heal_need=False, zhp=95%, risky_next=False) from ['5× Poké Ball', 'Dire Hit', 'TM258 - Snarl']
+09:54:49 Zacian switched OUT (alive) - not a faint
+09:54:49 ZHP w39 107/113 onField=False ph=NextEncounterPhase
+09:54:49 WAVE UP 38 -> 39
+09:54:52 ZHP w39 107/113 onField=True ph=ShowAbilityPhase
+09:54:54 w39 Zacian -> Spirit Break eff=[2] stab=True PP={'Earthquake': '8/10', 'Mighty Cleave': '4/6', 'Spirit Break': '10/15', 'Bitter Blade': '10/10'} foes=[('Breloom', [11, 1], 'Effect Spore')] dbl=False
+09:54:57 w39 Zacian -> Spirit Break eff=[1] stab=True PP={'Earthquake': '8/10', 'Mighty Cleave': '4/6', 'Spirit Break': '9/15', 'Bitter Blade': '10/10'} foes=[('Swirlix', [17], 'Unburden')] dbl=False
+09:55:00 REWARD pick Rare Candy (rank 1, pp_low=False, heal_need=True, zhp=95%, risky_next=True) from ['Rare Candy', 'Petaya Berry', 'Lure']
+09:55:02 party opts=[3, 6, 7, 12, -1] labels=['Apply', 'Summary', 'Pokédex', 'Rename', 'Cancel'] -> 0
+09:55:02 party SelectModifierPhase: slot 0 option 3
+09:55:02 ZHP w40 117/123 onField=True ph=NextEncounterPhase
+09:55:02 WAVE UP 39 -> 40
+09:55:04 w40 Zacian -> Earthquake eff=[2] stab=False PP={'Earthquake': '8/10', 'Mighty Cleave': '4/6', 'Spirit Break': '8/15', 'Bitter Blade': '10/10'} foes=[('Trubbish', [3], 'Stench')] dbl=False
+09:55:08 ZHP w40 123/123 onField=True ph=PartyHealPhase
+09:55:12 Zacian switched OUT (alive) - not a faint
+09:55:12 ZHP w41 123/123 onField=False ph=ShowTrainerPhase
+09:55:12 WAVE UP 40 -> 41
+09:55:18 ZHP w41 123/123 onField=True ph=SummonPhase
+09:55:20 w41 Zacian -> Spirit Break eff=[2] stab=True PP={'Earthquake': '10/10', 'Mighty Cleave': '6/6', 'Spirit Break': '15/15', 'Bitter Blade': '10/10'} foes=[('Timburr', [1], 'Guts')] dbl=False
+09:55:22 REWARD pick Map (rank 50, pp_low=False, heal_need=False, zhp=100%, risky_next=False) from ['5× Poké Ball', 'TM060 - Reversal', 'Map']
+09:55:23 reward cursor 0 != 2 - re-set
+09:55:24 Zacian switched OUT (alive) - not a faint
+09:55:24 ZHP w42 123/123 onField=False ph=NextEncounterPhase
+09:55:24 WAVE UP 41 -> 42
+09:55:27 ZHP w42 123/123 onField=True ph=ShowAbilityPhase
+09:55:29 w42 Zacian -> Earthquake eff=[2] stab=False PP={'Earthquake': '10/10', 'Mighty Cleave': '6/6', 'Spirit Break': '14/15', 'Bitter Blade': '10/10'} foes=[('Drednaw', [10, 5], 'Strong Jaw')] dbl=False
+09:55:32 ZHP w42 126/126 onField=True ph=SwitchSummonPhase
+09:55:33 w42 Zacian -> Mighty Cleave eff=[2] stab=False PP={'Earthquake': '9/10', 'Mighty Cleave': '6/6', 'Spirit Break': '14/15', 'Bitter Blade': '10/10'} foes=[('Dwebble', [6, 5], 'Shell Armor')] dbl=False
+09:55:35 ZHP w42 129/129 onField=True ph=TrainerVictoryPhase
+09:55:36 REWARD pick X Sp. Atk (rank 70, pp_low=False, heal_need=False, zhp=100%, risky_next=True) from ['Super Lure', 'X Sp. Atk', '5× Poké Ball']
+09:55:37 reward cursor 0 != 1 - re-set
+09:55:38 WAVE UP 42 -> 43
+09:55:39 w43 Zacian -> Spirit Break eff=[1] stab=True PP={'Earthquake': '9/10', 'Mighty Cleave': '5/6', 'Spirit Break': '14/15', 'Bitter Blade': '10/10'} foes=[('Phanpy', [4], 'Pickup')] dbl=False
+09:55:41 REWARD pick Lum Berry (rank 20, pp_low=False, heal_need=False, zhp=100%, risky_next=False) from ['Lum Berry', '5× Poké Ball', 'Nugget']
+09:55:42 party opts=[3, 6, 7, 12, -1] labels=['Apply', 'Summary', 'Pokédex', 'Rename', 'Cancel'] -> 0
+09:55:42 party SelectModifierPhase: slot 0 option 3
+09:55:44 party opts=[3, 6, 7, 12, -1] labels=['Apply', 'Summary', 'Pokédex', 'Rename', 'Cancel'] -> 0
+09:55:44 party SelectModifierPhase: slot 0 option 3
+09:55:44 reward Lum Berry cannot be applied - blacklist for wave 43, back to rewards
+09:55:46 REWARD pick Nugget (rank 30, pp_low=False, heal_need=False, zhp=100%, risky_next=False) from ['5× Poké Ball', 'Nugget']
+09:55:46 WAVE UP 43 -> 44
+09:55:48 w44 Zacian -> Spirit Break eff=[2] stab=True PP={'Earthquake': '9/10', 'Mighty Cleave': '5/6', 'Spirit Break': '13/15', 'Bitter Blade': '10/10'} foes=[('Hariyama', [1], 'Guts')] dbl=False
+09:55:50 REWARD pick Rare Candy (rank 1, pp_low=False, heal_need=False, zhp=100%, risky_next=True) from ['Rare Candy', '5× Poké Ball', 'TM058 - Snore']
+09:55:51 party opts=[3, 6, 7, 12, -1] labels=['Apply', 'Summary', 'Pokédex', 'Rename', 'Cancel'] -> 0
+09:55:51 party SelectModifierPhase: slot 0 option 3
+09:55:52 Zacian switched OUT (alive) - not a faint
+09:55:52 ZHP w45 139/139 onField=False ph=ShowTrainerPhase
+09:55:52 WAVE UP 44 -> 45
+09:55:54 ZHP w45 139/139 onField=True ph=ShowAbilityPhase
+09:55:56 w45 Zacian -> Mighty Cleave eff=[2] stab=False PP={'Earthquake': '9/10', 'Mighty Cleave': '5/6', 'Spirit Break': '12/15', 'Bitter Blade': '10/10'} foes=[('Houndoom', [16, 9], 'Flash Fire')] dbl=False
+09:56:00 REWARD pick Hard Stone (rank 50, pp_low=False, heal_need=False, zhp=100%, risky_next=True) from ['Hard Stone', 'Lure', '5× Poké Ball']
+09:56:01 party opts=[3, 6, 7, 12, -1] labels=['Apply', 'Summary', 'Pokédex', 'Rename', 'Cancel'] -> 0
+09:56:01 party SelectModifierPhase: slot 0 option 3
+09:56:01 Zacian switched OUT (alive) - not a faint
+09:56:01 ZHP w46 139/139 onField=False ph=ShowTrainerPhase
+09:56:01 WAVE UP 45 -> 46
+09:56:05 mystery encounter w46: 3 options -> TOP option (0)
+09:56:05 option select in MysteryEncounterPhase - take default
+09:56:06 option select in MysteryEncounterBattlePhase - take default
+09:56:08 ZHP w46 139/139 onField=True ph=ShowAbilityPhase
+09:56:10 w46 Zacian -> Earthquake eff=[2] stab=False PP={'Earthquake': '9/10', 'Mighty Cleave': '4/6', 'Spirit Break': '12/15', 'Bitter Blade': '10/10'} foes=[('Nosepass', [5], 'Sturdy')] dbl=False
+09:56:12 ZHP w46 129/139 onField=True ph=MessagePhase
+09:56:13 ZHP w46 123/139 onField=True ph=MessagePhase
+09:56:14 w46 Zacian -> Earthquake eff=[2] stab=False PP={'Earthquake': '8/10', 'Mighty Cleave': '4/6', 'Spirit Break': '12/15', 'Bitter Blade': '10/10'} foes=[('Nosepass', [5], 'Sturdy')] dbl=False
+09:56:17 w46 Zacian -> Spirit Break eff=[2] stab=True PP={'Earthquake': '7/10', 'Mighty Cleave': '4/6', 'Spirit Break': '12/15', 'Bitter Blade': '10/10'} foes=[('Goomy', [15], 'Sap Sipper')] dbl=False
+09:56:20 REWARD pick TM046 - Swift (rank 99, pp_low=False, heal_need=True, zhp=88%, risky_next=True) from ['TM046 - Swift', 'TM240 - Retaliate', 'Memory Mushroom']
+09:56:21 TM teach menu for TM046 - Swift - skip, blacklist for wave 46
+09:56:23 REWARD pick TM046 - Swift (rank 99, pp_low=False, heal_need=True, zhp=88%, risky_next=True) from ['TM046 - Swift', 'TM240 - Retaliate', 'Memory Mushroom']
+09:56:24 TM teach menu for TM046 - Swift - skip, blacklist for wave 46
+09:56:25 REWARD pick TM046 - Swift (rank 99, pp_low=False, heal_need=True, zhp=88%, risky_next=True) from ['TM046 - Swift', 'TM240 - Retaliate', 'Memory Mushroom']
+09:56:27 TM teach menu for TM046 - Swift - skip, blacklist for wave 46
+09:56:28 REWARD pick TM046 - Swift (rank 99, pp_low=False, heal_need=True, zhp=88%, risky_next=True) from ['TM046 - Swift', 'TM240 - Retaliate', 'Memory Mushroom']
+09:56:29 TM teach menu for TM046 - Swift - skip, blacklist for wave 46
+09:56:31 REWARD pick TM046 - Swift (rank 99, pp_low=False, heal_need=True, zhp=88%, risky_next=True) from ['TM046 - Swift', 'TM240 - Retaliate', 'Memory Mushroom']
+09:56:32 TM teach menu for TM046 - Swift - skip, blacklist for wave 46
+09:56:34 REWARD pick TM046 - Swift (rank 99, pp_low=False, heal_need=True, zhp=88%, risky_next=True) from ['TM046 - Swift', 'TM240 - Retaliate', 'Memory Mushroom']
+09:56:35 TM teach menu for TM046 - Swift - skip, blacklist for wave 46
+09:56:36 REWARD pick TM046 - Swift (rank 99, pp_low=False, heal_need=True, zhp=88%, risky_next=True) from ['TM046 - Swift', 'TM240 - Retaliate', 'Memory Mushroom']
+09:56:38 TM teach menu for TM046 - Swift - skip, blacklist for wave 46
+09:56:39 REWARD pick TM046 - Swift (rank 99, pp_low=False, heal_need=True, zhp=88%, risky_next=True) from ['TM046 - Swift', 'TM240 - Retaliate', 'Memory Mushroom']
+09:56:40 TM teach menu for TM046 - Swift - skip, blacklist for wave 46
+09:56:42 REWARD pick TM046 - Swift (rank 99, pp_low=False, heal_need=True, zhp=88%, risky_next=True) from ['TM046 - Swift', 'TM240 - Retaliate', 'Memory Mushroom']
+09:56:43 TM teach menu for TM046 - Swift - skip, blacklist for wave 46
+09:56:45 REWARD pick TM046 - Swift (rank 99, pp_low=False, heal_need=True, zhp=88%, risky_next=True) from ['TM046 - Swift', 'TM240 - Retaliate', 'Memory Mushroom']
+09:56:46 TM teach menu for TM046 - Swift - skip, blacklist for wave 46
+09:56:47 REWARD pick TM046 - Swift (rank 99, pp_low=False, heal_need=True, zhp=88%, risky_next=True) from ['TM046 - Swift', 'TM240 - Retaliate', 'Memory Mushroom']
+09:56:49 TM teach menu for TM046 - Swift - skip, blacklist for wave 46
+09:56:50 REWARD pick TM046 - Swift (rank 99, pp_low=False, heal_need=True, zhp=88%, risky_next=True) from ['TM046 - Swift', 'TM240 - Retaliate', 'Memory Mushroom']
+09:56:51 TM teach menu for TM046 - Swift - skip, blacklist for wave 46
+09:56:53 REWARD pick TM046 - Swift (rank 99, pp_low=False, heal_need=True, zhp=88%, risky_next=True) from ['TM046 - Swift', 'TM240 - Retaliate', 'Memory Mushroom']
+09:56:54 TM teach menu for TM046 - Swift - skip, blacklist for wave 46
+09:56:56 REWARD pick TM046 - Swift (rank 99, pp_low=False, heal_need=True, zhp=88%, risky_next=True) from ['TM046 - Swift', 'TM240 - Retaliate', 'Memory Mushroom']
+09:56:57 TM teach menu for TM046 - Swift - skip, blacklist for wave 46
+09:56:58 REWARD pick TM046 - Swift (rank 99, pp_low=False, heal_need=True, zhp=88%, risky_next=True) from ['TM046 - Swift', 'TM240 - Retaliate', 'Memory Mushroom']
+09:57:00 TM teach menu for TM046 - Swift - skip, blacklist for wave 46
+09:57:01 REWARD pick TM046 - Swift (rank 99, pp_low=False, heal_need=True, zhp=88%, risky_next=True) from ['TM046 - Swift', 'TM240 - Retaliate', 'Memory Mushroom']
+09:57:02 TM teach menu for TM046 - Swift - skip, blacklist for wave 46
+09:57:04 REWARD pick TM046 - Swift (rank 99, pp_low=False, heal_need=True, zhp=88%, risky_next=True) from ['TM046 - Swift', 'TM240 - Retaliate', 'Memory Mushroom']
+09:57:05 TM teach menu for TM046 - Swift - skip, blacklist for wave 46
+09:57:07 REWARD pick TM046 - Swift (rank 99, pp_low=False, heal_need=True, zhp=88%, risky_next=True) from ['TM046 - Swift', 'TM240 - Retaliate', 'Memory Mushroom']
+09:57:08 TM teach menu for TM046 - Swift - skip, blacklist for wave 46
+09:57:09 REWARD pick TM046 - Swift (rank 99, pp_low=False, heal_need=True, zhp=88%, risky_next=True) from ['TM046 - Swift', 'TM240 - Retaliate', 'Memory Mushroom']
+09:57:11 TM teach menu for TM046 - Swift - skip, blacklist for wave 46
+09:57:12 REWARD pick TM046 - Swift (rank 99, pp_low=False, heal_need=True, zhp=88%, risky_next=True) from ['TM046 - Swift', 'TM240 - Retaliate', 'Memory Mushroom']
+09:57:13 TM teach menu for TM046 - Swift - skip, blacklist for wave 46
+09:57:15 REWARD pick TM046 - Swift (rank 99, pp_low=False, heal_need=True, zhp=88%, risky_next=True) from ['TM046 - Swift', 'TM240 - Retaliate', 'Memory Mushroom']
+09:57:16 TM teach menu for TM046 - Swift - skip, blacklist for wave 46
+09:57:18 REWARD pick TM046 - Swift (rank 99, pp_low=False, heal_need=True, zhp=88%, risky_next=True) from ['TM046 - Swift', 'TM240 - Retaliate', 'Memory Mushroom']
+09:57:19 TM teach menu for TM046 - Swift - skip, blacklist for wave 46
+09:57:20 REWARD pick TM046 - Swift (rank 99, pp_low=False, heal_need=True, zhp=88%, risky_next=True) from ['TM046 - Swift', 'TM240 - Retaliate', 'Memory Mushroom']
+09:57:22 TM teach menu for TM046 - Swift - skip, blacklist for wave 46
+09:57:23 REWARD pick TM046 - Swift (rank 99, pp_low=False, heal_need=True, zhp=88%, risky_next=True) from ['TM046 - Swift', 'TM240 - Retaliate', 'Memory Mushroom']
+09:57:24 TM teach menu for TM046 - Swift - skip, blacklist for wave 46
+09:57:26 REWARD pick TM046 - Swift (rank 99, pp_low=False, heal_need=True, zhp=88%, risky_next=True) from ['TM046 - Swift', 'TM240 - Retaliate', 'Memory Mushroom']
+09:57:27 TM teach menu for TM046 - Swift - skip, blacklist for wave 46
+09:57:29 REWARD pick TM046 - Swift (rank 99, pp_low=False, heal_need=True, zhp=88%, risky_next=True) from ['TM046 - Swift', 'TM240 - Retaliate', 'Memory Mushroom']
+09:57:30 TM teach menu for TM046 - Swift - skip, blacklist for wave 46
+09:57:31 REWARD pick TM046 - Swift (rank 99, pp_low=False, heal_need=True, zhp=88%, risky_next=True) from ['TM046 - Swift', 'TM240 - Retaliate', 'Memory Mushroom']
+09:57:33 TM teach menu for TM046 - Swift - skip, blacklist for wave 46
+09:57:34 REWARD pick TM046 - Swift (rank 99, pp_low=False, heal_need=True, zhp=88%, risky_next=True) from ['TM046 - Swift', 'TM240 - Retaliate', 'Memory Mushroom']
+09:57:35 TM teach menu for TM046 - Swift - skip, blacklist for wave 46
+09:57:37 REWARD pick TM046 - Swift (rank 99, pp_low=False, heal_need=True, zhp=88%, risky_next=True) from ['TM046 - Swift', 'TM240 - Retaliate', 'Memory Mushroom']
+09:57:38 TM teach menu for TM046 - Swift - skip, blacklist for wave 46
+09:57:40 REWARD pick TM046 - Swift (rank 99, pp_low=False, heal_need=True, zhp=88%, risky_next=True) from ['TM046 - Swift', 'TM240 - Retaliate', 'Memory Mushroom']
+09:57:41 TM teach menu for TM046 - Swift - skip, blacklist for wave 46
+09:57:42 REWARD pick TM046 - Swift (rank 99, pp_low=False, heal_need=True, zhp=88%, risky_next=True) from ['TM046 - Swift', 'TM240 - Retaliate', 'Memory Mushroom']
+09:57:44 TM teach menu for TM046 - Swift - skip, blacklist for wave 46
+09:57:45 REWARD pick TM046 - Swift (rank 99, pp_low=False, heal_need=True, zhp=88%, risky_next=True) from ['TM046 - Swift', 'TM240 - Retaliate', 'Memory Mushroom']
+09:57:46 TM teach menu for TM046 - Swift - skip, blacklist for wave 46
+09:57:48 REWARD pick TM046 - Swift (rank 99, pp_low=False, heal_need=True, zhp=88%, risky_next=True) from ['TM046 - Swift', 'TM240 - Retaliate', 'Memory Mushroom']
+09:57:49 TM teach menu for TM046 - Swift - skip, blacklist for wave 46
+09:57:51 REWARD pick TM046 - Swift (rank 99, pp_low=False, heal_need=True, zhp=88%, risky_next=True) from ['TM046 - Swift', 'TM240 - Retaliate', 'Memory Mushroom']
+09:57:52 TM teach menu for TM046 - Swift - skip, blacklist for wave 46
+09:57:53 REWARD pick TM046 - Swift (rank 99, pp_low=False, heal_need=True, zhp=88%, risky_next=True) from ['TM046 - Swift', 'TM240 - Retaliate', 'Memory Mushroom']
+09:57:54 TM teach menu for TM046 - Swift - skip, blacklist for wave 46
+09:57:56 REWARD pick TM046 - Swift (rank 99, pp_low=False, heal_need=True, zhp=88%, risky_next=True) from ['TM046 - Swift', 'TM240 - Retaliate', 'Memory Mushroom']
+09:57:57 TM teach menu for TM046 - Swift - skip, blacklist for wave 46
+09:57:59 REWARD pick TM046 - Swift (rank 99, pp_low=False, heal_need=True, zhp=88%, risky_next=True) from ['TM046 - Swift', 'TM240 - Retaliate', 'Memory Mushroom']
+09:58:00 TM teach menu for TM046 - Swift - skip, blacklist for wave 46
+09:58:02 REWARD pick TM046 - Swift (rank 99, pp_low=False, heal_need=True, zhp=88%, risky_next=True) from ['TM046 - Swift', 'TM240 - Retaliate', 'Memory Mushroom']
+09:58:03 TM teach menu for TM046 - Swift - skip, blacklist for wave 46
+09:58:04 REWARD pick TM046 - Swift (rank 99, pp_low=False, heal_need=True, zhp=88%, risky_next=True) from ['TM046 - Swift', 'TM240 - Retaliate', 'Memory Mushroom']
+09:58:05 TM teach menu for TM046 - Swift - skip, blacklist for wave 46
+09:58:07 REWARD pick TM046 - Swift (rank 99, pp_low=False, heal_need=True, zhp=88%, risky_next=True) from ['TM046 - Swift', 'TM240 - Retaliate', 'Memory Mushroom']
+09:58:08 TM teach menu for TM046 - Swift - skip, blacklist for wave 46
+09:58:10 REWARD pick TM046 - Swift (rank 99, pp_low=False, heal_need=True, zhp=88%, risky_next=True) from ['TM046 - Swift', 'TM240 - Retaliate', 'Memory Mushroom']
+09:58:11 TM teach menu for TM046 - Swift - skip, blacklist for wave 46
+09:58:13 REWARD pick TM046 - Swift (rank 99, pp_low=False, heal_need=True, zhp=88%, risky_next=True) from ['TM046 - Swift', 'TM240 - Retaliate', 'Memory Mushroom']
+09:58:14 TM teach menu for TM046 - Swift - skip, blacklist for wave 46
+09:58:15 REWARD pick TM046 - Swift (rank 99, pp_low=False, heal_need=True, zhp=88%, risky_next=True) from ['TM046 - Swift', 'TM240 - Retaliate', 'Memory Mushroom']
+09:58:16 TM teach menu for TM046 - Swift - skip, blacklist for wave 46
+09:58:18 REWARD pick TM046 - Swift (rank 99, pp_low=False, heal_need=True, zhp=88%, risky_next=True) from ['TM046 - Swift', 'TM240 - Retaliate', 'Memory Mushroom']
+09:58:19 TM teach menu for TM046 - Swift - skip, blacklist for wave 46
+09:58:21 REWARD pick TM046 - Swift (rank 99, pp_low=False, heal_need=True, zhp=88%, risky_next=True) from ['TM046 - Swift', 'TM240 - Retaliate', 'Memory Mushroom']
+09:58:22 TM teach menu for TM046 - Swift - skip, blacklist for wave 46
+09:58:24 REWARD pick TM046 - Swift (rank 99, pp_low=False, heal_need=True, zhp=88%, risky_next=True) from ['TM046 - Swift', 'TM240 - Retaliate', 'Memory Mushroom']
+09:58:25 TM teach menu for TM046 - Swift - skip, blacklist for wave 46
+09:58:26 REWARD pick TM046 - Swift (rank 99, pp_low=False, heal_need=True, zhp=88%, risky_next=True) from ['TM046 - Swift', 'TM240 - Retaliate', 'Memory Mushroom']
+09:58:27 TM teach menu for TM046 - Swift - skip, blacklist for wave 46
+09:58:29 REWARD pick TM046 - Swift (rank 99, pp_low=False, heal_need=True, zhp=88%, risky_next=True) from ['TM046 - Swift', 'TM240 - Retaliate', 'Memory Mushroom']
+09:58:30 TM teach menu for TM046 - Swift - skip, blacklist for wave 46
+09:58:32 REWARD pick TM046 - Swift (rank 99, pp_low=False, heal_need=True, zhp=88%, risky_next=True) from ['TM046 - Swift', 'TM240 - Retaliate', 'Memory Mushroom']
+09:58:33 TM teach menu for TM046 - Swift - skip, blacklist for wave 46
+09:58:34 REWARD pick TM046 - Swift (rank 99, pp_low=False, heal_need=True, zhp=88%, risky_next=True) from ['TM046 - Swift', 'TM240 - Retaliate', 'Memory Mushroom']
+09:58:36 TM teach menu for TM046 - Swift - skip, blacklist for wave 46
+09:58:37 REWARD pick TM046 - Swift (rank 99, pp_low=False, heal_need=True, zhp=88%, risky_next=True) from ['TM046 - Swift', 'TM240 - Retaliate', 'Memory Mushroom']
+09:58:38 TM teach menu for TM046 - Swift - skip, blacklist for wave 46
+09:58:40 REWARD pick TM046 - Swift (rank 99, pp_low=False, heal_need=True, zhp=88%, risky_next=True) from ['TM046 - Swift', 'TM240 - Retaliate', 'Memory Mushroom']
+09:58:41 TM teach menu for TM046 - Swift - skip, blacklist for wave 46
+09:58:43 REWARD pick TM046 - Swift (rank 99, pp_low=False, heal_need=True, zhp=88%, risky_next=True) from ['TM046 - Swift', 'TM240 - Retaliate', 'Memory Mushroom']
+09:58:44 TM teach menu for TM046 - Swift - skip, blacklist for wave 46
+09:58:45 REWARD pick TM046 - Swift (rank 99, pp_low=False, heal_need=True, zhp=88%, risky_next=True) from ['TM046 - Swift', 'TM240 - Retaliate', 'Memory Mushroom']
+09:58:47 TM teach menu for TM046 - Swift - skip, blacklist for wave 46
+09:58:48 REWARD pick TM046 - Swift (rank 99, pp_low=False, heal_need=True, zhp=88%, risky_next=True) from ['TM046 - Swift', 'TM240 - Retaliate', 'Memory Mushroom']
+09:58:49 TM teach menu for TM046 - Swift - skip, blacklist for wave 46
+09:58:51 REWARD pick TM046 - Swift (rank 99, pp_low=False, heal_need=True, zhp=88%, risky_next=True) from ['TM046 - Swift', 'TM240 - Retaliate', 'Memory Mushroom']
+09:58:52 TM teach menu for TM046 - Swift - skip, blacklist for wave 46
+09:58:54 REWARD pick TM046 - Swift (rank 99, pp_low=False, heal_need=True, zhp=88%, risky_next=True) from ['TM046 - Swift', 'TM240 - Retaliate', 'Memory Mushroom']
+09:58:55 TM teach menu for TM046 - Swift - skip, blacklist for wave 46
+09:58:56 REWARD pick TM046 - Swift (rank 99, pp_low=False, heal_need=True, zhp=88%, risky_next=True) from ['TM046 - Swift', 'TM240 - Retaliate', 'Memory Mushroom']
+09:58:58 TM teach menu for TM046 - Swift - skip, blacklist for wave 46
+09:58:59 REWARD pick TM046 - Swift (rank 99, pp_low=False, heal_need=True, zhp=88%, risky_next=True) from ['TM046 - Swift', 'TM240 - Retaliate', 'Memory Mushroom']
+09:59:00 TM teach menu for TM046 - Swift - skip, blacklist for wave 46
+09:59:02 REWARD pick TM046 - Swift (rank 99, pp_low=False, heal_need=True, zhp=88%, risky_next=True) from ['TM046 - Swift', 'TM240 - Retaliate', 'Memory Mushroom']
+09:59:03 TM teach menu for TM046 - Swift - skip, blacklist for wave 46
+09:59:05 REWARD pick TM046 - Swift (rank 99, pp_low=False, heal_need=True, zhp=88%, risky_next=True) from ['TM046 - Swift', 'TM240 - Retaliate', 'Memory Mushroom']
+09:59:06 TM teach menu for TM046 - Swift - skip, blacklist for wave 46
+09:59:07 REWARD pick TM046 - Swift (rank 99, pp_low=False, heal_need=True, zhp=88%, risky_next=True) from ['TM046 - Swift', 'TM240 - Retaliate', 'Memory Mushroom']
+09:59:09 TM teach menu for TM046 - Swift - skip, blacklist for wave 46
+09:59:10 REWARD pick TM046 - Swift (rank 99, pp_low=False, heal_need=True, zhp=88%, risky_next=True) from ['TM046 - Swift', 'TM240 - Retaliate', 'Memory Mushroom']
+09:59:11 TM teach menu for TM046 - Swift - skip, blacklist for wave 46
+09:59:13 REWARD pick TM046 - Swift (rank 99, pp_low=False, heal_need=True, zhp=88%, risky_next=True) from ['TM046 - Swift', 'TM240 - Retaliate', 'Memory Mushroom']
+09:59:14 TM teach menu for TM046 - Swift - skip, blacklist for wave 46
+09:59:16 REWARD pick TM046 - Swift (rank 99, pp_low=False, heal_need=True, zhp=88%, risky_next=True) from ['TM046 - Swift', 'TM240 - Retaliate', 'Memory Mushroom']
+09:59:17 TM teach menu for TM046 - Swift - skip, blacklist for wave 46
