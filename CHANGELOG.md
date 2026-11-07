@@ -2778,3 +2778,27 @@ Rare (variant 2) shiny Xatu Lv61 in double with Claydol. Unchanged at 10:52 (Com
 - Turn 1: Rayquaza V-create single-target at partner Sentret (_sw.py mv 0 1 + tgt 3), Abra switched to Spinda (_sw.py sw 1 3). Partner KO'd, shiny untouched 26/26.
 - Turn 2: Poké Ball (5 -> 4) caught first throw ("Gotcha!", cap_rd.py 80, catch_ack.py). Party was 5, so Sentret joined as slot 6.
 - Shiny Log row added (pr_161s.png present). _restart_after_shiny.py relaunched hidden PID 117324 (parent 3808 WmiPrvSE), single instance; fighting w15 by 13:36.
+
+## 2026-11-07 ~13:57-14:04 MST - wild shiny Magmar w70 doubles (boss, 2 segments) Caught (Rogue Ball)
+- Farm (PID 117324) stopped shiny_enemy Magmar Lv47 variant 1 (raw 0) w70 boss double with Electabuzz Lv56 boss, 13:56:59. At 13:59:03 (>2 min) unchanged: CommandPhase turn 1, full HP, balls Poke 9 / Rogue 5, no farm process, no other controller.
+- Turn 1: Rayquaza V-create single-target at Electabuzz (_sw.py mv 0 1 + tgt 3), Alakazam switched to Linoone (_sw.py sw 1 2). Electabuzz KO'd, Magmar untouched.
+- Shield break with weak moves only: Linoone Nuzzle (_sw.py shatk 1 2 + stgt 2) x2, 129 -> 113 -> 99 (paralyzed); Rayquaza switched to Spinda (Slack Off). Spinda Tackle (max crit < current HP) 99 -> 65, shield index 0. Linoone (30/170) switched to Furret.
+- _sw.py ball Magmar: 1st Rogue Ball (5 -> 4) caught ("Gotcha!", cap_rd.py, catch_ack.py). Party full: _optno.py No -> storage; Magmar dex caughtCount 3.
+- Shiny Log row added (pr_126s.png downloaded). _restart_after_shiny.py relaunched hidden PID 120348 (parent 3808 WmiPrvSE), single instance. Field order now Spinda/Furret (Rayquaza benched; farm brings primary back).
+
+## 2026-11-07 ~14:29-14:50 MST - wild shiny Raikou w100 (boss, 2 segments) MISSED (fainted)
+- Farm (PID 120348) stopped shiny_enemy Raikou Lv78 variant 1 w100 single boss (Electric, Pressure; Thunder/Supercell Slam/Roar/Thunderbolt), 14:22:47. At ~14:31 (>8 min) unchanged: CommandPhase turn 1, full HP, balls Poke 9 / Rogue 4, no other controller.
+- Rayquaza switched to Linoone; Linoone Extreme Speed x2 (246 -> 171 -> 123, shield broken, clamped at threshold); shield break gave Raikou +1 Atk / +4 Spe. Linoone fainted. Furret Quick Attack 123 -> 83, then Furret fainted.
+- All 4 Rogue Balls failed (Furret, Kricketot x2, Spinda) + 1 Poké Ball (Spinda); Kricketot and Spinda fainted. Rayquaza in: Air Slash left Raikou at 10 HP, 1 more Poké Ball failed (Rayquaza 206/345), then Air Slash KO'd Raikou to protect the run (only Rayquaza + Alakazam left). Balls now Poke 7 / Rogue 0.
+- Shiny Log row added as Missed (pr_243s.png downloaded). _restart_after_shiny.py relaunched hidden PID 121400 (parent 3808 WmiPrvSE). Linoone/Furret/Kricketot/Spinda fainted; farm should revive at shops.
+
+## 2026-11-07 ~14:52-15:03 MST - wild shiny Noctowl w110 (boss, 2 segments) Caught (Poke Ball)
+- Farm (PID 121400) stopped shiny_enemy Noctowl Lv98 variant 1 w110 single boss (Normal/Flying, Keen Eye), 14:52:31. At ~14:58 (>2 min) unchanged: CommandPhase turn 1, full HP, balls Poke 7 / Rogue 0, no other controller.
+- Rayquaza switched to Linoone; Linoone Extreme Speed 327 -> 218, Linoone fainted. Furret Quick Attack x2 218 -> 169 -> 164 (shield broken, clamped), Furret fainted. Spinda in; 1st Poke Ball (7 -> 6) caught. Party full: _optno.py No -> storage.
+- Shiny Log row added (pr_164s.png downloaded). _restart_after_shiny.py relaunched hidden PID 121508 (parent 3808 WmiPrvSE), single instance. Linoone/Furret fainted; farm revives at shops.
+
+## 2026-11-07 ~15:25-15:31 MST - wild shiny Grumpig w142 doubles Caught (Rogue Ball)
+- Farm (PID 121508) stopped shiny_enemy Grumpig Lv109 variant 1 (raw 0) w142 doubles vs Sigilyph (Psychic/Flying, Wonder Skin), 15:25:47. At 15:27:53 (>2 min) unchanged: CommandPhase turn 1, full HP, balls Poke 11 / Rogue 15, no farm process, no other controller.
+- Turn 1: Rayquaza V-create single-target at Sigilyph (_sw.py mv 0 1 + tgt 2), Alakazam switched to Spinda (_sw.py sw 1 2). Sigilyph KO'd, Grumpig untouched 314/314. Hidden tab needed _sw.py ack to step messages.
+- Turn 2: _sw.py ball Grumpig: Rogue Ball (15 -> 14) caught first throw ("Gotcha!", cap_rd.py 80, catch_ack.py). Party was 5 (Kricketot+Linoone fused to Krione at 15:16), so Grumpig joined as slot 6.
+- Shiny Log row added (pr_326s.png downloaded). New read-only helper _ro_state.py. _restart_after_shiny.py relaunched hidden PID 109164 (parent 3808 WmiPrvSE), single instance. Field order now Rayquaza/Spinda.
