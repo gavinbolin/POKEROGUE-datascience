@@ -44,3 +44,9 @@ User Data/
 chrome-profile*/
 ChromeProfile*/
 .browser*/
+
+# Historical output directories (not runtime source)
+logs/
+scripts/logs/
+*.out
+*_out.txt
