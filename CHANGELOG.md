@@ -2802,3 +2802,10 @@ Rare (variant 2) shiny Xatu Lv61 in double with Claydol. Unchanged at 10:52 (Com
 - Turn 1: Rayquaza V-create single-target at Sigilyph (_sw.py mv 0 1 + tgt 2), Alakazam switched to Spinda (_sw.py sw 1 2). Sigilyph KO'd, Grumpig untouched 314/314. Hidden tab needed _sw.py ack to step messages.
 - Turn 2: _sw.py ball Grumpig: Rogue Ball (15 -> 14) caught first throw ("Gotcha!", cap_rd.py 80, catch_ack.py). Party was 5 (Kricketot+Linoone fused to Krione at 15:16), so Grumpig joined as slot 6.
 - Shiny Log row added (pr_326s.png downloaded). New read-only helper _ro_state.py. _restart_after_shiny.py relaunched hidden PID 109164 (parent 3808 WmiPrvSE), single instance. Field order now Rayquaza/Spinda.
+
+## 2026-11-07 ~15:39-15:48 MST - Classic w145 run end (Trainer Ivy rival Rayquaza all-faint), candy, new slot-0 run
+- Farm (PID 109164) exited 15:35:29 MST ALL-FAINT Classic w145 vs rival Ivy's Rayquaza (Air Lock); Grumpig/Rayquaza/Alakazam/Spinda/Krione/Furret all 0 HP. RUN LOG row w145 slot=0 luck=1 verified in CHIE Run Log.md. DONE farm17.
+- front.py + to_title.py -> Title -> `_re2.py newgame` Classic (no Endless). Pre-counts eggs=0, vouchers 839/166/50.
+- `_re2.py reduce 384,63`: both vr=2 maxed (no reduce). Eggs: Rayquaza 3 (x6, candy 18->0); Abra 1 (x12, candy 18->6). Eggs 0->4. Vouchers unspent.
+- New Classic slot 0 party [384,63,263,327,401] via nr_pick + `_re2.py start` + `_re2.py slot 0` (slot 0 empty; slot 1 has data). Verified Classic, wave 1, slot 0, Rayquaza lead.
+- Config primary=384 secondary=63 candy_target=primary. Cleared stop artifacts + status reasons; rotated stdout -> _prev; hidden Win32_Process Create pythonw PID 117960 parent WmiPrvSE 3808, single instance. WAVE UP 4->5 by 15:47:20.
