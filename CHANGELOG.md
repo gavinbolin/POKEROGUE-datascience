@@ -2809,3 +2809,16 @@ Rare (variant 2) shiny Xatu Lv61 in double with Claydol. Unchanged at 10:52 (Com
 - `_re2.py reduce 384,63`: both vr=2 maxed (no reduce). Eggs: Rayquaza 3 (x6, candy 18->0); Abra 1 (x12, candy 18->6). Eggs 0->4. Vouchers unspent.
 - New Classic slot 0 party [384,63,263,327,401] via nr_pick + `_re2.py start` + `_re2.py slot 0` (slot 0 empty; slot 1 has data). Verified Classic, wave 1, slot 0, Rayquaza lead.
 - Config primary=384 secondary=63 candy_target=primary. Cleared stop artifacts + status reasons; rotated stdout -> _prev; hidden Win32_Process Create pythonw PID 117960 parent WmiPrvSE 3808, single instance. WAVE UP 4->5 by 15:47:20.
+
+## 2026-11-07 ~15:50-15:57 MST - wild shiny Taillow w10 doubles (boss, 1 segment) Caught (Poke Ball)
+- Farm (PID 117960) stopped shiny_enemy Taillow Lv8 variant 1 (raw 0) w10 doubles with Shroomish boss (2 seg), 15:50:18. At ~15:54 (>2 min) unchanged: CommandPhase turn 1, full HP, balls Poke 5 only, no other controller.
+- Turn 1: Rayquaza V-create single-target at Shroomish (_sw.py mv 0 1 + tgt 2), Abra switched to Spinda (_sw.py sw 1 3). Shroomish KO'd, Taillow untouched 26/26.
+- Turn 2: _sw.py ball Taillow: 1st Poke Ball (5 -> 4) caught ("Gotcha!", cap_rd.py 80, catch_ack.py). Party was 5, Taillow joined as slot 6.
+- Shiny Log row added (pr_276s.png downloaded). _restart_after_shiny.py relaunched hidden PID 111736 (parent 3808 WmiPrvSE). Field order Rayquaza/Spinda.
+
+## 2026-11-07 ~16:49-16:56 MST - Classic w110 run end (wild Armaldo all-faint), candy, new slot-0 run
+- Farm exited 16:47:43 MST ALL-FAINT Classic w110 vs wild Armaldo (Battle Armor); Swellow/Rayquaza/Alakazam/Spinda/Linoone/Kricketot all 0 HP. RUN LOG row w110 slot=0 luck=1 verified in CHIE Run Log.md. DONE farm17.
+- front.py + to_title.py -> Title -> `_re2.py newgame` Classic (no Endless). Pre-counts eggs=0, vouchers 844/166/50.
+- `_re2.py reduce 384,63`: both vr=2 maxed (no reduce). Eggs: Rayquaza 2 (x6, candy 14->2); Abra 1 (x12, candy 21->9). Eggs 0->3. Vouchers unspent.
+- New Classic slot 0 party [384,63,263,327,401] via nr_pick + `_re2.py start` + `_re2.py slot 0` (slot 0 empty; slot 1 has data). Verified Classic, wave 1, slot 0, Rayquaza lead.
+- Config primary=384 secondary=63 candy_target=primary. Cleared stop artifacts + status reasons; rotated stdout -> _prev; hidden Win32_Process Create pythonw PID 122076 parent WmiPrvSE 3808, single instance. WAVE UP 3->4 by 16:56:18.
