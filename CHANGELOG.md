@@ -2834,3 +2834,10 @@ Rare (variant 2) shiny Xatu Lv61 in double with Claydol. Unchanged at 10:52 (Com
 - Turn 1: Rayquaza Air Slash single-target at Gigalith (_sw.py mv 0 2 + tgt 2) and Alakazam Aura Sphere single-target at Gigalith (_sw.py mv 1 2 + tgt 2). Deliberate deviation from "one attacker": Sturdy needs two hits, and both our mons outspeed Gigalith, so KOing it in one turn kept it from using Explosion (which would hit Fearow). Gigalith KO'd, Fearow untouched.
 - Turn 2: Poke Ball failed (Fearow Take Down). Turn 3: 2nd Poke Ball caught (14 -> 12, "Gotcha!"). Party full -> release prompt options [Summary, Pokedex, Yes, No]; picked No via h.config.options (sent to storage; optionsContainer text read is empty for this prompt, use config.options labels).
 - Shiny Log row added at top (CHIE vault + box copy). Farm relaunched with _restart_after_shiny.py, hidden PID 125044 (parent 3808); w100 by 18:18:55.
+
+## 2026-11-07 ~19:21-19:28 MST - Classic w165 run end (Team Galactic Boss Cyrus, Crobat all-faint), candy, new slot-0 run
+- Farm exited 19:17:44 MST ALL-FAINT Classic w165 vs Trainer Cyrus's Crobat (Inner Focus); party Vileplume/Mega Rayquaza/Alakazam/Spinda/Kricketot/Linoone all 0 HP. RUN LOG row w165 slot=0 luck=2 verified in CHIE Run Log.md. DONE farm17.
+- front.py + to_title.py -> Title -> `_re2.py newgame` Classic (no Endless). Pre-counts eggs=0, vouchers 855/167/50.
+- `_re2.py reduce 384,63`: both vr=2 maxed (no reduce). Eggs: Rayquaza 3 (x6, candy 23->5); Abra 3 (x12, candy 38->2). Eggs 0->6. Vouchers unspent.
+- New Classic slot 0 party [384,63,263,327,401] via nr_pick + `_re2.py start` + `_re2.py slot 0` (slot 0 empty; slot 1 has data). Verified Classic, wave 1, slot 0, Rayquaza lead.
+- Config primary=384 secondary=63 candy_target=primary. Cleared stop artifacts + status reasons; rotated stdout -> _prev; hidden Win32_Process Create pythonw PID 128668 parent WmiPrvSE 3808, single instance. WAVE UP 3->4 by 19:27:52.
