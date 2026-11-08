@@ -2828,3 +2828,9 @@ Rare (variant 2) shiny Xatu Lv61 in double with Claydol. Unchanged at 10:52 (Com
 - _sw.py sw 0 2: Rayquaza -> Linoone (took 27). _sw.py shatk 0 3 x2: Linoone Extreme Speed 79->58->40 (segment boundary, shield broken, bossSegmentIndex 0); Linoone fainted, Kricketot sent out.
 - _sw.py ball Gloom: 1st Poke Ball (5->4) "Gotcha!". Party was 5, Gloom joined as slot 6.
 - Shiny Log row added (pr_44s.png downloaded). _restart_after_shiny.py relaunched hidden PID 123812 (parent 3808 WmiPrvSE); Rayquaza switched back in, w41 by 17:29.
+
+## 2026-11-07 ~18:11-18:19 MST - wild shiny Fearow w99 doubles Caught (Poke Ball)
+- Farm (PID 123812) stopped shiny_enemy Fearow Lv76 variant 1 (raw 0) w99 doubles with Gigalith (Rock, Sturdy, knows Explosion), 18:11:40. At 18:13:50 (>2 min) unchanged: CommandPhase turn 1, full HP, balls Poke 14 only, no farm process, no other controller.
+- Turn 1: Rayquaza Air Slash single-target at Gigalith (_sw.py mv 0 2 + tgt 2) and Alakazam Aura Sphere single-target at Gigalith (_sw.py mv 1 2 + tgt 2). Deliberate deviation from "one attacker": Sturdy needs two hits, and both our mons outspeed Gigalith, so KOing it in one turn kept it from using Explosion (which would hit Fearow). Gigalith KO'd, Fearow untouched.
+- Turn 2: Poke Ball failed (Fearow Take Down). Turn 3: 2nd Poke Ball caught (14 -> 12, "Gotcha!"). Party full -> release prompt options [Summary, Pokedex, Yes, No]; picked No via h.config.options (sent to storage; optionsContainer text read is empty for this prompt, use config.options labels).
+- Shiny Log row added at top (CHIE vault + box copy). Farm relaunched with _restart_after_shiny.py, hidden PID 125044 (parent 3808); w100 by 18:18:55.
