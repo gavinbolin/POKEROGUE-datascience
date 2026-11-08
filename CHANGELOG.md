@@ -2873,3 +2873,10 @@ Rare (variant 2) shiny Xatu Lv61 in double with Claydol. Unchanged at 10:52 (Com
 - `_re2.py reduce 384,63`: both vr=2 maxed (no reduce); its egg pass bought eggs: Abra 2 (x12, candy 29->5), Rayquaza to candy 5 (x6); eggs 0->10 so Rayquaza 8 (inferred). `_buyeggs_once.py 384,63` no-op. Vouchers unspent.
 - New Classic slot 0 party [384,63,263,327,401] via nr_pick + `_re2.py start` + `_re2.py slot 0` (slot 0 empty; slot 1 has data). Verified Classic, wave 1, slot 0, Rayquaza lead.
 - Config primary=384 secondary=63 candy_target=primary. Cleared stop artifacts + status reasons; rotated stdout -> _prev; hidden Win32_Process Create pythonw PID 134400 parent WmiPrvSE 3808, single instance. WAVE UP 1->2 by 22:27:09.
+
+## 2026-11-07 ~23:46-23:54 MST - Classic w100 run end (wild boss Koraidon all-faint), candy, new slot-0 run
+- Farm (PID 134400) exited 23:42:42 MST ALL-FAINT Classic w100 vs wild Koraidon (Orichalcum Pulse); Thievul last out. RUN LOG row w100 slot=0 luck=0 verified in CHIE Run Log.md. DONE farm17.
+- front.py + to_title.py -> Title -> `_re2.py newgame` Classic (no Endless). Pre-counts eggs=8, vouchers 868/168/51.
+- `_re2.py reduce 384,63`: vr=2 maxed (no reduce); egg pass Rayquaza 1 egg (9->3), Abra 1 egg (19->7); eggs 8->10. Vouchers unspent.
+- New Classic slot 0 party [384,63,263,327,401] via nr_pick + `_re2.py start` + `_re2.py slot 0` (slot 0 empty; slot 1 has data). Verified Classic, wave 1, slot 0, Rayquaza lead.
+- Config primary=384 secondary=63 candy_target=primary. Cleared stop artifacts + status reasons; rotated stdout -> _prev; hidden Win32_Process Create pythonw PID 137800 parent WmiPrvSE 3808, single instance. WAVE UP 1->4 by 23:54:05.
