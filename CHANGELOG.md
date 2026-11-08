@@ -2860,3 +2860,9 @@ Rare (variant 2) shiny Xatu Lv61 in double with Claydol. Unchanged at 10:52 (Com
 - Turn 1: Rayquaza V-create single-target at Parasect (_sw.py mv 0 1 + tgt 3), Kadabra switched to Spinda (_sw.py sw 1 3). Parasect KO'd, Haunter untouched 89/89. Hidden tab needed _sw.py rd 150 / ack 25.
 - Turn 2: _sw.py ball Haunter: 1st Rogue Ball (5 -> 4) "Gotcha!" (cap_rd.py 80, catch_ack.py). Party was 5, Haunter joined as slot 6.
 - Shiny Log row added at top (pr_93s.png present). _restart_after_shiny.py relaunched hidden PID 81156 (parent 3808 WmiPrvSE). Field order now Rayquaza/Spinda.
+
+## 2026-11-07 ~21:35-21:42 MST - wild shiny Bronzong w78 doubles Caught (Rogue Ball)
+- Farm (PID 81156) stopped shiny_enemy Bronzong Lv53 variant 2 (raw 1, Steel/Psychic, Levitate) w78 doubles with Klefki (Steel/Fairy, Prankster), 21:35:28. At 21:37:47 (>2 min) unchanged: CommandPhase turn 1, full HP, balls Poke 10 / Great 5 / Rogue 4, no farm process, no other controller.
+- Turn 1: Rayquaza V-create single-target at Klefki (_sw.py mv 0 1 + tgt 3), Alakazam switched to Spinda (_sw.py sw 1 3). Klefki KO'd, Bronzong untouched 138/138. Hidden tab needed cap_rd.py 80 + _sw.py ack during ExpPhase.
+- Turn 2: _sw.py ball Bronzong: 1st Rogue Ball (4 -> 3) "Gotcha!". Party full -> release prompt [Summary, Pokedex, Yes, No]; picked No via h.config.options (sent to storage).
+- Shiny Log row added at top (pr_437s.png present). _restart_after_shiny.py relaunched hidden PID 130576 (parent 3808 WmiPrvSE). Field order now Rayquaza/Spinda.
