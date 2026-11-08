@@ -547,6 +547,8 @@ def pick_reward(st, bad=()):
             EVO_TGT.pop(r["n"].lower(), None)
     for r in rew:  # ALAKA t226u: Alakazamite top when Alakazam (65) alive in party
         if "alakazamite" in r["n"].lower() and any(p.get("sp") == 65 and (p.get("hp") or 0) > 0 for p in (st.get("party") or [])): _rk[id(r)] = ((0, -370, 0), -370, "alakazamite")
+    for r in rew:  # NECRO t233u: Necrozma (800) form-change items top priority when Necrozma alive
+        if any(k in r["n"].lower() for k in ("n-solarizer", "n-lunarizer", "ultranecrozium", "n solarizer", "n lunarizer")) and any(p.get("sp") == 800 and (p.get("hp") or 0) > 0 for p in (st.get("party") or [])): _rk[id(r)] = ((0, -370, 0), -370, "necrozma_form")
     _HSTAT = ("potion", "full restore", "full heal", "berry", "heal", "ether", "elixir", "antidote", "awakening", "burn heal", "ice heal", "paralyze heal")
     _sec_ok = bool(sec and sec["hp"] > 0 and SEC_ALLOW_HEAL and _r(sec) < 0.75)
     if _zdead:
@@ -1113,7 +1115,7 @@ async def main():
                     try: st["lure_left"] = int(await ev(LURE_JS) or 0)
                     except Exception: st["lure_left"] = 0
                     if any("lure" in str(r_.get("n", "")).lower() for r_ in (st.get("rew") or [])) and lure_log.get(w) is None:
-                        lure_log[w] = 1; log(f"LURE active ({st['lure_left']} left) -> skip" if st["lure_left"] > 0 else "LURE none active -> rank -15")
+                        lure_log[w] = 1; log(f"LURE active ({st['lure_left']} left) -> skip" if st["lure_left"] > 0 else "LURE none active -> rank -50 (doubles = secondary on field)")
                     i, why = pick_reward(st, rew_bad.get(w, set()))
                     br = getattr(pick_reward, "last_rank", 0) if i is not None else 999
                     ppc = i is not None and br <= -10 and any(k in str((st.get("rew") or [{}]*(i+1))[i].get("n", "")).lower() for k in PP_ITEMS)
@@ -1307,6 +1309,11 @@ async def main():
                             if _mwi is not None:
                                 tgt = _mwi
                                 if same == 0: log(f"MEWTWONITE -> Mewtwo slot {tgt}")
+                        if any(k in lpn for k in ("n-solarizer", "n-lunarizer", "ultranecrozium", "n solarizer", "n lunarizer")):  # NECRO t233u: -> Necrozma (800) only
+                            _nzi = next((j for j, p in enumerate(party) if p.get("sp") == 800), None)
+                            if _nzi is not None:
+                                tgt = _nzi
+                                if same == 0: log(f"NECROZMA FORM {last_pick[0]} -> Necrozma slot {tgt}")
                         if "alakazamite" in lpn:  # ALAKA t226u: Alakazamite -> Alakazam (65) only
                             _aki = next((j for j, p in enumerate(party) if p.get("sp") == 65), None)
                             if _aki is not None:
@@ -1341,7 +1348,7 @@ async def main():
                         if same == 0: log(f"ME party select -> slot {tgt} (Zacian/slot1)")
                     else:
                         log(f"stray party UI in {ph} - back"); await X(); await asyncio.sleep(0.3); continue
-                    if ph == "SelectModifierPhase" and shop_tgt[0] is not None and not any(k in (last_pick[0] or "").lower() for k in ("rare candy", "soothe bell", "eelektrossite", "absolite", "mewtwonite", "alakazamite", "link cord", "linking cord")):
+                    if ph == "SelectModifierPhase" and shop_tgt[0] is not None and not any(k in (last_pick[0] or "").lower() for k in ("rare candy", "soothe bell", "eelektrossite", "absolite", "mewtwonite", "alakazamite", "link cord", "linking cord", "n-solarizer", "n-lunarizer", "ultranecrozium")):
                         tgt = shop_tgt[0]
                         if same == 0: log(f"SHOP target slot {tgt} for {last_pick[0]}")
                     if ph == "SelectModifierPhase":

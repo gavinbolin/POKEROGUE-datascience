@@ -12,7 +12,7 @@ CFGF = OUT / "pokerogue_farm_config.json"
 CFG_DEF = {"secondary_field": "auto", "candy_target": "secondary"}
 def cfg_load():
     d = dict(CFG_DEF)
-    try: d.update({k: v for k, v in json.loads(CFGF.read_text(encoding="utf-8")).items() if k in CFG_DEF})
+    try: d.update({k: v for k, v in json.loads(CFGF.read_text(encoding="utf-8-sig")).items() if k in CFG_DEF})
     except Exception: pass
     return d
 
@@ -73,8 +73,9 @@ class App:
         if s.pids: s.big.config(text=f"RUNNING  (pid {', '.join(map(str, s.pids))})", bg="#2e7d32")
         else: s.big.config(text="STOPPED", bg="#c62828")
         party = st.get("party") or []
-        try: _cfg = json.loads(CFGF.read_text(encoding="utf-8"))
+        try: _cfg = json.loads(CFGF.read_text(encoding="utf-8-sig"))
         except Exception: _cfg = {}
+        if _cfg.get("candy_target") in ("primary", "both", "secondary") and s.v_ct.get() != _cfg["candy_target"]: s.v_ct.set(_cfg["candy_target"])  # t232u: UI mirrors file
         _pid = _cfg.get("primary") or z.get("sp")
         pm = next((p for p in party if p.get("sp") == _pid), None) or z or (party[0] if party else {})
         _sid = _cfg.get("secondary")

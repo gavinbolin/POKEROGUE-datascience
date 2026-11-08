@@ -1,1 +1,24 @@
-{"secondary_field": "bench", "candy_target": "secondary"}
+{
+  "secondary_field": "bench",
+  "candy_target": "secondary",
+  "primary": 384,
+  "secondary": 63,
+  "new_run_team": [
+    800,
+    63,
+    263,
+    401,
+    327
+  ],
+  "new_run_party": [
+    800,
+    63,
+    263,
+    401,
+    327
+  ],
+  "pending_next_run": {
+    "primary": 800,
+    "secondary": 63
+  }
+}

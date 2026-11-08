@@ -2880,3 +2880,9 @@ Rare (variant 2) shiny Xatu Lv61 in double with Claydol. Unchanged at 10:52 (Com
 - `_re2.py reduce 384,63`: vr=2 maxed (no reduce); egg pass Rayquaza 1 egg (9->3), Abra 1 egg (19->7); eggs 8->10. Vouchers unspent.
 - New Classic slot 0 party [384,63,263,327,401] via nr_pick + `_re2.py start` + `_re2.py slot 0` (slot 0 empty; slot 1 has data). Verified Classic, wave 1, slot 0, Rayquaza lead.
 - Config primary=384 secondary=63 candy_target=primary. Cleared stop artifacts + status reasons; rotated stdout -> _prev; hidden Win32_Process Create pythonw PID 137800 parent WmiPrvSE 3808, single instance. WAVE UP 1->4 by 23:54:05.
+
+## 2026-11-08 00:50 MT - t232u/t233u candy target + Necrozma
+- Root cause: config candy_target was 'primary' while PokeFarmControl showed 'secondary' (UI never re-read the file; strict utf-8 read). Set secondary; app now reads utf-8-sig and mirrors the file each refresh.
+- Lure (no lure active, secondary in party) rank -15 -> -50 so doubles put Alakazam (slot 2) on the field for XP.
+- Next run: team [800,63,263,401,327]; config pending_next_run {primary:800,secondary:63} applied by _re2.py start. Necrozma unlocked (caughtAttr 1681).
+- NECRO: N-Solarizer / N-Lunarizer / Ultranecrozium Z rank -370 and applied to Necrozma (800). New profiles/necrozma.json.

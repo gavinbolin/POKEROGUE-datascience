@@ -17,15 +17,18 @@
   "sword": -290,
   "prism_scale": -290,
   "dna_pair": -250,
-  "emergency_heal": -240
+  "emergency_heal": -240,
+  "mega_bracelet": -400,
+  "absolite": -400,
+  "mewtwonite": -400
  },
  "special_notes": {
+  "master_ball": "Gavin t138u/t140u: Master Ball beats everything; reserved for the wave-200 Eternatus catch every run.",
   "role_revive": "Revive/Max Revive/Sacred Ash when Zacian or secondary fainted",
   "sword": "Rusted/Ancient Sword while Zacian in party",
   "prism_scale": "while secondary is Feebas",
   "dna_pair": "DNA Splicers when unfused Kricketot/Kricketune + Zigzagoon/Linoone",
-  "emergency_heal": "Full Restore/Max Potion/heal when Zacian <25% HP and next wave risky",
-  "master_ball": "Gavin t138u 10/31: Master Ball beats everything (for Eternatus catch). Revert: delete this special."
+  "emergency_heal": "Full Restore/Max Potion/heal when Zacian <25% HP and next wave risky"
  },
  "flags": [
   "lure_active",
@@ -344,7 +347,7 @@
    ],
    "mode": "substring",
    "when": "secondary_in_party",
-   "rank": -15,
+   "rank": -50,
    "tier": "",
    "shop_buyable": false,
    "notes": "keep a lure up for doubles (within tier)"

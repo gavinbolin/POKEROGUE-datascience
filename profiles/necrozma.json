@@ -1,0 +1,14 @@
+{
+  "_help": "Gavin t232u/t233u 11/08: Necrozma primary. N-Solarizer / N-Lunarizer / Ultranecrozium Z ranked -370 and applied to Necrozma (pr_farm17 NECRO). Moves are a first guess; review after first run.",
+  "name": "Necrozma",
+  "species": [800],
+  "signature_items": ["N-Solarizer", "N-Lunarizer", "Ultranecrozium Z"],
+  "learn_moves": true,
+  "protected_moves": ["Photon Geyser"],
+  "wanted_moves": ["Sunsteel Strike", "Moongeist Beam", "Earth Power", "Dragon Pulse"],
+  "replaceable_moves": ["Gravity", "Charge Beam", "Mirror Shot", "Metal Claw", "Confusion", "Night Slash", "Stealth Rock", "Rock Blast", "Morning Sun", "Moonlight", "Autotomize", "Iron Defense", "Wring Out", "Prismatic Laser"],
+  "replace_normal_type": true,
+  "good_moves": ["Psychic", "Psyshock", "Psycho Cut", "Zen Headbutt", "Power Gem", "Stone Edge", "X-Scissor", "Brick Break", "Close Combat", "Earthquake", "Shadow Ball", "Flash Cannon", "Iron Head", "Dark Pulse", "Knock Off", "Dragon Claw", "Calm Mind", "Swords Dance", "Earth Power", "Dragon Pulse"],
+  "primary_move": "Photon Geyser",
+  "spread_moves": ["Earthquake"]
+}

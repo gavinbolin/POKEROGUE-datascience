@@ -76,7 +76,7 @@ def resolve_primary(party, logf=None):
     """Primary = config 'primary' (name or species id) if in party, else first non-secondary mon in party order (slot 1)."""
     global PRIMARY
     want = None
-    try: want = json.loads(CONFIG_FILE.read_text(encoding="utf-8")).get("primary")
+    try: want = json.loads(CONFIG_FILE.read_text(encoding="utf-8-sig")).get("primary")
     except Exception: pass
     pick = None
     if want not in (None, "", "auto"):
@@ -228,7 +228,8 @@ LEARN_JS = r"""(()=>{try{const s=window.__pr_cam.scene,ph=s.phaseManager.getCurr
 const f=m=>({n:m.name,type:m.type,pow:m.power,cat:m.category,acc:m.accuracy});return {pi:s.getPlayerParty().indexOf(p),pn:p.name,sp:p.species.speciesId,lt:ph.learnMoveType,cur:ms.map(m=>f(m.getMove())),new:f(nm),canLearn:typeof ph.learnMove==='function'}}catch(e){return {err:String(e)}}})()"""
 LEARN_DO_JS = r"""(()=>{try{const s=window.__pr_cam.scene,ph=s.phaseManager.getCurrentPhase();if(!ph||ph.constructor.name!=='LearnMovePhase')return 'nophase';const p=ph.getPokemon();const ms=p.getMoveset();const C=ms[0].constructor;const mv=new C(ph.moveId).getMove();const old=ms[%d]?ms[%d].getName():null;
 ph.learnMove(%d,mv,p,old?('1, 2, and... Poof! '+p.name+' forgot '+old+'. And...'):undefined);return 'ok:'+old}catch(e){return 'err:'+String(e)}})()"""
-SECONDARY = ("Tynamo", {602, 603, 604})  # TYNAMO t199u 11/03: Tynamo/Eelektrik/Eelektross is the secondary (Mudkip/Feebas lines no longer secondary)
+SECONDARY = ("Abra", {63, 64, 65})  # MEWABSOL t207u 11/04: Absol secondary, Mewtwo (150) primary via config
+_OLD_SECONDARY = ("Tynamo", {602, 603, 604})  # TYNAMO t199u 11/03: Tynamo/Eelektrik/Eelektross is the secondary (Mudkip/Feebas lines no longer secondary)
 LEVITATE_PARTNER = {602, 603, 604}  # TYNAMO t199u: Levitate partner -> Zacian may Earthquake in doubles
 def role(party, r):
     return next((p for p in party or [] if p.get("sp") in r[1] or p.get("n") == r[0]), None)
@@ -261,7 +262,7 @@ CFG = {"candy_target": CANDY_TARGET, "secondary_field": SECONDARY_FIELD}
 def cfg_reload(logf=None):
     new = {"candy_target": CANDY_TARGET, "secondary_field": SECONDARY_FIELD}
     try:
-        d = json.loads(CONFIG_FILE.read_text(encoding="utf-8"))
+        d = json.loads(CONFIG_FILE.read_text(encoding="utf-8-sig"))
         if str(d.get("candy_target","")).lower() in ("secondary","primary","both"): new["candy_target"] = str(d["candy_target"]).lower()
         if str(d.get("secondary_field","")).lower() in ("bench","field","auto"): new["secondary_field"] = str(d["secondary_field"]).lower()
     except Exception: pass
@@ -515,7 +516,7 @@ def pick_reward(st, bad=()):
                  role_low=bool(role_low), pp_crit=bool(pp_crit), pp_low=bool(pp_low), secondary_in_party=feebas, ally_dead=ally_dead,
                  zhp_low=bool(zhp_low), zacian_fainted=bool(z and z["hp"] <= 0), voucher_crit=emerg, emergency=emerg,
                  dna_pair=bool(dna_pair(st.get("party"))), zacian_in_party=bool(z) and any('sword' in s.lower() for s in PROF()['signature_items']), role_dead=bool(role_dead),
-                 secondary_is_feebas=bool(sec and (sec.get("sp") == 349 or sec.get("n") == "Feebas")), eelektross_in_party=any(p.get("sp") == 604 and (p.get("hp") or 0) > 0 for p in (st.get("party") or [])))
+                 secondary_is_feebas=bool(sec and (sec.get("sp") == 349 or sec.get("n") == "Feebas")), mewtwo_in_party=any(p.get("sp") == 150 and (p.get("hp") or 0) > 0 for p in (st.get("party") or [])), absol_in_party=any(p.get("sp") == 359 and (p.get("hp") or 0) > 0 for p in (st.get("party") or [])), eelektross_in_party=any(p.get("sp") == 604 and (p.get("hp") or 0) > 0 for p in (st.get("party") or [])))
     _rk = {id(r): prio.rank_item(r, flags, _pd) for r in rew}
     _pf = PROF(); _zm = [m["n"] for m in (st.get("zmoves") or [])]
     for r in rew:  # AGNOSTIC: profile signature items rank like the sword; profile-approved TMs rank -50 (below candy)
@@ -529,18 +530,25 @@ def pick_reward(st, bad=()):
             if _ix is not None:
                 _rk[id(r)] = ((1, -_pd["tier_order"].get(prio.TN.get(r.get("t") or 0, ""), 0), -50), -50, "profile_tm"); tm_ok[r["n"]] = _ix
     for r in rew:  # EVOITEM: rank evolution items top when a non-primary/non-secondary party member can use it
-        if r.get("evo") is None: continue
+        _lcn = r["n"].lower()  # LINKCORD 11/06 fix: game name is "Linking Cord"; evo may be None while Kadabra is secondary
+        if r.get("evo") is None and not ("link" in _lcn and "cord" in _lcn and any(p.get("sp") == 64 and (p.get("hp") or 0) > 0 for p in (st.get("party") or []))): continue
         _pt = st.get("party") or []
         _ts = "thunder stone" in r["n"].lower()  # ETERNTEAM t200u: Thunder Stone -> Eelektrik (603) -> Eelektross
         _el = [p for p in _pt if p.get("i") in (r.get("evo") or []) and p is not z and (p is not sec or (_ts and p.get("sp") == 603)) and p.get("sp") not in (349, 350) and (p.get("hp") or 0) > 0]
         if _ts and not _el and sec and sec.get("sp") == 603 and (sec.get("hp") or 0) > 0: _el = [sec]
+        _lc = ("link cord" in r["n"].lower() or "linking cord" in r["n"].lower())  # ALAKA t226u: Link Cord -> Kadabra (64) secondary
+        if _lc: _el = [p for p in _pt if p.get("sp") == 64 and (p.get("hp") or 0) > 0] or _el
         _el.sort(key=lambda p: p.get("sp") not in EVO_PREF)
         if _el:
-            _er = -360 if (_ts and _el[0].get("sp") == 603) else -280  # Thunder Stone for Eelektrik ranks just under Eelektrossite, far above Nugget
+            _er = -360 if ((_ts and _el[0].get("sp") == 603) or (_lc and _el[0].get("sp") == 64)) else -280  # Thunder Stone for Eelektrik ranks just under Eelektrossite, far above Nugget
             EVO_TGT[r["n"].lower()] = _el[0].get("sp"); _rk[id(r)] = ((0, _er, 0), _er, "evo_item")
             if getattr(pick_reward, "_evl", None) != (w0, r["n"]): pick_reward._evl = (w0, r["n"]); log(f"EVO ITEM {r['n']} -> {_el[0]['n']} (eligible {[p['n'] for p in _el]})")
         else:
             EVO_TGT.pop(r["n"].lower(), None)
+    for r in rew:  # ALAKA t226u: Alakazamite top when Alakazam (65) alive in party
+        if "alakazamite" in r["n"].lower() and any(p.get("sp") == 65 and (p.get("hp") or 0) > 0 for p in (st.get("party") or [])): _rk[id(r)] = ((0, -370, 0), -370, "alakazamite")
+    for r in rew:  # NECRO t233u: Necrozma (800) form-change items top priority when Necrozma alive
+        if any(k in r["n"].lower() for k in ("n-solarizer", "n-lunarizer", "ultranecrozium", "n solarizer", "n lunarizer")) and any(p.get("sp") == 800 and (p.get("hp") or 0) > 0 for p in (st.get("party") or [])): _rk[id(r)] = ((0, -370, 0), -370, "necrozma_form")
     _HSTAT = ("potion", "full restore", "full heal", "berry", "heal", "ether", "elixir", "antidote", "awakening", "burn heal", "ice heal", "paralyze heal")
     _sec_ok = bool(sec and sec["hp"] > 0 and SEC_ALLOW_HEAL and _r(sec) < 0.75)
     if _zdead:
@@ -982,7 +990,11 @@ async def main():
                             # STRUGGLE 11/1: all moves 0 PP -> confirming any move makes the game use Struggle (w120 Corviknight loop)
                             log(f"STRUGGLE: all moves 0 PP {pps} foes={foes} -> confirm move 0"); await set_cursor(0); await asyncio.sleep(0.1); await Z(); await asyncio.sleep(1.0)
                         else:
-                            log(f"no usable move {pps} foes={foes} dbl={st.get('double')} - back"); await X()
+                            _any = [mm for mm in _mv if (mm.get("left") or 0) > 0]  # NOUSABLE 11/5: only status moves left (w89 Linoone Tidy Up vs Wonder Guard Shedinja looped) -> use one so the turn passes
+                            if _any:
+                                log(f"NOUSABLE: no damaging move {pps} foes={foes} -> use {_any[0]['n']} to pass turn"); await set_cursor(_any[0]["i"]); await asyncio.sleep(0.1); await Z(); await asyncio.sleep(1.0)
+                            else:
+                                log(f"no usable move {pps} foes={foes} dbl={st.get('double')} - back"); await X()
                     else:
                         if m["n"] == "Freeze-Dry" and max(m.get("effs") or [1]) >= 2: log(f"FREEZE-DRY vs {[e['n'] for e in st.get('enemy') or []]} eff={max(m['effs'])}")
                         log(f"w{w} {st.get('user')} -> {m['n']} eff={m['effs']} stab={m['stab']} PP={pps} foes={foes} dbl={st.get('double')}")
@@ -1103,7 +1115,7 @@ async def main():
                     try: st["lure_left"] = int(await ev(LURE_JS) or 0)
                     except Exception: st["lure_left"] = 0
                     if any("lure" in str(r_.get("n", "")).lower() for r_ in (st.get("rew") or [])) and lure_log.get(w) is None:
-                        lure_log[w] = 1; log(f"LURE active ({st['lure_left']} left) -> skip" if st["lure_left"] > 0 else "LURE none active -> rank -15")
+                        lure_log[w] = 1; log(f"LURE active ({st['lure_left']} left) -> skip" if st["lure_left"] > 0 else "LURE none active -> rank -50 (doubles = secondary on field)")
                     i, why = pick_reward(st, rew_bad.get(w, set()))
                     br = getattr(pick_reward, "last_rank", 0) if i is not None else 999
                     ppc = i is not None and br <= -10 and any(k in str((st.get("rew") or [{}]*(i+1))[i].get("n", "")).lower() for k in PP_ITEMS)
@@ -1288,10 +1300,30 @@ async def main():
                             else: tgt = party.index(z); _m = f"SOOTHE -> Zacian (secondary full {_sbn}/{_sbm})"
                             if same == 0: log(_m)
                         if lpn in EVO_TGT:
-                            _ei = next((j for j, p in enumerate(party) if p.get("sp") == EVO_TGT[lpn] and p is not z and (p is not role(party, SECONDARY) or (p.get("sp") == 603 and "thunder stone" in lpn))), None)
+                            _ei = next((j for j, p in enumerate(party) if p.get("sp") == EVO_TGT[lpn] and p is not z and (p is not role(party, SECONDARY) or (p.get("sp") == 603 and "thunder stone" in lpn) or (p.get("sp") == 64 and ("link cord" in lpn or "linking cord" in lpn)))), None)
                             if _ei is not None:
                                 tgt = _ei
                                 if same == 0: log(f"EVO ITEM {last_pick[0]} -> slot {tgt} ({party[tgt]['n']}), never Lugia/Milotic")
+                        if "mewtwonite" in lpn:  # t209u: Mewtwonite X/Y -> Mewtwo (150) only
+                            _mwi = next((j for j, p in enumerate(party) if p.get("sp") == 150), None)
+                            if _mwi is not None:
+                                tgt = _mwi
+                                if same == 0: log(f"MEWTWONITE -> Mewtwo slot {tgt}")
+                        if any(k in lpn for k in ("n-solarizer", "n-lunarizer", "ultranecrozium", "n solarizer", "n lunarizer")):  # NECRO t233u: -> Necrozma (800) only
+                            _nzi = next((j for j, p in enumerate(party) if p.get("sp") == 800), None)
+                            if _nzi is not None:
+                                tgt = _nzi
+                                if same == 0: log(f"NECROZMA FORM {last_pick[0]} -> Necrozma slot {tgt}")
+                        if "alakazamite" in lpn:  # ALAKA t226u: Alakazamite -> Alakazam (65) only
+                            _aki = next((j for j, p in enumerate(party) if p.get("sp") == 65), None)
+                            if _aki is not None:
+                                tgt = _aki
+                                if same == 0: log(f"ALAKAZAMITE -> Alakazam slot {tgt}")
+                        if "absolite" in lpn:  # MEWABSOL t207u: Absolite -> Absol (359) only
+                            _abi = next((j for j, p in enumerate(party) if p.get("sp") == 359), None)
+                            if _abi is not None:
+                                tgt = _abi
+                                if same == 0: log(f"ABSOLITE -> Absol slot {tgt}")
                         if "eelektrossite" in lpn:  # MEGA t199u: Eelektrossite -> Eelektross (604) only
                             _swi = next((j for j, p in enumerate(party) if p.get("sp") == 604), None)
                             if _swi is not None:
@@ -1316,13 +1348,13 @@ async def main():
                         if same == 0: log(f"ME party select -> slot {tgt} (Zacian/slot1)")
                     else:
                         log(f"stray party UI in {ph} - back"); await X(); await asyncio.sleep(0.3); continue
-                    if ph == "SelectModifierPhase" and shop_tgt[0] is not None and not any(k in (last_pick[0] or "").lower() for k in ("rare candy", "soothe bell", "eelektrossite")):
+                    if ph == "SelectModifierPhase" and shop_tgt[0] is not None and not any(k in (last_pick[0] or "").lower() for k in ("rare candy", "soothe bell", "eelektrossite", "absolite", "mewtwonite", "alakazamite", "link cord", "linking cord", "n-solarizer", "n-lunarizer", "ultranecrozium")):
                         tgt = shop_tgt[0]
                         if same == 0: log(f"SHOP target slot {tgt} for {last_pick[0]}")
                     if ph == "SelectModifierPhase":
                         _lp2 = (last_pick[0] or "").lower(); _s3 = role(party, SECONDARY)
                         if _s3 and tgt == party.index(_s3) and z:
-                            _ok3 = ("rare candy" in _lp2 or "candy jar" in _lp2) or (SEC_ALLOW_SOOTHE and "soothe bell" in _lp2) or (SEC_ALLOW_PRISM and "prism scale" in _lp2) or (SEC_ALLOW_REVIVE and _s3["hp"] <= 0 and any(k in _lp2 for k in ("revive", "sacred ash"))) or (SEC_ALLOW_HEAL and _s3["hp"] > 0 and any(k in _lp2 for k in ("potion", "full restore", "full heal")) and not (SEC_NO_STATUS_CURE and _s3.get("sp") in (349, 350, 602, 603, 604) and any(k in _lp2 for k in SEC_CURE_ITEMS))) or orb_banned({"n": _lp2}) or ("swampertite" in _lp2 and _s3.get("sp") == 260) or ("thunder stone" in _lp2 and _s3.get("sp") == 603) or ("eelektrossite" in _lp2 and _s3.get("sp") == 604)  # TSTONE 11/04: evo stone/mega stone may go to Tynamo-line secondary
+                            _ok3 = ("rare candy" in _lp2 or "candy jar" in _lp2) or (SEC_ALLOW_SOOTHE and "soothe bell" in _lp2) or (SEC_ALLOW_PRISM and "prism scale" in _lp2) or (SEC_ALLOW_REVIVE and _s3["hp"] <= 0 and any(k in _lp2 for k in ("revive", "sacred ash"))) or (SEC_ALLOW_HEAL and _s3["hp"] > 0 and any(k in _lp2 for k in ("potion", "full restore", "full heal")) and not (SEC_NO_STATUS_CURE and _s3.get("sp") in (349, 350, 602, 603, 604) and any(k in _lp2 for k in SEC_CURE_ITEMS))) or orb_banned({"n": _lp2}) or ("swampertite" in _lp2 and _s3.get("sp") == 260) or ("thunder stone" in _lp2 and _s3.get("sp") == 603) or ("eelektrossite" in _lp2 and _s3.get("sp") == 604) or (("link cord" in _lp2 or "linking cord" in _lp2) and _s3.get("sp") == 64) or ("alakazamite" in _lp2 and _s3.get("sp") == 65)  # TSTONE 11/04: evo stone/mega stone may go to Tynamo-line secondary
                             if not _ok3:
                                 tgt = party.index(z)
                                 if SEC_NO_STATUS_CURE and _s3.get("sp") in (349, 350, 602, 603, 604) and any(k in _lp2 for k in SEC_CURE_ITEMS) and same == 0: log(f"SEC STATUS skip: {last_pick[0]} not used on Milotic (burn/poison kept)")
@@ -1406,16 +1438,19 @@ async def main():
                             _cm = str(await ev("(()=>{try{return window.__pr_cam.scene.ui.getMessageHandler().message.text||''}catch(e){return ''}})()") or "").lower()
                             if "stop" in _cm: log(f"LEARN {_li['pn']}: stop teaching {_li['new']['n']} -> Yes"); await set_cursor(0); await Z()
                             else: log(f"LEARN {_li['pn']}: decline {_li['new']['n']} (profile) cur={[m['n'] for m in _li['cur']]} {LEARN_NOTE[0]}"); await X()
-                    elif st.get("ph") == "LearnMovePhase" and (_li := await ev(LEARN_JS)) and not _li.get("err") and _li.get("sp") in SECONDARY[1]:  # ETERNTEAM t200u: secondary learn rules
-                        _sp = sec_profile(); _rol = _sp.get("replace_on_learn") or {}; _cn = [m["n"] for m in _li["cur"]]
-                        _ix = next((_cn.index(o) for o in _rol.get(_li["new"]["n"], []) if o in _cn), None)
-                        if _ix is None and len(_cn) < 4 and _li["new"]["n"] in _rol: _ix = len(_cn)
+                    elif st.get("ph") == "LearnMovePhase" and (_li := await ev(LEARN_JS)) and not _li.get("err") and _li.get("sp") in SECONDARY[1]:  # Absol slot_replace via learn_decide (was replace_on_learn only)
+                        _sp = sec_profile(); _cn = [m["n"] for m in _li["cur"]]
+                        _ix = learn_decide(_sp, _li["cur"], _li["new"])
+                        if _ix is None:
+                            _rol = _sp.get("replace_on_learn") or {}
+                            _ix = next((_cn.index(o) for o in _rol.get(_li["new"]["n"], []) if o in _cn), None)
+                            if _ix is None and len(_cn) < 4 and _li["new"]["n"] in _rol: _ix = len(_cn)
                         if _ix is not None and _li.get("canLearn"):
-                            r_ = await ev(LEARN_DO_JS % (_ix, _ix, _ix)); log(f"LEARN SECONDARY {_li['pn']}: {_li['new']['n']} replaces slot {_ix} ({_cn[_ix] if _ix < len(_cn) else '-'}) -> {r_}")
+                            r_ = await ev(LEARN_DO_JS % (_ix, _ix, _ix)); log(f"LEARN SECONDARY {_li['pn']}: {_li['new']['n']} replaces slot {_ix} ({_cn[_ix] if _ix < len(_cn) else '-'}) -> {r_} cur={_cn} {LEARN_NOTE[0]}")
                         else:
                             _cm = str(await ev("(()=>{try{return window.__pr_cam.scene.ui.getMessageHandler().message.text||''}catch(e){return ''}})()") or "").lower()
                             if "stop" in _cm: log(f"LEARN SECONDARY {_li['pn']}: stop teaching {_li['new']['n']} -> Yes"); await set_cursor(0); await Z()
-                            else: log(f"LEARN SECONDARY {_li['pn']}: decline {_li['new']['n']} cur={_cn}"); await X()
+                            else: log(f"LEARN SECONDARY {_li['pn']}: decline {_li['new']['n']} cur={_cn} {LEARN_NOTE[0]}"); await X()
                     elif skip_yes[0] and st.get("ph") == "SelectModifierPhase":
                         skip_yes[0] = False; await set_cursor(0); await Z()
                     elif st.get("ph") == "CheckSwitchPhase" and z["hp"] > 0 and not z["f"] and z["hp"] >= 0.5 * (z.get("mx") or 1):

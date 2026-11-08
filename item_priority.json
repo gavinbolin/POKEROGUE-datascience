@@ -13,13 +13,14 @@
  "default_rank": 50,
  "specials": {
   "master_ball": -400,
-  "mega_bracelet": -380,
-  "eelektrossite": -370,
   "role_revive": -300,
   "sword": -290,
   "prism_scale": -290,
   "dna_pair": -250,
-  "emergency_heal": -240
+  "emergency_heal": -240,
+  "mega_bracelet": -400,
+  "absolite": -400,
+  "mewtwonite": -400
  },
  "special_notes": {
   "master_ball": "Gavin t138u/t140u: Master Ball beats everything; reserved for the wave-200 Eternatus catch every run.",
@@ -27,9 +28,7 @@
   "sword": "Rusted/Ancient Sword while Zacian in party",
   "prism_scale": "while secondary is Feebas",
   "dna_pair": "DNA Splicers when unfused Kricketot/Kricketune + Zigzagoon/Linoone",
-  "emergency_heal": "Full Restore/Max Potion/heal when Zacian <25% HP and next wave risky",
-  "mega_bracelet": "Gavin t195u: Mega Bracelet right below Master Ball (enables Mega Evolution)",
-  "eelektrossite": "Gavin t199u: Eelektrossite next, only while Eelektross (604) alive in party; applied to Eelektross only (Swampertite special removed)"
+  "emergency_heal": "Full Restore/Max Potion/heal when Zacian <25% HP and next wave risky"
  },
  "flags": [
   "lure_active",
@@ -348,7 +347,7 @@
    ],
    "mode": "substring",
    "when": "secondary_in_party",
-   "rank": -15,
+   "rank": -50,
    "tier": "",
    "shop_buyable": false,
    "notes": "keep a lure up for doubles (within tier)"
