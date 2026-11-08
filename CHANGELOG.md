@@ -2854,3 +2854,9 @@ Rare (variant 2) shiny Xatu Lv61 in double with Claydol. Unchanged at 10:52 (Com
 - `_re2.py reduce 384,63`: both vr=2 maxed (no reduce). Eggs: Rayquaza 1 (x6, candy 8->2); Abra 1 (x12, candy 20->8). Eggs 3->5. Vouchers unspent.
 - New Classic slot 0 party [384,63,263,327,401] via nr_pick + `_re2.py start` + `_re2.py slot 0` (slot 0 empty; slot 1 has data). Verified Classic, wave 1, slot 0, Rayquaza lead.
 - Config primary=384 secondary=63 candy_target=primary. Cleared stop artifacts + status reasons; rotated stdout -> _prev; hidden Win32_Process Create pythonw PID 130396 parent WmiPrvSE 3808, single instance. WAVE UP 3->4 by 20:34:09.
+
+## 2026-11-07 ~21:10-21:20 MST - wild shiny Haunter w57 doubles Caught (Rogue Ball)
+- Farm (PID 130396) stopped shiny_enemy Haunter Lv39 variant 1 (raw 0, Ghost/Poison, Levitate) w57 doubles with Parasect (Bug/Grass, Dry Skin), 21:07:14. At ~21:11 (>2 min) unchanged: CommandPhase turn 1, full HP, balls Poke 5 / Great 5 / Rogue 5, no farm process, no other controller.
+- Turn 1: Rayquaza V-create single-target at Parasect (_sw.py mv 0 1 + tgt 3), Kadabra switched to Spinda (_sw.py sw 1 3). Parasect KO'd, Haunter untouched 89/89. Hidden tab needed _sw.py rd 150 / ack 25.
+- Turn 2: _sw.py ball Haunter: 1st Rogue Ball (5 -> 4) "Gotcha!" (cap_rd.py 80, catch_ack.py). Party was 5, Haunter joined as slot 6.
+- Shiny Log row added at top (pr_93s.png present). _restart_after_shiny.py relaunched hidden PID 81156 (parent 3808 WmiPrvSE). Field order now Rayquaza/Spinda.
