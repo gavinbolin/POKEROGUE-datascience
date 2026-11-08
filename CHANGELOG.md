@@ -2841,3 +2841,9 @@ Rare (variant 2) shiny Xatu Lv61 in double with Claydol. Unchanged at 10:52 (Com
 - `_re2.py reduce 384,63`: both vr=2 maxed (no reduce). Eggs: Rayquaza 3 (x6, candy 23->5); Abra 3 (x12, candy 38->2). Eggs 0->6. Vouchers unspent.
 - New Classic slot 0 party [384,63,263,327,401] via nr_pick + `_re2.py start` + `_re2.py slot 0` (slot 0 empty; slot 1 has data). Verified Classic, wave 1, slot 0, Rayquaza lead.
 - Config primary=384 secondary=63 candy_target=primary. Cleared stop artifacts + status reasons; rotated stdout -> _prev; hidden Win32_Process Create pythonw PID 128668 parent WmiPrvSE 3808, single instance. WAVE UP 3->4 by 19:27:52.
+
+## 2026-11-07 ~20:15-20:22 MST - wild shiny Marowak w77 doubles Caught (Poke Ball)
+- Farm (PID 128668) stopped shiny_enemy Marowak Lv52 variant 1 (raw 0, Fire/Ghost, Cursed Body) w77 doubles with Rhydon (Ground/Rock, Lightning Rod), 20:14:53. At 20:17:16 (>2 min) unchanged: CommandPhase turn 1, full HP, balls Poke 10 / Master 1, no farm process, no other controller.
+- Turn 1: Rayquaza switched to Spinda (_sw.py sw 0 3); Alakazam Ice Beam single-target at Rhydon (_sw.py mv 1 3 + tgt 3; Thunderbolt avoided because of Lightning Rod). Rhydon KO'd, Marowak untouched 132/132. Hidden tab needed _sw.py ack during ExpPhase.
+- Turn 2: _sw.py ball Marowak: 1st Poke Ball (10 -> 9) "Gotcha!". Party was 5, Marowak joined as slot 6. Master Ball untouched.
+- Shiny Log row added at top (pr_105s.png downloaded). _restart_after_shiny.py relaunched hidden PID 126256 (parent 3808 WmiPrvSE), single instance; on w77 rewards by 20:21. Field order now Spinda/Alakazam (farm brings Rayquaza back).
