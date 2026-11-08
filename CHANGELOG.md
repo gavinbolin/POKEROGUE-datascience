@@ -2822,3 +2822,9 @@ Rare (variant 2) shiny Xatu Lv61 in double with Claydol. Unchanged at 10:52 (Com
 - `_re2.py reduce 384,63`: both vr=2 maxed (no reduce). Eggs: Rayquaza 2 (x6, candy 14->2); Abra 1 (x12, candy 21->9). Eggs 0->3. Vouchers unspent.
 - New Classic slot 0 party [384,63,263,327,401] via nr_pick + `_re2.py start` + `_re2.py slot 0` (slot 0 empty; slot 1 has data). Verified Classic, wave 1, slot 0, Rayquaza lead.
 - Config primary=384 secondary=63 candy_target=primary. Cleared stop artifacts + status reasons; rotated stdout -> _prev; hidden Win32_Process Create pythonw PID 122076 parent WmiPrvSE 3808, single instance. WAVE UP 3->4 by 16:56:18.
+
+## 2026-11-07 ~17:24-17:30 MST - wild shiny Gloom w40 (boss, 2 seg, singles) Caught (Poke Ball)
+- Farm (PID 122076) stopped shiny_enemy Gloom Lv29 variant 2 (rare) w40 boss 2 segments, 17:16:16. At ~17:24 (8 min) unchanged: CommandPhase turn 1, full HP, balls Poke 5 only, no other controller.
+- _sw.py sw 0 2: Rayquaza -> Linoone (took 27). _sw.py shatk 0 3 x2: Linoone Extreme Speed 79->58->40 (segment boundary, shield broken, bossSegmentIndex 0); Linoone fainted, Kricketot sent out.
+- _sw.py ball Gloom: 1st Poke Ball (5->4) "Gotcha!". Party was 5, Gloom joined as slot 6.
+- Shiny Log row added (pr_44s.png downloaded). _restart_after_shiny.py relaunched hidden PID 123812 (parent 3808 WmiPrvSE); Rayquaza switched back in, w41 by 17:29.
